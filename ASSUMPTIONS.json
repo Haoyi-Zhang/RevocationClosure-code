@@ -1,0 +1,102 @@
+{
+  "schema": "revocation-closure-assumptions-v2",
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "The gateway membership set is fixed, finite, complete, and known to the collector.",
+      "role": "Defines the coordinates that must be covered before closure.",
+      "evidence": [
+        "exact barrier enumeration",
+        "certificate coverage tests"
+      ],
+      "removed_or_out_of_scope": "Dynamic membership and omitted configured gateways are outside the theorem."
+    },
+    {
+      "id": "A2",
+      "statement": "Capabilities form an acyclic single-parent lineage and legal descendants monotonically attenuate authority and expiry.",
+      "role": "Makes ancestor exclusion dominate all legal descendants.",
+      "evidence": [
+        "independent interpreter",
+        "depth and amplification rejection tests",
+        "leaf-only weakened-model counterexample"
+      ],
+      "removed_or_out_of_scope": "Arbitrary policy graphs and multiple-parent joins are not covered."
+    },
+    {
+      "id": "A3",
+      "statement": "Grant, revoke, and receipt records have authentic origin, canonical encoding, and intact signer-domain separation.",
+      "role": "Prevents forged coverage and forged lineage edges.",
+      "evidence": [
+        "principal/gateway domain-separation tests",
+        "malformed-record rejection"
+      ],
+      "removed_or_out_of_scope": "Production key custody, transport authentication, and compromised issuers are not evaluated."
+    },
+    {
+      "id": "A4",
+      "statement": "Gateways are honest and may crash, recover, or be disconnected; they are not Byzantine.",
+      "role": "Lets a receipt attest to the gateway's actual durable exclusion transition.",
+      "evidence": [
+        "one-server-process gateway crash/recovery campaign",
+        "transaction fault injection"
+      ],
+      "removed_or_out_of_scope": "Byzantine gateways and malicious storage are out of scope."
+    },
+    {
+      "id": "A5",
+      "statement": "A receipt is issued only after a durable exclusion transition commits, and committed exclusion survives process recovery.",
+      "role": "Makes receipt coverage stable after closure.",
+      "evidence": [
+        "commit-before-reply crash",
+        "whole gateway-service restart",
+        "volatile-receipt negative control"
+      ],
+      "removed_or_out_of_scope": "Physical power-cut and disk-corruption guarantees are not inferred from process-crash evidence."
+    },
+    {
+      "id": "A6",
+      "statement": "All active gateway and collector clocks are nonnegative and within one fixed error bound of nondecreasing real time, including after recovery.",
+      "role": "Upper time excludes actual expiry; retained lower time certifies expiry; d <= epsilon is permanently unusable under the nonnegative-clock authorizer.",
+      "evidence": [
+        "original clock checks",
+        "independent finite journal oracle",
+        "bounded-clock regression trace"
+      ],
+      "removed_or_out_of_scope": "A clock reading outside the stated bound cannot cover a coordinate."
+    },
+    {
+      "id": "A7",
+      "statement": "Compaction preserves a persistent admission floor sufficient to reject replayed records below the retained boundary; the Delta-specialized metadata bound applies only while the latest successful compaction age is at most Delta.",
+      "role": "Prevents old grants and revokes from re-entering after metadata deletion.",
+      "evidence": [
+        "floor recovery cases",
+        "floor-removal negative control",
+        "replay tests",
+        "recovery-compaction age-window regression"
+      ],
+      "removed_or_out_of_scope": "Arbitrary lossy compaction is not covered."
+    },
+    {
+      "id": "A8",
+      "statement": "Each gateway serializes authorization-changing transitions through the declared SQLite transaction boundary.",
+      "role": "Prevents half-committed grant, revoke, floor, and in-memory state.",
+      "evidence": [
+        "nine crash points",
+        "late rollback regressions",
+        "concurrent delegate/revoke race"
+      ],
+      "removed_or_out_of_scope": "The artifact does not claim lock-free progress or high-load linearizability."
+    },
+    {
+      "id": "A9",
+      "statement": "The collector commits monotone evidence before returning completion and reopens only under the same immutable target, audience and error bound.",
+      "role": "Makes returned completion monotone across valid observation updates and non-rollback recovery.",
+      "evidence": [
+        "collector.py",
+        "three owned collector-process crash cases",
+        "64 stateful traces"
+      ],
+      "removed_or_out_of_scope": "A stale snapshot, changed membership, changed clock bound, or untrusted database modification is outside the claim."
+    }
+  ]
+}

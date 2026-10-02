@@ -1,0 +1,160 @@
+{
+  "certificate_closed": true,
+  "cover": [
+    "receipt",
+    "receipt",
+    "receipt",
+    "expiry",
+    "expiry"
+  ],
+  "hidden_lineage_depth": 3,
+  "process_restarts": 2,
+  "post_closure_authorization_comparisons": 15,
+  "post_closure_delegation_attempts": 5,
+  "all_authorizations_rejected": true,
+  "all_delegations_rejected": true,
+  "reasons_by_node": {
+    "0": [
+      "revoked"
+    ],
+    "1": [
+      "revoked"
+    ],
+    "2": [
+      "revoked"
+    ],
+    "3": [
+      "expired"
+    ],
+    "4": [
+      "expired"
+    ]
+  },
+  "decisions": [
+    {
+      "node": 0,
+      "capability": "c7b903e09f91e0263edcf3e2cb05ed62a71627b2a2b601190d1072c941081b11",
+      "depth": 1,
+      "reason": "revoked"
+    },
+    {
+      "node": 0,
+      "capability": "f58af62e2750c82c6b1f7befe1c4dada4bd09e40972f24abc660686bffdb331e",
+      "depth": 2,
+      "reason": "revoked"
+    },
+    {
+      "node": 0,
+      "capability": "c2b42b40a5cad146d52d33ef05c403aa286e24b4cc7f2d34c1842ede65154c17",
+      "depth": 3,
+      "reason": "revoked"
+    },
+    {
+      "node": 1,
+      "capability": "c7b903e09f91e0263edcf3e2cb05ed62a71627b2a2b601190d1072c941081b11",
+      "depth": 1,
+      "reason": "revoked"
+    },
+    {
+      "node": 1,
+      "capability": "f58af62e2750c82c6b1f7befe1c4dada4bd09e40972f24abc660686bffdb331e",
+      "depth": 2,
+      "reason": "revoked"
+    },
+    {
+      "node": 1,
+      "capability": "c2b42b40a5cad146d52d33ef05c403aa286e24b4cc7f2d34c1842ede65154c17",
+      "depth": 3,
+      "reason": "revoked"
+    },
+    {
+      "node": 2,
+      "capability": "c7b903e09f91e0263edcf3e2cb05ed62a71627b2a2b601190d1072c941081b11",
+      "depth": 1,
+      "reason": "revoked"
+    },
+    {
+      "node": 2,
+      "capability": "f58af62e2750c82c6b1f7befe1c4dada4bd09e40972f24abc660686bffdb331e",
+      "depth": 2,
+      "reason": "revoked"
+    },
+    {
+      "node": 2,
+      "capability": "c2b42b40a5cad146d52d33ef05c403aa286e24b4cc7f2d34c1842ede65154c17",
+      "depth": 3,
+      "reason": "revoked"
+    },
+    {
+      "node": 3,
+      "capability": "c7b903e09f91e0263edcf3e2cb05ed62a71627b2a2b601190d1072c941081b11",
+      "depth": 1,
+      "reason": "expired"
+    },
+    {
+      "node": 3,
+      "capability": "f58af62e2750c82c6b1f7befe1c4dada4bd09e40972f24abc660686bffdb331e",
+      "depth": 2,
+      "reason": "expired"
+    },
+    {
+      "node": 3,
+      "capability": "c2b42b40a5cad146d52d33ef05c403aa286e24b4cc7f2d34c1842ede65154c17",
+      "depth": 3,
+      "reason": "expired"
+    },
+    {
+      "node": 4,
+      "capability": "c7b903e09f91e0263edcf3e2cb05ed62a71627b2a2b601190d1072c941081b11",
+      "depth": 1,
+      "reason": "expired"
+    },
+    {
+      "node": 4,
+      "capability": "f58af62e2750c82c6b1f7befe1c4dada4bd09e40972f24abc660686bffdb331e",
+      "depth": 2,
+      "reason": "expired"
+    },
+    {
+      "node": 4,
+      "capability": "c2b42b40a5cad146d52d33ef05c403aa286e24b4cc7f2d34c1842ede65154c17",
+      "depth": 3,
+      "reason": "expired"
+    }
+  ],
+  "delegations": [
+    {
+      "node": 0,
+      "issued": false,
+      "reason": "revoked"
+    },
+    {
+      "node": 1,
+      "issued": false,
+      "reason": "revoked"
+    },
+    {
+      "node": 2,
+      "issued": false,
+      "reason": "revoked"
+    },
+    {
+      "node": 3,
+      "issued": false,
+      "reason": "expired"
+    },
+    {
+      "node": 4,
+      "issued": false,
+      "reason": "expired"
+    }
+  ],
+  "messages": 29,
+  "wire_bytes": 40855,
+  "server_peak_rss_kib": 97104,
+  "wall_s": 1.9458576029996948,
+  "parent_cpu_s": 0.012267255000000032,
+  "children_cpu_s": 3.191308,
+  "parent_peak_rss_kib": 95024,
+  "scope": "One deterministic owned-loopback mixed-cover case with a valid depth-three lineage; finite correspondence evidence, not exhaustive descendant or deployment evidence."
+}

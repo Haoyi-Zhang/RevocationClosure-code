@@ -1,0 +1,1173 @@
+{
+  "state": "complete",
+  "commands_executed_from_retained_source_snapshot": true,
+  "retained_source_files": 24,
+  "commands": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "pilot.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 3.1411291979999305,
+      "children_cpu_s": 5.191611
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "finite.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 10.394889698999918,
+      "children_cpu_s": 10.814964000000002
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "crashes.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 20.381793930999947,
+      "children_cpu_s": 33.836657
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "policies.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 5.058499639999923,
+      "children_cpu_s": 8.130836000000002
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "tests/boundaries.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 6.289496146999909,
+      "children_cpu_s": 7.119019
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "tests/recovery_compaction_window.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 0.783613177999996,
+      "children_cpu_s": 1.153526
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "tests/differential_audit.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 6.1803175439999904,
+      "children_cpu_s": 6.593247
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "tests/closure_descendants.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.4808004430001347,
+      "children_cpu_s": 4.235878
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "tests/reproduction_guard.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 0.6674840830000903,
+      "children_cpu_s": 1.1175680000000003
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "histories.py",
+        "--seed",
+        "101",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 4.287801148999961,
+      "children_cpu_s": 6.232117000000001
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "histories.py",
+        "--seed",
+        "211",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 4.28492133199984,
+      "children_cpu_s": 6.244344999999998
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "histories.py",
+        "--seed",
+        "307",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 4.288052598000149,
+      "children_cpu_s": 6.1665319999999975
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "histories.py",
+        "--seed",
+        "401",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 4.635477282000011,
+      "children_cpu_s": 6.433605999999999
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "histories.py",
+        "--seed",
+        "503",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 4.196599632000016,
+      "children_cpu_s": 5.958219
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "histories.py",
+        "--seed",
+        "601",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 4.499037834000092,
+      "children_cpu_s": 6.352188000000002
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "histories.py",
+        "--seed",
+        "701",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 4.93790606399989,
+      "children_cpu_s": 6.828073
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "histories.py",
+        "--seed",
+        "809",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 4.85325855300016,
+      "children_cpu_s": 6.790280999999999
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "1",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.5229981720001433,
+      "children_cpu_s": 2.4221550000000027
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "1",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.4726948560000892,
+      "children_cpu_s": 2.324395
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "1",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.52354126299997,
+      "children_cpu_s": 2.3462829999999997
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "4",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.4235519569999724,
+      "children_cpu_s": 2.266897
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "4",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.514626550999992,
+      "children_cpu_s": 2.3991480000000003
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "4",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.4223396909999337,
+      "children_cpu_s": 2.3127350000000004
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "16",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.5777718150000055,
+      "children_cpu_s": 2.378216
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "16",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.5257827860000361,
+      "children_cpu_s": 2.426948999999999
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "16",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.6235904519999167,
+      "children_cpu_s": 2.4152569999999995
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "64",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.7296597100000781,
+      "children_cpu_s": 2.583459999999998
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "64",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.7236328820001745,
+      "children_cpu_s": 2.6455770000000016
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "100",
+        "--depth",
+        "64",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.6737823099999787,
+      "children_cpu_s": 2.46497
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "1",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.481146686999864,
+      "children_cpu_s": 2.3500959999999997
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "1",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.5235303740000745,
+      "children_cpu_s": 2.333411
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "1",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.5260590840000532,
+      "children_cpu_s": 2.3386719999999985
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "4",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.5788829670000268,
+      "children_cpu_s": 2.3812790000000006
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "4",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.6275591439998607,
+      "children_cpu_s": 2.4191809999999996
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "4",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.5370715569999902,
+      "children_cpu_s": 2.3902079999999994
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "16",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.5736863629999789,
+      "children_cpu_s": 2.435661000000002
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "16",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.6733522349998111,
+      "children_cpu_s": 2.6014029999999995
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "16",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.6722382670000115,
+      "children_cpu_s": 2.5533740000000003
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "64",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.8723245910000514,
+      "children_cpu_s": 2.704309
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "64",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.9738924579999093,
+      "children_cpu_s": 2.7730699999999997
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "1000",
+        "--depth",
+        "64",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.1198270160000448,
+      "children_cpu_s": 2.940634
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "1",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.9726098959999945,
+      "children_cpu_s": 2.8458389999999993
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "1",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.0758755209999435,
+      "children_cpu_s": 2.914941999999999
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "1",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.025897610000129,
+      "children_cpu_s": 2.901954
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "4",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.077989959999968,
+      "children_cpu_s": 2.9769749999999986
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "4",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.0270074980001027,
+      "children_cpu_s": 2.8709880000000005
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "4",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.0254270220000308,
+      "children_cpu_s": 2.895734
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "16",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.0752110920000177,
+      "children_cpu_s": 2.9012139999999995
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "16",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.9763288259998717,
+      "children_cpu_s": 2.877473
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "16",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.1261700100001235,
+      "children_cpu_s": 3.00611
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "64",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.2271316850001313,
+      "children_cpu_s": 3.1061940000000003
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "64",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.1765158829998654,
+      "children_cpu_s": 3.0891140000000004
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "5000",
+        "--depth",
+        "64",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.191515855000034,
+      "children_cpu_s": 3.0111170000000014
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "1",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.376743977999922,
+      "children_cpu_s": 3.2222149999999994
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "1",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.527605173999973,
+      "children_cpu_s": 3.3809450000000014
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "1",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.4250071330000083,
+      "children_cpu_s": 3.295714999999997
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "4",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.5256091749999996,
+      "children_cpu_s": 3.454624000000001
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "4",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.4276775299999827,
+      "children_cpu_s": 3.335181999999995
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "4",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.5782896079999773,
+      "children_cpu_s": 3.50728
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "16",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.6248061960000086,
+      "children_cpu_s": 3.5355339999999997
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "16",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.625632219999943,
+      "children_cpu_s": 3.5279309999999997
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "16",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.6759625419999793,
+      "children_cpu_s": 3.5192609999999998
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "64",
+        "--seed",
+        "17",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.828049654999859,
+      "children_cpu_s": 3.730887
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "64",
+        "--seed",
+        "29",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.8830063200000495,
+      "children_cpu_s": 3.7416819999999964
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "benchmark.py",
+        "--records",
+        "10000",
+        "--depth",
+        "64",
+        "--seed",
+        "43",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.878448529000025,
+      "children_cpu_s": 3.811346
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "verify_history.py",
+        "--directory",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.5236448310001833,
+      "children_cpu_s": 2.9777480000000005
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "summarize.py",
+        "--directory",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 0.818540688999974,
+      "children_cpu_s": 1.2066200000000018
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "tests/clock_bounds.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.6234614359998432,
+      "children_cpu_s": 2.453301
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "tests/clock_regression.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.4233900410001752,
+      "children_cpu_s": 2.297852
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "tests/collector_audit.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.6879918790000374,
+      "children_cpu_s": 4.421416999999999
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python3",
+        "tests/collector_stateful.py",
+        "--out",
+        "<output>"
+      ],
+      "exit_code": 0,
+      "wall_s": 12.704695243999822,
+      "children_cpu_s": 13.138822000000001
+    }
+  ],
+  "segments": [
+    {
+      "wall_s": 13.537827282999956,
+      "coordinator_cpu_s": 0.012923483999999874,
+      "completed_commands": 2
+    },
+    {
+      "wall_s": 25.440964446999942,
+      "coordinator_cpu_s": 0.0187093519999999,
+      "completed_commands": 2
+    },
+    {
+      "wall_s": 6.289881625000135,
+      "coordinator_cpu_s": 0.0058372340000001355,
+      "completed_commands": 1
+    },
+    {
+      "wall_s": 10.11349753200011,
+      "coordinator_cpu_s": 0.009994245000000124,
+      "completed_commands": 4
+    },
+    {
+      "wall_s": 12.862134697000101,
+      "coordinator_cpu_s": 0.011526262000000065,
+      "completed_commands": 3
+    },
+    {
+      "wall_s": 13.332265515000017,
+      "coordinator_cpu_s": 0.011268056999999887,
+      "completed_commands": 3
+    },
+    {
+      "wall_s": 11.315188933999934,
+      "coordinator_cpu_s": 0.009378050999999998,
+      "completed_commands": 3
+    },
+    {
+      "wall_s": 15.541209883999954,
+      "coordinator_cpu_s": 0.02074202000000014,
+      "completed_commands": 10
+    },
+    {
+      "wall_s": 15.87232106800002,
+      "coordinator_cpu_s": 0.023387021000000008,
+      "completed_commands": 10
+    },
+    {
+      "wall_s": 20.250680692999822,
+      "coordinator_cpu_s": 0.024821557000000105,
+      "completed_commands": 10
+    },
+    {
+      "wall_s": 22.985489182000038,
+      "coordinator_cpu_s": 0.030028724000000118,
+      "completed_commands": 10
+    },
+    {
+      "wall_s": 24.064662491999798,
+      "coordinator_cpu_s": 0.02818761000000003,
+      "completed_commands": 10
+    },
+    {
+      "wall_s": 1.4242138639999666,
+      "coordinator_cpu_s": 0.0022769099999999654,
+      "completed_commands": 1
+    },
+    {
+      "wall_s": 15.393773580000015,
+      "coordinator_cpu_s": 0.014708044999999892,
+      "completed_commands": 2
+    }
+  ],
+  "failed_attempts": [],
+  "semantic_comparisons": 69,
+  "exact_structured_inputs_compared": 59,
+  "timing_equality_required": false,
+  "completed_segment_wall_s": 208.4241107959998,
+  "coordinator_cpu_s": 0.22378857200000024,
+  "command_children_cpu_s": 292.362023,
+  "coordinator_peak_rss_kib": 141432,
+  "boundary": "Successful finite checks and exact fixture/semantic replay are not a proof of general correctness or an independent scientific review."
+}

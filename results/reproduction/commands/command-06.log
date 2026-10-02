@@ -1,0 +1,97 @@
+{
+  "case": "recovery-compaction-age-window",
+  "parameters": {
+    "epsilon": 0,
+    "L": 1,
+    "rho": 1,
+    "B": 1,
+    "Delta": 1,
+    "initial_compaction_time": 0,
+    "recovery_time": 100,
+    "first_post_recovery_compaction_time": 101
+  },
+  "events": [
+    {
+      "creation_time": 1,
+      "horizon": 2,
+      "event_id": "fbdac9c1edb7125e070c50dfee492eaa17a72cbecc3c6393ba4ce204f11778c0"
+    },
+    {
+      "creation_time": 2,
+      "horizon": 3,
+      "event_id": "5863d5a0715d784049cfc1d9749f808fe6dd4d39cd4a26159d013349260ce319"
+    },
+    {
+      "creation_time": 3,
+      "horizon": 4,
+      "event_id": "d5fa07af8ac504395d2a457b97c06dd4116bd90e243af5c5b009eb41bf0764c9"
+    },
+    {
+      "creation_time": 4,
+      "horizon": 5,
+      "event_id": "fca46a174b8f3ebdfaffbb14cff4ebdc3751b3fea74a11464d86e1bddd19c7ba"
+    },
+    {
+      "creation_time": 5,
+      "horizon": 6,
+      "event_id": "31d1f45831b143805c05b85981814d1f2ab090a3d218742900ef5efb0934f0fe"
+    },
+    {
+      "creation_time": 6,
+      "horizon": 7,
+      "event_id": "7752fc80d91dd4bf22cabaab4901c812dcf14ae46254042bbb34b62f99fa2415"
+    },
+    {
+      "creation_time": 7,
+      "horizon": 8,
+      "event_id": "eeb174ac12b5fc902ce10f677bc990f41f7b77ebe28730c40eb0ae011d869181"
+    },
+    {
+      "creation_time": 8,
+      "horizon": 9,
+      "event_id": "04c0b3381b6bd4e0809afe17da3db2aa0f64412257f482c758e55345b4b2f9c5"
+    },
+    {
+      "creation_time": 9,
+      "horizon": 10,
+      "event_id": "56c7ce53bede66fa682a1618b0514f05bf455e62c2b6de1b0b96dbdc9bd68acb"
+    },
+    {
+      "creation_time": 10,
+      "horizon": 11,
+      "event_id": "affde715c8275c1c52dd43239ddf491126e28224308ff332e916c85bc62644a6"
+    }
+  ],
+  "initial_floor": 0,
+  "replay": {
+    "added": 10,
+    "dropped": 0,
+    "records_before_first_post_recovery_compaction": 10,
+    "floor_before_first_post_recovery_compaction": 0
+  },
+  "authorization": {
+    "checks": 10,
+    "rejected": 10,
+    "reasons": [
+      "expired"
+    ],
+    "sql_interpreter_agreement": true
+  },
+  "bounds": {
+    "Delta_specialization": 3,
+    "Delta_specialization_premise_holds_at_replay": false,
+    "compaction_age_at_replay": 100,
+    "age_conditioned_bound_at_replay": 102,
+    "pre_compaction_count_exceeds_Delta_specialization": true,
+    "pre_compaction_count_within_age_conditioned_bound": true
+  },
+  "post_compaction": {
+    "floor": 101,
+    "records_before": 10,
+    "records_after": 0
+  },
+  "interpretation": "Observed executable case: the Delta-specialized metadata bound does not apply before the first successful post-recovery compaction because the last-compaction age is 100>Delta. Authorization safety is preserved by the upper-time check; all ten expired grants reject. The general age-conditioned bound applies, and the next compaction advances the durable floor and removes the retained metadata.",
+  "wall_s": 0.008738834000041606,
+  "parent_cpu_s": 0.008738211000000051,
+  "parent_peak_rss_kib": 95528
+}

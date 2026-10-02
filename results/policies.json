@@ -1,0 +1,2786 @@
+{
+  "ticks": [
+    20,
+    199,
+    200,
+    999,
+    1000,
+    1499,
+    1500,
+    1600
+  ],
+  "units": "logical milliseconds, not a wall-clock network latency claim",
+  "baseline_scope": "policy emulations in one toy service; not external system implementations",
+  "policies": [
+    {
+      "policy": "central-fail-closed",
+      "deadlines": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "mode": "closed",
+      "rule": "central",
+      "revocation_tick": 20,
+      "healing_tick": 1500,
+      "first_observed_closed_tick": 20,
+      "logical_completion_delay": 0,
+      "observations": [
+        {
+          "tick": 20,
+          "closed": true,
+          "cover": [
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ]
+        },
+        {
+          "tick": 199,
+          "closed": true,
+          "cover": [
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "closed": true,
+          "cover": [
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ]
+        },
+        {
+          "tick": 999,
+          "closed": true,
+          "cover": [
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ]
+        },
+        {
+          "tick": 1000,
+          "closed": true,
+          "cover": [
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ]
+        },
+        {
+          "tick": 1499,
+          "closed": true,
+          "cover": [
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            },
+            {
+              "allow": false,
+              "reason": "partition-unavailable"
+            }
+          ]
+        },
+        {
+          "tick": 1500,
+          "closed": true,
+          "cover": [
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1600,
+          "closed": true,
+          "cover": [
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable",
+            "authority-or-unavailable"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        }
+      ],
+      "messages": 66,
+      "wire_bytes": 125244,
+      "server_peak_rss_kib": 97060
+    },
+    {
+      "policy": "lease-only",
+      "deadlines": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "mode": "lease",
+      "rule": "lease-only",
+      "revocation_tick": 20,
+      "healing_tick": 1500,
+      "first_observed_closed_tick": 1000,
+      "logical_completion_delay": 980,
+      "observations": [
+        {
+          "tick": 20,
+          "closed": false,
+          "cover": [
+            "open",
+            "open",
+            "open",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 199,
+          "closed": false,
+          "cover": [
+            "open",
+            "open",
+            "open",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "closed": false,
+          "cover": [
+            "open",
+            "open",
+            "open",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 999,
+          "closed": false,
+          "cover": [
+            "open",
+            "open",
+            "open",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 1000,
+          "closed": true,
+          "cover": [
+            "expiry",
+            "expiry",
+            "expiry",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1499,
+          "closed": true,
+          "cover": [
+            "expiry",
+            "expiry",
+            "expiry",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1500,
+          "closed": true,
+          "cover": [
+            "expiry",
+            "expiry",
+            "expiry",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1600,
+          "closed": true,
+          "cover": [
+            "expiry",
+            "expiry",
+            "expiry",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        }
+      ],
+      "messages": 98,
+      "wire_bytes": 176683,
+      "server_peak_rss_kib": 97072
+    },
+    {
+      "policy": "all-durable-receipts",
+      "deadlines": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "mode": "closed",
+      "rule": "all-receipts",
+      "revocation_tick": 20,
+      "healing_tick": 1500,
+      "first_observed_closed_tick": 1500,
+      "logical_completion_delay": 1480,
+      "observations": [
+        {
+          "tick": 20,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 199,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 999,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 1000,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1499,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1500,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1600,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        }
+      ],
+      "messages": 98,
+      "wire_bytes": 177530,
+      "server_peak_rss_kib": 97072
+    },
+    {
+      "policy": "uniform-long-plus-receipts",
+      "deadlines": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "mode": "closed",
+      "rule": "hybrid",
+      "revocation_tick": 20,
+      "healing_tick": 1500,
+      "first_observed_closed_tick": 1000,
+      "logical_completion_delay": 980,
+      "observations": [
+        {
+          "tick": 20,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 199,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 999,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 1000,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1499,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1500,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1600,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        }
+      ],
+      "messages": 98,
+      "wire_bytes": 177504,
+      "server_peak_rss_kib": 97068
+    },
+    {
+      "policy": "uniform-short-plus-receipts",
+      "deadlines": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "mode": "closed",
+      "rule": "hybrid",
+      "revocation_tick": 20,
+      "healing_tick": 1500,
+      "first_observed_closed_tick": 200,
+      "logical_completion_delay": 180,
+      "observations": [
+        {
+          "tick": 20,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 199,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 999,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1000,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1499,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1500,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1600,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        }
+      ],
+      "messages": 98,
+      "wire_bytes": 176795,
+      "server_peak_rss_kib": 97068
+    },
+    {
+      "policy": "audience-lease-plus-receipts",
+      "deadlines": [
+        1000,
+        1000,
+        1000,
+        200,
+        200
+      ],
+      "mode": "closed",
+      "rule": "hybrid",
+      "revocation_tick": 20,
+      "healing_tick": 1500,
+      "first_observed_closed_tick": 200,
+      "logical_completion_delay": 180,
+      "observations": [
+        {
+          "tick": 20,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 199,
+          "closed": false,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "open",
+            "open"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 999,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": true,
+              "reason": "allow"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1000,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1499,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "expiry",
+            "expiry"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1500,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        },
+        {
+          "tick": 1600,
+          "closed": true,
+          "cover": [
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt",
+            "receipt"
+          ],
+          "target": [
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            },
+            {
+              "allow": false,
+              "reason": "revoked"
+            }
+          ],
+          "unrevoked": [
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            },
+            {
+              "allow": false,
+              "reason": "expired"
+            }
+          ]
+        }
+      ],
+      "messages": 98,
+      "wire_bytes": 177382,
+      "server_peak_rss_kib": 97072
+    }
+  ],
+  "wall_s": 4.670864368999901,
+  "parent_cpu_s": 0.1889190810000001,
+  "children_cpu_s": 7.0607750000000005,
+  "parent_peak_rss_kib": 94888
+}

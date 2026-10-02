@@ -1,0 +1,1085 @@
+{
+  "transaction_crash_cases": 9,
+  "sqlite_integrity_checks": 45,
+  "offline_delegation_cases": 1,
+  "ablations": [
+    {
+      "mode": "closed",
+      "allow": false,
+      "reason": "revoked",
+      "failure_type": "none"
+    },
+    {
+      "mode": "volatile",
+      "allow": true,
+      "reason": "allow",
+      "failure_type": "pre-expiry-revoked-use"
+    },
+    {
+      "mode": "leaf-only",
+      "allow": true,
+      "reason": "allow",
+      "failure_type": "pre-expiry-revoked-use"
+    },
+    {
+      "mode": "lww",
+      "allow": true,
+      "reason": "allow",
+      "failure_type": "pre-expiry-revoked-use"
+    },
+    {
+      "mode": "closed",
+      "actual_time": 100,
+      "clock": 90,
+      "epsilon": 10,
+      "deadline": 100,
+      "allow": false,
+      "failure_type": "none"
+    },
+    {
+      "mode": "clock-unsafe",
+      "actual_time": 100,
+      "clock": 90,
+      "epsilon": 10,
+      "deadline": 100,
+      "allow": true,
+      "failure_type": "expired-use"
+    },
+    {
+      "mode": "closed",
+      "before": {
+        "floor": 0,
+        "grants": 1000,
+        "json_bytes": 281890,
+        "records": 1000,
+        "revocations": 0,
+        "server_cpu_s": 1.491143528,
+        "server_peak_rss_kib": 106816,
+        "service_ns": 1388641,
+        "sqlite_bytes": 729056,
+        "rpc_ns": 1865529
+      },
+      "after": {
+        "floor": 100,
+        "grants": 0,
+        "json_bytes": 0,
+        "records": 0,
+        "revocations": 0,
+        "server_cpu_s": 1.199436022,
+        "server_peak_rss_kib": 106816,
+        "service_ns": 312332,
+        "sqlite_bytes": 1384136,
+        "rpc_ns": 745212
+      },
+      "replay_added": 0,
+      "allow": false,
+      "failure_type": "none"
+    },
+    {
+      "mode": "no-floor",
+      "before": {
+        "floor": 0,
+        "grants": 1000,
+        "json_bytes": 281890,
+        "records": 1000,
+        "revocations": 0,
+        "server_cpu_s": 1.085952574,
+        "server_peak_rss_kib": 106816,
+        "service_ns": 1087596,
+        "sqlite_bytes": 729056,
+        "rpc_ns": 1563920
+      },
+      "after": {
+        "floor": 0,
+        "grants": 1000,
+        "json_bytes": 281890,
+        "records": 1000,
+        "revocations": 0,
+        "server_cpu_s": 1.104671621,
+        "server_peak_rss_kib": 106816,
+        "service_ns": 1031004,
+        "sqlite_bytes": 2030976,
+        "rpc_ns": 1472995
+      },
+      "replay_added": 1000,
+      "allow": false,
+      "failure_type": "metadata-reappearance-only"
+    }
+  ],
+  "traces": [
+    {
+      "operation": "revoke",
+      "point": "before_transaction",
+      "receipt_received": false,
+      "reply_lost": true,
+      "decision": {
+        "allow": true,
+        "atom": null,
+        "chain": [
+          "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+        ],
+        "clock": 21,
+        "epsilon": 0,
+        "floor": 0,
+        "node": 0,
+        "reason": "allow",
+        "request": {
+          "actor": 2,
+          "cap": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "right": 1,
+          "service": "svc0"
+        },
+        "server_cpu_s": 0.978437165,
+        "server_peak_rss_kib": 96952,
+        "service_ns": 224163,
+        "snapshot": [
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+            "nonce": "fault-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          },
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+            "issuer": 1,
+            "kind": "grant",
+            "mac": "18512b150f7b34986ddf515c37249fec248fb15f19ea16544237746df508cd7b",
+            "nonce": "fault-child",
+            "parent": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "rights": 3,
+            "service": "svc0",
+            "subject": 2
+          }
+        ],
+        "rpc_ns": 790793
+      }
+    },
+    {
+      "operation": "revoke",
+      "point": "before_commit",
+      "receipt_received": false,
+      "reply_lost": true,
+      "decision": {
+        "allow": true,
+        "atom": null,
+        "chain": [
+          "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+        ],
+        "clock": 21,
+        "epsilon": 0,
+        "floor": 0,
+        "node": 0,
+        "reason": "allow",
+        "request": {
+          "actor": 2,
+          "cap": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "right": 1,
+          "service": "svc0"
+        },
+        "server_cpu_s": 1.055618116,
+        "server_peak_rss_kib": 96948,
+        "service_ns": 295651,
+        "snapshot": [
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+            "nonce": "fault-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          },
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+            "issuer": 1,
+            "kind": "grant",
+            "mac": "18512b150f7b34986ddf515c37249fec248fb15f19ea16544237746df508cd7b",
+            "nonce": "fault-child",
+            "parent": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "rights": 3,
+            "service": "svc0",
+            "subject": 2
+          }
+        ],
+        "rpc_ns": 992107
+      }
+    },
+    {
+      "operation": "revoke",
+      "point": "after_commit_before_reply",
+      "receipt_received": false,
+      "reply_lost": true,
+      "decision": {
+        "allow": false,
+        "atom": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+        "chain": [
+          "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+        ],
+        "clock": 21,
+        "epsilon": 0,
+        "floor": 0,
+        "node": 0,
+        "reason": "revoked",
+        "request": {
+          "actor": 2,
+          "cap": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "right": 1,
+          "service": "svc0"
+        },
+        "server_cpu_s": 1.105736127,
+        "server_peak_rss_kib": 97600,
+        "service_ns": 247522,
+        "snapshot": [
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+            "nonce": "fault-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          },
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+            "issuer": 1,
+            "kind": "grant",
+            "mac": "18512b150f7b34986ddf515c37249fec248fb15f19ea16544237746df508cd7b",
+            "nonce": "fault-child",
+            "parent": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "rights": 3,
+            "service": "svc0",
+            "subject": 2
+          },
+          {
+            "id": "958c10ae3cc90c45a2f2395ef189cc69ab08a000a8680bd73de165b0b06c43fb",
+            "issuer": 0,
+            "kind": "revoke",
+            "mac": "140200a8d773e3750554cd4f86a78e8ef3eb904e2ca36d1eb41cb69537f791a7",
+            "target": {
+              "deadlines": [
+                1000,
+                1000,
+                1000,
+                200,
+                200
+              ],
+              "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+              "nonce": "fault-root",
+              "parent": null,
+              "rights": 7,
+              "service": "svc0",
+              "subject": 1
+            }
+          }
+        ],
+        "rpc_ns": 938423
+      }
+    },
+    {
+      "operation": "revoke",
+      "point": "after_reply",
+      "receipt_received": true,
+      "reply_lost": false,
+      "decision": {
+        "allow": false,
+        "atom": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+        "chain": [
+          "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+        ],
+        "clock": 21,
+        "epsilon": 0,
+        "floor": 0,
+        "node": 0,
+        "reason": "revoked",
+        "request": {
+          "actor": 2,
+          "cap": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "right": 1,
+          "service": "svc0"
+        },
+        "server_cpu_s": 1.037241611,
+        "server_peak_rss_kib": 98880,
+        "service_ns": 277575,
+        "snapshot": [
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+            "nonce": "fault-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          },
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+            "issuer": 1,
+            "kind": "grant",
+            "mac": "18512b150f7b34986ddf515c37249fec248fb15f19ea16544237746df508cd7b",
+            "nonce": "fault-child",
+            "parent": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "rights": 3,
+            "service": "svc0",
+            "subject": 2
+          },
+          {
+            "id": "958c10ae3cc90c45a2f2395ef189cc69ab08a000a8680bd73de165b0b06c43fb",
+            "issuer": 0,
+            "kind": "revoke",
+            "mac": "140200a8d773e3750554cd4f86a78e8ef3eb904e2ca36d1eb41cb69537f791a7",
+            "target": {
+              "deadlines": [
+                1000,
+                1000,
+                1000,
+                200,
+                200
+              ],
+              "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+              "nonce": "fault-root",
+              "parent": null,
+              "rights": 7,
+              "service": "svc0",
+              "subject": 1
+            }
+          }
+        ],
+        "rpc_ns": 896817
+      }
+    },
+    {
+      "operation": "compact",
+      "point": "before_transaction",
+      "state_after_restart": {
+        "floor": 0,
+        "grants": 2,
+        "json_bytes": 1098,
+        "records": 3,
+        "revocations": 1,
+        "server_cpu_s": 1.019195141,
+        "server_peak_rss_kib": 100160,
+        "service_ns": 355284,
+        "sqlite_bytes": 90456,
+        "rpc_ns": 1050846
+      },
+      "replay": {
+        "added": 0,
+        "dropped": 0,
+        "receipts": [
+          {
+            "gateway": 0,
+            "id": "be10f8aa9b99b184626e8585ee80ee956afd566e52e9ddedb6ccb3f794c60cfe",
+            "kind": "receipt",
+            "mac": "76ccee030b7188689b516e759be86a3bff90769b3e03606ec6cc42f5ae319ccd",
+            "revocation": "958c10ae3cc90c45a2f2395ef189cc69ab08a000a8680bd73de165b0b06c43fb",
+            "target": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+          }
+        ],
+        "server_cpu_s": 1.020311901,
+        "server_peak_rss_kib": 100160,
+        "service_ns": 389065,
+        "rpc_ns": 753170
+      },
+      "decision": {
+        "allow": false,
+        "atom": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+        "chain": [
+          "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+        ],
+        "clock": 1001,
+        "epsilon": 0,
+        "floor": 0,
+        "node": 0,
+        "reason": "revoked",
+        "request": {
+          "actor": 2,
+          "cap": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "right": 1,
+          "service": "svc0"
+        },
+        "server_cpu_s": 1.020807046,
+        "server_peak_rss_kib": 100160,
+        "service_ns": 187236,
+        "snapshot": [
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+            "nonce": "fault-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          },
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+            "issuer": 1,
+            "kind": "grant",
+            "mac": "18512b150f7b34986ddf515c37249fec248fb15f19ea16544237746df508cd7b",
+            "nonce": "fault-child",
+            "parent": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "rights": 3,
+            "service": "svc0",
+            "subject": 2
+          },
+          {
+            "id": "958c10ae3cc90c45a2f2395ef189cc69ab08a000a8680bd73de165b0b06c43fb",
+            "issuer": 0,
+            "kind": "revoke",
+            "mac": "140200a8d773e3750554cd4f86a78e8ef3eb904e2ca36d1eb41cb69537f791a7",
+            "target": {
+              "deadlines": [
+                1000,
+                1000,
+                1000,
+                200,
+                200
+              ],
+              "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+              "nonce": "fault-root",
+              "parent": null,
+              "rights": 7,
+              "service": "svc0",
+              "subject": 1
+            }
+          }
+        ],
+        "rpc_ns": 841016
+      }
+    },
+    {
+      "operation": "compact",
+      "point": "before_floor",
+      "state_after_restart": {
+        "floor": 0,
+        "grants": 2,
+        "json_bytes": 1098,
+        "records": 3,
+        "revocations": 1,
+        "server_cpu_s": 1.096332949,
+        "server_peak_rss_kib": 101568,
+        "service_ns": 406218,
+        "sqlite_bytes": 90456,
+        "rpc_ns": 1094368
+      },
+      "replay": {
+        "added": 0,
+        "dropped": 0,
+        "receipts": [
+          {
+            "gateway": 0,
+            "id": "be10f8aa9b99b184626e8585ee80ee956afd566e52e9ddedb6ccb3f794c60cfe",
+            "kind": "receipt",
+            "mac": "76ccee030b7188689b516e759be86a3bff90769b3e03606ec6cc42f5ae319ccd",
+            "revocation": "958c10ae3cc90c45a2f2395ef189cc69ab08a000a8680bd73de165b0b06c43fb",
+            "target": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+          }
+        ],
+        "server_cpu_s": 1.097228857,
+        "server_peak_rss_kib": 101568,
+        "service_ns": 395493,
+        "rpc_ns": 765760
+      },
+      "decision": {
+        "allow": false,
+        "atom": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+        "chain": [
+          "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+        ],
+        "clock": 1001,
+        "epsilon": 0,
+        "floor": 0,
+        "node": 0,
+        "reason": "revoked",
+        "request": {
+          "actor": 2,
+          "cap": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "right": 1,
+          "service": "svc0"
+        },
+        "server_cpu_s": 1.097950973,
+        "server_peak_rss_kib": 101568,
+        "service_ns": 300732,
+        "snapshot": [
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+            "nonce": "fault-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          },
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+            "issuer": 1,
+            "kind": "grant",
+            "mac": "18512b150f7b34986ddf515c37249fec248fb15f19ea16544237746df508cd7b",
+            "nonce": "fault-child",
+            "parent": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "rights": 3,
+            "service": "svc0",
+            "subject": 2
+          },
+          {
+            "id": "958c10ae3cc90c45a2f2395ef189cc69ab08a000a8680bd73de165b0b06c43fb",
+            "issuer": 0,
+            "kind": "revoke",
+            "mac": "140200a8d773e3750554cd4f86a78e8ef3eb904e2ca36d1eb41cb69537f791a7",
+            "target": {
+              "deadlines": [
+                1000,
+                1000,
+                1000,
+                200,
+                200
+              ],
+              "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+              "nonce": "fault-root",
+              "parent": null,
+              "rights": 7,
+              "service": "svc0",
+              "subject": 1
+            }
+          }
+        ],
+        "rpc_ns": 610578
+      }
+    },
+    {
+      "operation": "compact",
+      "point": "before_commit",
+      "state_after_restart": {
+        "floor": 0,
+        "grants": 2,
+        "json_bytes": 1098,
+        "records": 3,
+        "revocations": 1,
+        "server_cpu_s": 1.107586718,
+        "server_peak_rss_kib": 102848,
+        "service_ns": 417581,
+        "sqlite_bytes": 90456,
+        "rpc_ns": 1165476
+      },
+      "replay": {
+        "added": 0,
+        "dropped": 0,
+        "receipts": [
+          {
+            "gateway": 0,
+            "id": "be10f8aa9b99b184626e8585ee80ee956afd566e52e9ddedb6ccb3f794c60cfe",
+            "kind": "receipt",
+            "mac": "76ccee030b7188689b516e759be86a3bff90769b3e03606ec6cc42f5ae319ccd",
+            "revocation": "958c10ae3cc90c45a2f2395ef189cc69ab08a000a8680bd73de165b0b06c43fb",
+            "target": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+          }
+        ],
+        "server_cpu_s": 1.10837547,
+        "server_peak_rss_kib": 102848,
+        "service_ns": 417569,
+        "rpc_ns": 894774
+      },
+      "decision": {
+        "allow": false,
+        "atom": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+        "chain": [
+          "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+        ],
+        "clock": 1001,
+        "epsilon": 0,
+        "floor": 0,
+        "node": 0,
+        "reason": "revoked",
+        "request": {
+          "actor": 2,
+          "cap": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "right": 1,
+          "service": "svc0"
+        },
+        "server_cpu_s": 1.109151081,
+        "server_peak_rss_kib": 102848,
+        "service_ns": 293589,
+        "snapshot": [
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+            "nonce": "fault-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          },
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+            "issuer": 1,
+            "kind": "grant",
+            "mac": "18512b150f7b34986ddf515c37249fec248fb15f19ea16544237746df508cd7b",
+            "nonce": "fault-child",
+            "parent": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "rights": 3,
+            "service": "svc0",
+            "subject": 2
+          },
+          {
+            "id": "958c10ae3cc90c45a2f2395ef189cc69ab08a000a8680bd73de165b0b06c43fb",
+            "issuer": 0,
+            "kind": "revoke",
+            "mac": "140200a8d773e3750554cd4f86a78e8ef3eb904e2ca36d1eb41cb69537f791a7",
+            "target": {
+              "deadlines": [
+                1000,
+                1000,
+                1000,
+                200,
+                200
+              ],
+              "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+              "nonce": "fault-root",
+              "parent": null,
+              "rights": 7,
+              "service": "svc0",
+              "subject": 1
+            }
+          }
+        ],
+        "rpc_ns": 776395
+      }
+    },
+    {
+      "operation": "compact",
+      "point": "after_commit_before_reply",
+      "state_after_restart": {
+        "floor": 1000,
+        "grants": 0,
+        "json_bytes": 0,
+        "records": 0,
+        "revocations": 0,
+        "server_cpu_s": 1.02430664,
+        "server_peak_rss_kib": 104128,
+        "service_ns": 359484,
+        "sqlite_bytes": 106936,
+        "rpc_ns": 971692
+      },
+      "replay": {
+        "added": 0,
+        "dropped": 3,
+        "receipts": [
+          {
+            "gateway": 0,
+            "id": "be10f8aa9b99b184626e8585ee80ee956afd566e52e9ddedb6ccb3f794c60cfe",
+            "kind": "receipt",
+            "mac": "76ccee030b7188689b516e759be86a3bff90769b3e03606ec6cc42f5ae319ccd",
+            "revocation": "958c10ae3cc90c45a2f2395ef189cc69ab08a000a8680bd73de165b0b06c43fb",
+            "target": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+          }
+        ],
+        "server_cpu_s": 1.025159662,
+        "server_peak_rss_kib": 104128,
+        "service_ns": 292610,
+        "rpc_ns": 632766
+      },
+      "decision": {
+        "allow": false,
+        "atom": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+        "chain": [],
+        "clock": 1001,
+        "epsilon": 0,
+        "floor": 1000,
+        "node": 0,
+        "reason": "missing",
+        "request": {
+          "actor": 2,
+          "cap": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "right": 1,
+          "service": "svc0"
+        },
+        "server_cpu_s": 1.025740791,
+        "server_peak_rss_kib": 104128,
+        "service_ns": 64231,
+        "snapshot": [],
+        "rpc_ns": 357773
+      }
+    },
+    {
+      "operation": "compact",
+      "point": "after_reply",
+      "state_after_restart": {
+        "floor": 1000,
+        "grants": 0,
+        "json_bytes": 0,
+        "records": 0,
+        "revocations": 0,
+        "server_cpu_s": 1.058886923,
+        "server_peak_rss_kib": 105408,
+        "service_ns": 329409,
+        "sqlite_bytes": 106936,
+        "rpc_ns": 926154
+      },
+      "replay": {
+        "added": 0,
+        "dropped": 3,
+        "receipts": [
+          {
+            "gateway": 0,
+            "id": "be10f8aa9b99b184626e8585ee80ee956afd566e52e9ddedb6ccb3f794c60cfe",
+            "kind": "receipt",
+            "mac": "76ccee030b7188689b516e759be86a3bff90769b3e03606ec6cc42f5ae319ccd",
+            "revocation": "958c10ae3cc90c45a2f2395ef189cc69ab08a000a8680bd73de165b0b06c43fb",
+            "target": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+          }
+        ],
+        "server_cpu_s": 1.059671822,
+        "server_peak_rss_kib": 105408,
+        "service_ns": 305866,
+        "rpc_ns": 745623
+      },
+      "decision": {
+        "allow": false,
+        "atom": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+        "chain": [],
+        "clock": 1001,
+        "epsilon": 0,
+        "floor": 1000,
+        "node": 0,
+        "reason": "missing",
+        "request": {
+          "actor": 2,
+          "cap": "6e36716ac71ca0c732643239565dec887e28e5a700531801c3cb617c51372f6f",
+          "right": 1,
+          "service": "svc0"
+        },
+        "server_cpu_s": 1.060301411,
+        "server_peak_rss_kib": 105408,
+        "service_ns": 168920,
+        "snapshot": [],
+        "rpc_ns": 424421
+      }
+    },
+    {
+      "operation": "offline-delegation",
+      "issuer_result": {
+        "event": {
+          "deadlines": [
+            1000,
+            1000,
+            1000,
+            200,
+            200
+          ],
+          "id": "433efe27f8fd376df5590909bdbd16b50bfd1e0eeb53d43e4f05d1d53665551c",
+          "issuer": 1,
+          "kind": "grant",
+          "mac": "aa467a1b82b8cf1a295ea1adaa5d9210e6ec8b1b16d5078f0fe2bb9385316aca",
+          "nonce": "offline-created",
+          "parent": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+          "rights": 1,
+          "service": "svc0",
+          "subject": 2
+        },
+        "issued": true,
+        "reason": "allow",
+        "server_cpu_s": 1.178630616,
+        "server_peak_rss_kib": 106816,
+        "service_ns": 358826,
+        "rpc_ns": 652415
+      },
+      "before_delivery": {
+        "allow": true,
+        "atom": null,
+        "chain": [
+          "433efe27f8fd376df5590909bdbd16b50bfd1e0eeb53d43e4f05d1d53665551c",
+          "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+        ],
+        "clock": 31,
+        "epsilon": 0,
+        "floor": 0,
+        "node": 4,
+        "reason": "allow",
+        "request": {
+          "actor": 2,
+          "cap": "433efe27f8fd376df5590909bdbd16b50bfd1e0eeb53d43e4f05d1d53665551c",
+          "right": 1,
+          "service": "svc0"
+        },
+        "server_cpu_s": 1.179144469,
+        "server_peak_rss_kib": 106816,
+        "service_ns": 109606,
+        "snapshot": [
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+            "nonce": "fault-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          },
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "433efe27f8fd376df5590909bdbd16b50bfd1e0eeb53d43e4f05d1d53665551c",
+            "issuer": 1,
+            "kind": "grant",
+            "mac": "aa467a1b82b8cf1a295ea1adaa5d9210e6ec8b1b16d5078f0fe2bb9385316aca",
+            "nonce": "offline-created",
+            "parent": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "rights": 1,
+            "service": "svc0",
+            "subject": 2
+          }
+        ],
+        "rpc_ns": 382433
+      },
+      "after_delivery": {
+        "allow": false,
+        "atom": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+        "chain": [
+          "433efe27f8fd376df5590909bdbd16b50bfd1e0eeb53d43e4f05d1d53665551c",
+          "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb"
+        ],
+        "clock": 40,
+        "epsilon": 0,
+        "floor": 0,
+        "node": 4,
+        "reason": "revoked",
+        "request": {
+          "actor": 2,
+          "cap": "433efe27f8fd376df5590909bdbd16b50bfd1e0eeb53d43e4f05d1d53665551c",
+          "right": 1,
+          "service": "svc0"
+        },
+        "server_cpu_s": 1.181156134,
+        "server_peak_rss_kib": 106816,
+        "service_ns": 119585,
+        "snapshot": [
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+            "nonce": "fault-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          },
+          {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "433efe27f8fd376df5590909bdbd16b50bfd1e0eeb53d43e4f05d1d53665551c",
+            "issuer": 1,
+            "kind": "grant",
+            "mac": "aa467a1b82b8cf1a295ea1adaa5d9210e6ec8b1b16d5078f0fe2bb9385316aca",
+            "nonce": "offline-created",
+            "parent": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+            "rights": 1,
+            "service": "svc0",
+            "subject": 2
+          },
+          {
+            "id": "958c10ae3cc90c45a2f2395ef189cc69ab08a000a8680bd73de165b0b06c43fb",
+            "issuer": 0,
+            "kind": "revoke",
+            "mac": "140200a8d773e3750554cd4f86a78e8ef3eb904e2ca36d1eb41cb69537f791a7",
+            "target": {
+              "deadlines": [
+                1000,
+                1000,
+                1000,
+                200,
+                200
+              ],
+              "id": "2f5cebe3da393bdca34a35dbf844a7721e8f585ba68ca61f7ced96cdd4b20cfb",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "f78c916112c540b94b1b034336bd8446938e80bf62f2393bd4414f7f7ea17dc0",
+              "nonce": "fault-root",
+              "parent": null,
+              "rights": 7,
+              "service": "svc0",
+              "subject": 1
+            }
+          }
+        ],
+        "rpc_ns": 333271
+      },
+      "connected_issue": {
+        "issued": false,
+        "reason": "revoked",
+        "server_cpu_s": 1.179637223,
+        "server_peak_rss_kib": 106816,
+        "service_ns": 115554,
+        "rpc_ns": 2032032
+      }
+    }
+  ],
+  "messages": 79,
+  "wire_bytes": 1193015,
+  "server_peak_rss_kib": 106816,
+  "wall_s": 21.258848501000102,
+  "parent_cpu_s": 0.109709308,
+  "children_cpu_s": 34.12594,
+  "parent_peak_rss_kib": 106816,
+  "boundary": "Actual process termination; all five endpoints share one process. No machine/power-loss claim."
+}

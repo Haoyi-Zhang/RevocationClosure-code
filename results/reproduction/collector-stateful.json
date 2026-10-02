@@ -1,0 +1,1043 @@
+{
+  "traces": 64,
+  "steps": 10240,
+  "authorization_comparisons": 51200,
+  "postclosure_decisions": 37890,
+  "gateway_reopens": 1196,
+  "collector_reopens": 1135,
+  "compactions": 1554,
+  "replays": 1809,
+  "hidden_deliveries": 80,
+  "mismatches": 0,
+  "postclosure_allows": 0,
+  "status_regressions": 0,
+  "trace_summaries": [
+    {
+      "profile": "receipt-rich",
+      "seed": 101,
+      "first_closed": {
+        "step": 21,
+        "time": 43,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 695
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 211,
+      "first_closed": {
+        "step": 61,
+        "time": 125,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 495
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 307,
+      "first_closed": {
+        "step": 19,
+        "time": 41,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 705
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 401,
+      "first_closed": {
+        "step": 15,
+        "time": 34,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 725
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 503,
+      "first_closed": {
+        "step": 12,
+        "time": 25,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 740
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 601,
+      "first_closed": {
+        "step": 19,
+        "time": 42,
+        "cover": [
+          "expiry",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 705
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 701,
+      "first_closed": {
+        "step": 31,
+        "time": 66,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 645
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 809,
+      "first_closed": {
+        "step": 18,
+        "time": 32,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 710
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 907,
+      "first_closed": {
+        "step": 15,
+        "time": 32,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 725
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 1009,
+      "first_closed": {
+        "step": 51,
+        "time": 102,
+        "cover": [
+          "receipt",
+          "receipt",
+          "expiry",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 545
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 1103,
+      "first_closed": {
+        "step": 37,
+        "time": 76,
+        "cover": [
+          "expiry",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 615
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 1201,
+      "first_closed": {
+        "step": 20,
+        "time": 41,
+        "cover": [
+          "expiry",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 700
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 1301,
+      "first_closed": {
+        "step": 32,
+        "time": 59,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 640
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 1409,
+      "first_closed": {
+        "step": 22,
+        "time": 50,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 690
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 1511,
+      "first_closed": {
+        "step": 29,
+        "time": 66,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 655
+    },
+    {
+      "profile": "receipt-rich",
+      "seed": 1601,
+      "first_closed": {
+        "step": 22,
+        "time": 49,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt",
+          "receipt"
+        ]
+      },
+      "postclosure_decisions": 690
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 101,
+      "first_closed": {
+        "step": 80,
+        "time": 164,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 400
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 211,
+      "first_closed": {
+        "step": 74,
+        "time": 163,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 430
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 307,
+      "first_closed": {
+        "step": 74,
+        "time": 163,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 430
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 401,
+      "first_closed": {
+        "step": 82,
+        "time": 161,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 390
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 503,
+      "first_closed": {
+        "step": 81,
+        "time": 163,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 395
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 601,
+      "first_closed": {
+        "step": 76,
+        "time": 160,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 420
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 701,
+      "first_closed": {
+        "step": 79,
+        "time": 164,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 405
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 809,
+      "first_closed": {
+        "step": 77,
+        "time": 160,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 415
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 907,
+      "first_closed": {
+        "step": 72,
+        "time": 163,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 440
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 1009,
+      "first_closed": {
+        "step": 86,
+        "time": 166,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 370
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 1103,
+      "first_closed": {
+        "step": 74,
+        "time": 162,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 430
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 1201,
+      "first_closed": {
+        "step": 79,
+        "time": 161,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 405
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 1301,
+      "first_closed": {
+        "step": 86,
+        "time": 163,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 370
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 1409,
+      "first_closed": {
+        "step": 82,
+        "time": 165,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 390
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 1511,
+      "first_closed": {
+        "step": 79,
+        "time": 161,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 405
+    },
+    {
+      "profile": "expiry-only",
+      "seed": 1601,
+      "first_closed": {
+        "step": 76,
+        "time": 164,
+        "cover": [
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 420
+    },
+    {
+      "profile": "mixed",
+      "seed": 101,
+      "first_closed": {
+        "step": 30,
+        "time": 61,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 650
+    },
+    {
+      "profile": "mixed",
+      "seed": 211,
+      "first_closed": {
+        "step": 27,
+        "time": 60,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 665
+    },
+    {
+      "profile": "mixed",
+      "seed": 307,
+      "first_closed": {
+        "step": 30,
+        "time": 61,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 650
+    },
+    {
+      "profile": "mixed",
+      "seed": 401,
+      "first_closed": {
+        "step": 31,
+        "time": 63,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 645
+    },
+    {
+      "profile": "mixed",
+      "seed": 503,
+      "first_closed": {
+        "step": 30,
+        "time": 61,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 650
+    },
+    {
+      "profile": "mixed",
+      "seed": 601,
+      "first_closed": {
+        "step": 26,
+        "time": 64,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 670
+    },
+    {
+      "profile": "mixed",
+      "seed": 701,
+      "first_closed": {
+        "step": 33,
+        "time": 63,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 635
+    },
+    {
+      "profile": "mixed",
+      "seed": 809,
+      "first_closed": {
+        "step": 32,
+        "time": 63,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 640
+    },
+    {
+      "profile": "mixed",
+      "seed": 907,
+      "first_closed": {
+        "step": 33,
+        "time": 64,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 635
+    },
+    {
+      "profile": "mixed",
+      "seed": 1009,
+      "first_closed": {
+        "step": 28,
+        "time": 61,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 660
+    },
+    {
+      "profile": "mixed",
+      "seed": 1103,
+      "first_closed": {
+        "step": 36,
+        "time": 64,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 620
+    },
+    {
+      "profile": "mixed",
+      "seed": 1201,
+      "first_closed": {
+        "step": 32,
+        "time": 62,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 640
+    },
+    {
+      "profile": "mixed",
+      "seed": 1301,
+      "first_closed": {
+        "step": 33,
+        "time": 61,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 635
+    },
+    {
+      "profile": "mixed",
+      "seed": 1409,
+      "first_closed": {
+        "step": 31,
+        "time": 63,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 645
+    },
+    {
+      "profile": "mixed",
+      "seed": 1511,
+      "first_closed": {
+        "step": 34,
+        "time": 63,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 630
+    },
+    {
+      "profile": "mixed",
+      "seed": 1601,
+      "first_closed": {
+        "step": 28,
+        "time": 63,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 660
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 101,
+      "first_closed": {
+        "step": 29,
+        "time": 64,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 655
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 211,
+      "first_closed": {
+        "step": 33,
+        "time": 63,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 635
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 307,
+      "first_closed": {
+        "step": 34,
+        "time": 62,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 630
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 401,
+      "first_closed": {
+        "step": 31,
+        "time": 61,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 645
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 503,
+      "first_closed": {
+        "step": 28,
+        "time": 66,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 660
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 601,
+      "first_closed": {
+        "step": 36,
+        "time": 65,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 620
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 701,
+      "first_closed": {
+        "step": 32,
+        "time": 65,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 640
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 809,
+      "first_closed": {
+        "step": 33,
+        "time": 62,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 635
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 907,
+      "first_closed": {
+        "step": 29,
+        "time": 64,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 655
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 1009,
+      "first_closed": {
+        "step": 33,
+        "time": 62,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 635
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 1103,
+      "first_closed": {
+        "step": 31,
+        "time": 60,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 645
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 1201,
+      "first_closed": {
+        "step": 30,
+        "time": 63,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 650
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 1301,
+      "first_closed": {
+        "step": 27,
+        "time": 62,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 665
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 1409,
+      "first_closed": {
+        "step": 29,
+        "time": 63,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 655
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 1511,
+      "first_closed": {
+        "step": 28,
+        "time": 63,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 660
+    },
+    {
+      "profile": "hidden-lineage",
+      "seed": 1601,
+      "first_closed": {
+        "step": 24,
+        "time": 60,
+        "cover": [
+          "receipt",
+          "receipt",
+          "receipt",
+          "expiry",
+          "expiry"
+        ]
+      },
+      "postclosure_decisions": 680
+    }
+  ],
+  "wall_s": 11.929369018999978,
+  "parent_cpu_s": 11.92620165,
+  "parent_peak_rss_kib": 96944
+}

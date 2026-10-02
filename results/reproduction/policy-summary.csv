@@ -1,0 +1,7 @@
+policy,closure_delay_ms,unrevoked_available_at_200,target_available_at_200
+central-fail-closed,0,3,0
+lease-only,980,5,5
+all-durable-receipts,1480,5,2
+uniform-long-plus-receipts,980,5,2
+uniform-short-plus-receipts,180,0,0
+audience-lease-plus-receipts,180,3,0

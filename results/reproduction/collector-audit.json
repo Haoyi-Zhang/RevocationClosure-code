@@ -1,0 +1,43 @@
+{
+  "finite_comparisons": 26852,
+  "closed_cases": 16921,
+  "open_witness_cases": 9931,
+  "feasible_histories": 137,
+  "inconsistent_histories_rejected": 34,
+  "additional_closed_cases": 2627,
+  "sql_witness_checks": 93,
+  "rejected_binding_cases": 6,
+  "legacy_status": [
+    true,
+    false
+  ],
+  "journal_status": [
+    true,
+    true,
+    true
+  ],
+  "crash_cases": [
+    {
+      "point": "before_transaction",
+      "exit": 70,
+      "closed_after_reopen": false,
+      "integrity": "ok"
+    },
+    {
+      "point": "before_commit",
+      "exit": 70,
+      "closed_after_reopen": false,
+      "integrity": "ok"
+    },
+    {
+      "point": "after_commit_before_reply",
+      "exit": 70,
+      "closed_after_reopen": true,
+      "integrity": "ok"
+    }
+  ],
+  "mismatches": 0,
+  "wall_s": 1.9209984180001811,
+  "parent_cpu_s": 0.22495389200000004,
+  "parent_peak_rss_kib": 95788
+}

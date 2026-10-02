@@ -1,0 +1,23 @@
+{
+  "barrier_instances": 27648,
+  "closed_certificates": 14667,
+  "uncovered_counterextensions": 12981,
+  "local_decisions": 23520,
+  "reason_counts": {
+    "missing": 17640,
+    "attenuation": 3090,
+    "allow": 45,
+    "expired": 90,
+    "revoked": 135,
+    "right": 2520
+  },
+  "labeled_schedule_permutations": 120,
+  "schedule_decisions": 600,
+  "distinct_final_states": 1,
+  "malformed_rejected": 7,
+  "wall_s": 10.185257556000124,
+  "parent_cpu_s": 10.184574736,
+  "children_cpu_s": 0,
+  "parent_peak_rss_kib": 95656,
+  "boundary": "Exact stated finite products only; in-memory stores; no durability or exhaustive unbounded schedule claim."
+}

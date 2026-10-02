@@ -1,0 +1,76 @@
+{
+  "seed": 20260910,
+  "scenarios": 640,
+  "decisions": 3840,
+  "verifier_mismatches": 0,
+  "category_counts": {
+    "ancestor-revoked": 80,
+    "deadline-amplified": 80,
+    "expired": 80,
+    "issuer-mismatch": 80,
+    "live": 80,
+    "missing-parent": 80,
+    "rights-amplified": 80,
+    "root-service-mismatch": 80
+  },
+  "reason_counts": {
+    "allow": 240,
+    "attenuation": 720,
+    "expired": 240,
+    "missing": 480,
+    "revoked": 240,
+    "right": 480,
+    "service": 960,
+    "subject": 480
+  },
+  "stateful_replay_audit": {
+    "traces": 10,
+    "steps_per_trace": 250,
+    "decisions": 2500,
+    "verifier_mismatches": 0,
+    "retained_state_mismatches": 0,
+    "restarts": 320,
+    "compactions": 332,
+    "delegations_issued": 110,
+    "delegations_refused": 178,
+    "operation_counts": {
+      "compact": 332,
+      "delegate": 288,
+      "duplicate-delivery": 328,
+      "fresh-root": 324,
+      "invalid-edge-delivery": 300,
+      "reordered-batch": 291,
+      "restart": 320,
+      "revoke": 317
+    },
+    "reason_counts": {
+      "allow": 329,
+      "attenuation": 186,
+      "expired": 49,
+      "missing": 717,
+      "revoked": 144,
+      "right": 371,
+      "service": 343,
+      "subject": 361
+    }
+  },
+  "durable_floor_receipt_case": {
+    "installed_floor": 100,
+    "revocation_rows_retained_before_recovery": 0,
+    "initial_revoke_added": 0,
+    "initial_revoke_dropped": 1,
+    "receipt_returned_after_commit": true,
+    "recovered_floor": 100,
+    "replay_added": 0,
+    "replay_dropped": 2,
+    "post_recovery_allow": false,
+    "post_recovery_reason": "missing",
+    "certificate_closed_at_sound_expiry": true,
+    "receipt_meaning": "committed revoke row or already sufficient durable floor"
+  },
+  "wall_s": 5.385098683000024,
+  "parent_cpu_s": 5.384925727,
+  "children_cpu_s": 0.0,
+  "parent_peak_rss_kib": 104108,
+  "scope": "Deterministic owned-input differential testing and one on-disk recovery branch; not a mechanized proof, deployment trace, or independent review."
+}

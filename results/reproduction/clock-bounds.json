@@ -1,0 +1,37 @@
+{
+  "admissible_clock_readings": 4656,
+  "guaranteed_early_use_readings": 1046,
+  "guaranteed_late_closure_readings": 864,
+  "closed_readings": 1648,
+  "status_counterexample": {
+    "epsilon": 2,
+    "deadline": 10,
+    "actual_times": [
+      10,
+      11
+    ],
+    "collector_clocks": [
+      12,
+      9
+    ],
+    "closed": [
+      true,
+      false
+    ],
+    "post_closure_reasons": [
+      "expired",
+      "expired",
+      "expired",
+      "expired",
+      "expired"
+    ]
+  },
+  "messages": 12,
+  "wire_bytes": 8163,
+  "server_peak_rss_kib": 97064,
+  "wall_s": 0.8558783839998796,
+  "parent_cpu_s": 0.21599719700000009,
+  "children_cpu_s": 1.084805,
+  "parent_peak_rss_kib": 94768,
+  "scope": "Post-inspection finite clock-boundary check. The stateless collector can reopen its poll status after bounded clock regression; no post-certificate authorization becomes valid."
+}

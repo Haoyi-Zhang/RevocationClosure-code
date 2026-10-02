@@ -1,0 +1,13 @@
+{
+  "transaction_crash_cases": 9,
+  "sqlite_integrity_checks": 45,
+  "offline_delegation_cases": 1,
+  "messages": 79,
+  "wire_bytes": 1193001,
+  "server_peak_rss_kib": 107076,
+  "wall_s": 19.532170361,
+  "parent_cpu_s": 0.09580140899999989,
+  "children_cpu_s": 32.482967,
+  "parent_peak_rss_kib": 107076,
+  "boundary": "Actual process termination; all five endpoints share one process. No machine/power-loss claim."
+}

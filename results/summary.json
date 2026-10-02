@@ -1,0 +1,176 @@
+{
+  "finite": {
+    "barrier_instances": 27648,
+    "closed_certificates": 14667,
+    "uncovered_counterextensions": 12981,
+    "local_decisions": 23520,
+    "reason_counts": {
+      "missing": 17640,
+      "attenuation": 3090,
+      "allow": 45,
+      "expired": 90,
+      "revoked": 135,
+      "right": 2520
+    },
+    "labeled_schedule_permutations": 120,
+    "schedule_decisions": 600,
+    "distinct_final_states": 1,
+    "malformed_rejected": 7,
+    "boundary": "Exact stated finite products only; in-memory stores; no durability or exhaustive unbounded schedule claim."
+  },
+  "history": {
+    "seeds": 8,
+    "generated_records": 2304,
+    "scheduled_use_requests": 8000,
+    "all_use_checks": 11160,
+    "closed_certificates": 632,
+    "barrier_checks": 1024,
+    "post_barrier_use_checks": 3160,
+    "messages": 24334,
+    "wire_bytes": 29355289,
+    "process_restarts": 16,
+    "reasons": {
+      "missing": 5891,
+      "allow": 1495,
+      "revoked": 3212,
+      "attenuation": 353,
+      "service": 68,
+      "subject": 81,
+      "right": 60
+    }
+  },
+  "differential_audit": {
+    "scenarios": 640,
+    "decisions": 3840,
+    "verifier_mismatches": 0,
+    "stateful_replay_audit": {
+      "traces": 10,
+      "steps_per_trace": 250,
+      "decisions": 2500,
+      "verifier_mismatches": 0,
+      "retained_state_mismatches": 0,
+      "restarts": 320,
+      "compactions": 332,
+      "delegations_issued": 110,
+      "delegations_refused": 178,
+      "operation_counts": {
+        "compact": 332,
+        "delegate": 288,
+        "duplicate-delivery": 328,
+        "fresh-root": 324,
+        "invalid-edge-delivery": 300,
+        "reordered-batch": 291,
+        "restart": 320,
+        "revoke": 317
+      },
+      "reason_counts": {
+        "allow": 329,
+        "attenuation": 186,
+        "expired": 49,
+        "missing": 717,
+        "revoked": 144,
+        "right": 371,
+        "service": 343,
+        "subject": 361
+      }
+    },
+    "total_differential_decisions": 6340,
+    "durable_floor_receipt_case": {
+      "installed_floor": 100,
+      "revocation_rows_retained_before_recovery": 0,
+      "initial_revoke_added": 0,
+      "initial_revoke_dropped": 1,
+      "receipt_returned_after_commit": true,
+      "recovered_floor": 100,
+      "replay_added": 0,
+      "replay_dropped": 2,
+      "post_recovery_allow": false,
+      "post_recovery_reason": "missing",
+      "certificate_closed_at_sound_expiry": true,
+      "receipt_meaning": "committed revoke row or already sufficient durable floor"
+    },
+    "scope": "Deterministic owned-input differential testing and one on-disk recovery branch; not a mechanized proof, deployment trace, or independent review."
+  },
+  "authorization_correspondence": {
+    "finite_product_decisions": 23520,
+    "static_differential_decisions": 3840,
+    "stateful_replay_decisions": 2500,
+    "hidden_descendant_decisions": 15,
+    "total": 29875,
+    "observed_mismatches": 0
+  },
+  "crash_recovery": {
+    "transaction_crash_cases": 9,
+    "sqlite_integrity_checks": 45,
+    "offline_delegation_cases": 1,
+    "scope": "Actual process termination; all five endpoints share one process. No machine/power-loss claim."
+  },
+  "closure_descendants": {
+    "certificate_closed": true,
+    "cover": [
+      "receipt",
+      "receipt",
+      "receipt",
+      "expiry",
+      "expiry"
+    ],
+    "hidden_lineage_depth": 3,
+    "process_restarts": 2,
+    "authorization_comparisons": 15,
+    "delegation_attempts": 5,
+    "all_authorizations_rejected": true,
+    "all_delegations_rejected": true,
+    "scope": "One deterministic owned-loopback mixed-cover case with a valid depth-three lineage; finite correspondence evidence, not exhaustive descendant or deployment evidence."
+  },
+  "scaling": {
+    "runs": 48,
+    "measured_queries": 9600,
+    "warmup_queries": 960,
+    "generated_records": 193200
+  },
+  "policies": [
+    {
+      "policy": "central-fail-closed",
+      "closure_delay_ms": 0,
+      "unrevoked_available_at_200": 3,
+      "target_available_at_200": 0
+    },
+    {
+      "policy": "lease-only",
+      "closure_delay_ms": 980,
+      "unrevoked_available_at_200": 5,
+      "target_available_at_200": 5
+    },
+    {
+      "policy": "all-durable-receipts",
+      "closure_delay_ms": 1480,
+      "unrevoked_available_at_200": 5,
+      "target_available_at_200": 2
+    },
+    {
+      "policy": "uniform-long-plus-receipts",
+      "closure_delay_ms": 980,
+      "unrevoked_available_at_200": 5,
+      "target_available_at_200": 2
+    },
+    {
+      "policy": "uniform-short-plus-receipts",
+      "closure_delay_ms": 180,
+      "unrevoked_available_at_200": 0,
+      "target_available_at_200": 0
+    },
+    {
+      "policy": "audience-lease-plus-receipts",
+      "closure_delay_ms": 180,
+      "unrevoked_available_at_200": 3,
+      "target_available_at_200": 0
+    }
+  ],
+  "resources": {
+    "reported_experiment_parent_plus_children_cpu_s": 200.573642595,
+    "reported_experiment_wall_s_sum": 149.49294124000016,
+    "largest_reported_parent_rss_kib": 202564,
+    "largest_reported_server_rss_kib": 170820,
+    "accounting_scope": "Current per-experiment reports only; excludes earlier development, offline replay, summary, compilation and packaging. RSS maxima are not simultaneous whole-cgroup measurements."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "seed": 211,
+  "epsilon": 3,
+  "clock_offsets": [
+    -1,
+    2,
+    -1,
+    -1,
+    -2
+  ],
+  "logical_generated_events": 288,
+  "scheduled_use_requests": 1000,
+  "all_use_checks": 1395,
+  "reason_counts": {
+    "missing": 721,
+    "allow": 155,
+    "right": 11,
+    "revoked": 405,
+    "service": 7,
+    "subject": 7,
+    "attenuation": 89
+  },
+  "barrier_checks": 128,
+  "closed_certificates": 79,
+  "post_barrier_use_checks": 395,
+  "process_restarts": 2,
+  "distinct_states_before_anti_entropy": 5,
+  "states_after_anti_entropy": 1,
+  "anti_entropy_records": 205,
+  "records_after_common_floor_and_replay": 0,
+  "dropped_deliveries": 205,
+  "duplicate_slots": 261,
+  "rpc_median_us": 404.96,
+  "rpc_p95_us": 710.602,
+  "wall_s": 4.31096017300024,
+  "parent_cpu_s": 1.3247573209999999,
+  "parent_peak_rss_kib": 99672,
+  "messages": 3049,
+  "wire_bytes": 3668140,
+  "server_peak_rss_kib": 98232,
+  "children_cpu_s": 4.336615
+}

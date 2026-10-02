@@ -1,0 +1,289 @@
+{
+  "purpose": "Bounded end-to-end investigation of ancestor revocation, receipt-or-expiry closure and recovery-safe replay admission",
+  "gateways": 5,
+  "principals": 5,
+  "rights_bits_in_model": 32,
+  "chain_limit": 256,
+  "record_admission_limit_per_gateway": 20000,
+  "finite_barrier_deadlines": [
+    3,
+    6
+  ],
+  "finite_barrier_receipt_masks": [
+    0,
+    31
+  ],
+  "finite_barrier_clocks_inclusive": [
+    2,
+    10
+  ],
+  "finite_barrier_epsilon": [
+    0,
+    1,
+    2
+  ],
+  "finite_right_masks_inclusive": [
+    1,
+    7
+  ],
+  "finite_local_event_subsets": 8,
+  "finite_order_labeled_slots": 5,
+  "history_seeds": [
+    101,
+    211,
+    307,
+    401,
+    503,
+    601,
+    701,
+    809
+  ],
+  "history_capabilities": 256,
+  "history_use_requests": 1000,
+  "history_revocations": 32,
+  "history_logical_partition": {
+    "gateways": [
+      3,
+      4
+    ],
+    "start": 30,
+    "end": 170
+  },
+  "history_process_restarts": [
+    75,
+    150
+  ],
+  "scale_records": [
+    100,
+    1000,
+    5000,
+    10000
+  ],
+  "scale_chain_depths": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "scale_seeds": [
+    17,
+    29,
+    43
+  ],
+  "scale_queries_per_run": 200,
+  "primary_policy_comparison": [
+    "central-fail-closed",
+    "lease-only",
+    "all-durable-receipts",
+    "uniform-lease-plus-receipts",
+    "audience-lease-plus-receipts"
+  ],
+  "negative_controls": [
+    "arrival-time-lww",
+    "leaf-only-revocation",
+    "volatile-receipt",
+    "clock-guard-disabled",
+    "replay-floor-disabled"
+  ],
+  "physical_execution": "One localhost host; one sequential client process and one asyncio server process with five sockets and five SQLite databases",
+  "no_deployment_or_human_workload_claim": true,
+  "outer_deadline_seconds_per_chunk": 180,
+  "server_cpu_limit_seconds": 180,
+  "server_address_space_limit_bytes": 1073741824,
+  "campaign_cpu_ceiling_seconds": 27000,
+  "repair_and_reproduction_reserve_fraction": 0.25,
+  "no_preselected_performance_improvement": true,
+  "post_inspection_differential_audit": {
+    "seed": 20260910,
+    "scenarios": 640,
+    "authorization_queries_per_scenario": 6,
+    "categories": [
+      "live",
+      "ancestor-revoked",
+      "missing-parent",
+      "rights-amplified",
+      "deadline-amplified",
+      "expired",
+      "root-service-mismatch",
+      "issuer-mismatch"
+    ],
+    "purpose": "Check Store decisions against the separately implemented verifier and exercise a floor-dominated durable-receipt recovery branch",
+    "not_part_of_preselected_performance_grid": true
+  },
+  "delegation_actor_boundary": {
+    "transport": "owned loopback RPC",
+    "cases": [
+      "omitted actor",
+      "actor different from parent subject",
+      "matching parent subject"
+    ],
+    "expected": [
+      "RPC rejection",
+      "typed subject rejection",
+      "child issuance"
+    ],
+    "purpose": "Bind child issuance to an explicit acting principal without claiming production caller authentication"
+  },
+  "logical_time_maximum": 9007199254740992,
+  "record_and_reply_envelope": {
+    "maximum_grant_bytes": 512,
+    "maximum_event_bytes": 768,
+    "maximum_reply_bytes": 16777216,
+    "reply_overhead_reserve_bytes": 1048576,
+    "full_store_export_records": 20000,
+    "purpose": "Close parser/transport bounds for the admitted record cap; not a production protocol-size claim"
+  },
+  "delegation_chain_boundary": {
+    "maximum_usable_chain_records": 256,
+    "parent_depth_255_may_issue_child_depth_256": true,
+    "parent_depth_256_must_refuse_child_depth_257": true,
+    "expected_refusal_reason": "chain_limit"
+  },
+  "hidden_descendant_closure_case": {
+    "gateway_cover": [
+      "receipt",
+      "receipt",
+      "receipt",
+      "expiry",
+      "expiry"
+    ],
+    "hidden_lineage_depth": 3,
+    "process_restarts": 2,
+    "post_closure_authorization_comparisons": 15,
+    "post_closure_delegation_attempts": 5,
+    "purpose": "Exercise the theorem-facing hidden-lineage path after a mixed receipt/expiry closure"
+  },
+  "reproduction_source_closure": {
+    "retained_python_source_files": 24,
+    "resume_requires_exact_source_bytes_and_file_set": true,
+    "source_change_requires_fresh_output_directory": true,
+    "purpose": "Prevent a segmented reproduction from combining outputs produced by different source trees"
+  },
+  "receipt_authentication_boundary": {
+    "event_signer_field": "issuer",
+    "receipt_signer_field": "gateway",
+    "fixture_key_domains": "principal-event and gateway-receipt are disjoint",
+    "cases": [
+      "exact receipt",
+      "wrong target",
+      "corrupted MAC",
+      "principal-domain MAC over receipt-shaped body"
+    ],
+    "expected": [
+      "coordinate covered",
+      "coordinate open",
+      "coordinate open",
+      "coordinate open"
+    ],
+    "purpose": "Check that only the exact gateway-domain receipt can cover a certificate coordinate; not a production credential claim"
+  },
+  "stateful_replay_audit": {
+    "nodes": 5,
+    "seeds_per_node": [
+      1103,
+      2207
+    ],
+    "traces": 10,
+    "steps_per_trace": 250,
+    "authorization_comparisons": 2500,
+    "operations": [
+      "duplicate delivery",
+      "valid delegation",
+      "invalid edge delivery",
+      "ancestor revocation",
+      "compaction",
+      "process recovery",
+      "reordered batch",
+      "fresh root"
+    ],
+    "oracles": [
+      "separately maintained replay decision",
+      "retained event-id set"
+    ],
+    "purpose": "Exercise evolving durable state, compaction and recovery beyond isolated request fixtures",
+    "boundary": "Deterministic bounded owned inputs; not a mechanized proof, independent implementation, or deployment trace"
+  },
+  "batch_transaction_atomicity": {
+    "modes": [
+      "closed",
+      "volatile"
+    ],
+    "fixture": "A two-event batch whose first revoke is admissible and whose second grant exceeds the 20,000-record cap",
+    "expected": "The RPC fails without a receipt, no durable or volatile revoke leaks, and the original authority remains usable",
+    "purpose": "Check whole-batch rollback, including the intentionally volatile negative-control state"
+  },
+  "local_delegate_revoke_serialization": {
+    "rounds": 16,
+    "transport": "Two concurrent owned loopback RPCs to the same gateway and SQLite connection",
+    "operations": [
+      "delegate from a live parent",
+      "revoke the same parent"
+    ],
+    "allowed_outcomes": [
+      "delegation commits before revocation",
+      "revocation commits before delegation"
+    ],
+    "postcondition": "After both replies, no issued child is usable and the root is revoked",
+    "boundary": "Single event loop, one process, one connection; not a distributed linearizability proof"
+  },
+  "crash_storage_integrity": {
+    "transaction_crash_cases": 9,
+    "sqlite_databases_checked_per_case": 5,
+    "integrity_checks": 45,
+    "check": "PRAGMA integrity_check after modeled process recovery",
+    "boundary": "Process termination only; no machine power cut, filesystem corruption, or disk-loss claim"
+  },
+  "journal_extension_plan": "collector-plan.json",
+  "journal_extension_sources": [
+    "collector.py",
+    "tests/collector_audit.py",
+    "tests/collector_stateful.py"
+  ],
+  "reproduction_schedule_commands": 71,
+  "recovery_compaction_window": {
+    "epsilon": 0,
+    "L": 1,
+    "rho": 1,
+    "B": 1,
+    "Delta": 1,
+    "initial_compaction_time": 0,
+    "recovery_time": 100,
+    "first_post_recovery_compaction_time": 101,
+    "created_events": 10,
+    "creation_times": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "horizons": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "expected": {
+      "floor_before_recovery_compaction": 0,
+      "retained_before_recovery_compaction": 10,
+      "Delta_specialization": 3,
+      "Delta_specialization_premise_holds": false,
+      "authorization_rejections": 10,
+      "post_compaction_floor": 101,
+      "retained_after_compaction": 0
+    },
+    "purpose": "Execute the long-downtime window that invalidates the Delta specialization without weakening authorization safety",
+    "boundary": "Metadata-retention scope check; not a core closure counterexample or a process-crash claim"
+  }
+}

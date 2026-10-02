@@ -1,0 +1,5 @@
+resource,source,use,redistribution_and_boundary
+Published research and preprint bibliography,reference_audit.csv,"Attribution, closest-work comparison, model context",69 records; full external papers and implementations not redistributed; reading depth explicit
+IEEEtran class and bibliography style,https://ctan.org/pkg/ieeetran,Computer Society journal typesetting,Unmodified IEEEtran 1.8b class and bibliography style supplied in paper/ with LPPL notices; no font files
+Python standard library and SQLite,Installed local runtime,"Process harness, deterministic generators, WAL transactions",Not bundled as third-party source; clock and storage guarantees remain explicit assumptions
+Primary fixtures and generated traces,Owned deterministic generators,Executable finite and stateful evidence,Generated artifact inputs and outputs supplied; no external contact dataset is needed or claimed

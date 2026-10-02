@@ -1,0 +1,35 @@
+{
+  "pilot": "receipt-or-expiry-and-process-recovery",
+  "gateways": 5,
+  "principals": 5,
+  "capabilities": 2,
+  "revocations": 1,
+  "worker_processes_at_once": 2,
+  "positive": {
+    "before_closed": false,
+    "after_closed": true,
+    "cover": [
+      "receipt",
+      "receipt",
+      "receipt",
+      "expiry",
+      "expiry"
+    ],
+    "post_barrier_reasons": [
+      "revoked",
+      "revoked",
+      "revoked",
+      "expired",
+      "expired"
+    ],
+    "post_restart_reason": "revoked",
+    "messages": 16,
+    "wire_bytes": 20066,
+    "server_peak_rss_kib": 97084
+  },
+  "negative_control_volatile_ack_resurrected": true,
+  "wall_s": 2.354794597000023,
+  "parent_cpu_s": 0.007786164000000095,
+  "children_cpu_s": 3.9983969999999998,
+  "parent_peak_rss_kib": 94620
+}

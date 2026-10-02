@@ -1,0 +1,99 @@
+{
+  "cases": [
+    {
+      "case": "batch-transaction-atomicity",
+      "closed_late_capacity_failure_rolled_back": true,
+      "volatile_late_capacity_failure_rolled_back": true,
+      "failed_batch_receipt_returned": false,
+      "authority_remained_usable": true
+    },
+    {
+      "case": "full-store-export-envelope",
+      "records": 20000,
+      "reply_wire_bytes": 5809001,
+      "reply_limit_bytes": 16777216
+    },
+    {
+      "case": "full-store-revocation-admission",
+      "records": 20000,
+      "new_revocation_refused": true,
+      "receipt_returned": false,
+      "existing_authority_remains_usable_before_expiry": true
+    },
+    {
+      "case": "security-rpc-explicit-clock",
+      "rejected_missing": true
+    },
+    {
+      "case": "bounded-clock-domain",
+      "maximum_clock": 9007199254740992,
+      "oversized_rejected": true
+    },
+    {
+      "case": "record-to-reply-wire-envelope",
+      "maximum_grant_bytes": 512,
+      "maximum_event_bytes": 768,
+      "maximum_reply_bytes": 16777216,
+      "reply_overhead_reserve_bytes": 1048576,
+      "conservative_event_array_bytes": 15380002,
+      "escaped_nonce_record_rejected": true
+    },
+    {
+      "case": "delegation-explicit-actor",
+      "missing_actor_rejected": true,
+      "wrong_actor_rejected": true,
+      "wrong_actor_reason": "subject",
+      "authorized_actor_issued": true
+    },
+    {
+      "case": "global-horizon-not-local-expiry",
+      "records_at_200": 2,
+      "records_at_1000": 0,
+      "replays_dropped": 2
+    },
+    {
+      "case": "chain-bound",
+      "length": 256,
+      "allow": true,
+      "reason": "allow"
+    },
+    {
+      "case": "chain-bound",
+      "length": 257,
+      "allow": false,
+      "reason": "chain_limit"
+    },
+    {
+      "case": "delegation-chain-bound",
+      "length_256_issued": true,
+      "length_257_refused": true,
+      "refusal_reason": "chain_limit"
+    },
+    {
+      "case": "local-delegate-revoke-serialization",
+      "rounds": 16,
+      "usable_children_after_both_operations": 0,
+      "all_outcomes_match_a_serial_order": true
+    },
+    {
+      "case": "receipt-exact-target-and-authentication",
+      "wrong_target_open": true,
+      "corrupt_open": true,
+      "principal_domain_forgery_open": true,
+      "gateway_signer_domain_required": true
+    },
+    {
+      "case": "converse-degenerate-deadline",
+      "certificate_open": true,
+      "minimum_authorizer_upper": 2,
+      "deadline": 1
+    }
+  ],
+  "messages": 181,
+  "wire_bytes": 12283319,
+  "server_peak_rss_kib": 170920,
+  "wall_s": 5.498517955000125,
+  "parent_cpu_s": 3.9413058619999997,
+  "children_cpu_s": 1.990882,
+  "parent_peak_rss_kib": 202664
+}

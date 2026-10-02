@@ -1,0 +1,49 @@
+{
+  "deadline": 10,
+  "epsilon": 2,
+  "observations": [
+    {
+      "actual_time": 8,
+      "clock": 10,
+      "operation": "use",
+      "value": false,
+      "reason": "expired"
+    },
+    {
+      "actual_time": 9,
+      "clock": 7,
+      "operation": "use",
+      "value": true,
+      "reason": "allow"
+    },
+    {
+      "actual_time": 10,
+      "clock": 12,
+      "operation": "barrier",
+      "value": true,
+      "reason": null
+    },
+    {
+      "actual_time": 11,
+      "clock": 9,
+      "operation": "barrier",
+      "value": false,
+      "reason": null
+    },
+    {
+      "actual_time": 11,
+      "clock": 9,
+      "operation": "use",
+      "value": false,
+      "reason": "expired"
+    }
+  ],
+  "messages": 6,
+  "wire_bytes": 4485,
+  "server_peak_rss_kib": 97068,
+  "wall_s": 0.6410408379999808,
+  "parent_cpu_s": 0.004110982000000041,
+  "children_cpu_s": 1.1002869999999998,
+  "parent_peak_rss_kib": 94764,
+  "scope": "Post-inspection trace: an early conservative time-guard rejection may become an allow before actual expiry. A genuine closure certificate still excludes all later use."
+}

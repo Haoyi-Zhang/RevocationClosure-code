@@ -1,0 +1,414 @@
+{
+  "pilot": "receipt-or-expiry-and-process-recovery",
+  "gateways": 5,
+  "principals": 5,
+  "capabilities": 2,
+  "revocations": 1,
+  "worker_processes_at_once": 2,
+  "positive": {
+    "before_closed": false,
+    "after_closed": true,
+    "cover": [
+      "receipt",
+      "receipt",
+      "receipt",
+      "expiry",
+      "expiry"
+    ],
+    "post_barrier_reasons": [
+      "revoked",
+      "revoked",
+      "revoked",
+      "expired",
+      "expired"
+    ],
+    "post_restart_reason": "revoked",
+    "messages": 16,
+    "wire_bytes": 20069,
+    "server_peak_rss_kib": 97076
+  },
+  "negative_control_volatile_ack_resurrected": true,
+  "wall_s": 3.20928145400012,
+  "parent_cpu_s": 0.008302637999999973,
+  "children_cpu_s": 4.916414,
+  "parent_peak_rss_kib": 94612,
+  "decisions": [
+    {
+      "allow": false,
+      "atom": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+      "chain": [
+        "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+        "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155"
+      ],
+      "clock": 200,
+      "epsilon": 0,
+      "floor": 0,
+      "node": 0,
+      "reason": "revoked",
+      "request": {
+        "actor": 2,
+        "cap": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+        "right": 1,
+        "service": "svc0"
+      },
+      "server_cpu_s": 1.145126867,
+      "server_peak_rss_kib": 97068,
+      "service_ns": 221366,
+      "snapshot": [
+        {
+          "id": "cfa4e8b78e647ec57afc181b9c59aeb491a7139bd73a59707c0c6518264e46ab",
+          "issuer": 0,
+          "kind": "revoke",
+          "mac": "186f418a86a92676a1c99e451469de2a2a518d4277ed25d56f248fc43f71719f",
+          "target": {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "3712e7b3314b9b0963de594b10beb26595344ae3b3a30c80a3aa3b3f8579a9fa",
+            "nonce": "pilot-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          }
+        },
+        {
+          "deadlines": [
+            1000,
+            1000,
+            1000,
+            200,
+            200
+          ],
+          "id": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+          "issuer": 0,
+          "kind": "grant",
+          "mac": "3712e7b3314b9b0963de594b10beb26595344ae3b3a30c80a3aa3b3f8579a9fa",
+          "nonce": "pilot-root",
+          "parent": null,
+          "rights": 7,
+          "service": "svc0",
+          "subject": 1
+        },
+        {
+          "deadlines": [
+            1000,
+            1000,
+            1000,
+            200,
+            200
+          ],
+          "id": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+          "issuer": 1,
+          "kind": "grant",
+          "mac": "22d6bc20dec65cf21fe634c8786301d4c118140a26fbb49e8be18ac5c8bd9b38",
+          "nonce": "pilot-child",
+          "parent": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+          "rights": 3,
+          "service": "svc0",
+          "subject": 2
+        }
+      ],
+      "rpc_ns": 531126
+    },
+    {
+      "allow": false,
+      "atom": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+      "chain": [
+        "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+        "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155"
+      ],
+      "clock": 200,
+      "epsilon": 0,
+      "floor": 0,
+      "node": 1,
+      "reason": "revoked",
+      "request": {
+        "actor": 2,
+        "cap": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+        "right": 1,
+        "service": "svc0"
+      },
+      "server_cpu_s": 1.145376479,
+      "server_peak_rss_kib": 97068,
+      "service_ns": 132902,
+      "snapshot": [
+        {
+          "id": "cfa4e8b78e647ec57afc181b9c59aeb491a7139bd73a59707c0c6518264e46ab",
+          "issuer": 0,
+          "kind": "revoke",
+          "mac": "186f418a86a92676a1c99e451469de2a2a518d4277ed25d56f248fc43f71719f",
+          "target": {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "3712e7b3314b9b0963de594b10beb26595344ae3b3a30c80a3aa3b3f8579a9fa",
+            "nonce": "pilot-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          }
+        },
+        {
+          "deadlines": [
+            1000,
+            1000,
+            1000,
+            200,
+            200
+          ],
+          "id": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+          "issuer": 0,
+          "kind": "grant",
+          "mac": "3712e7b3314b9b0963de594b10beb26595344ae3b3a30c80a3aa3b3f8579a9fa",
+          "nonce": "pilot-root",
+          "parent": null,
+          "rights": 7,
+          "service": "svc0",
+          "subject": 1
+        },
+        {
+          "deadlines": [
+            1000,
+            1000,
+            1000,
+            200,
+            200
+          ],
+          "id": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+          "issuer": 1,
+          "kind": "grant",
+          "mac": "22d6bc20dec65cf21fe634c8786301d4c118140a26fbb49e8be18ac5c8bd9b38",
+          "nonce": "pilot-child",
+          "parent": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+          "rights": 3,
+          "service": "svc0",
+          "subject": 2
+        }
+      ],
+      "rpc_ns": 473318
+    },
+    {
+      "allow": false,
+      "atom": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+      "chain": [
+        "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+        "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155"
+      ],
+      "clock": 200,
+      "epsilon": 0,
+      "floor": 0,
+      "node": 2,
+      "reason": "revoked",
+      "request": {
+        "actor": 2,
+        "cap": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+        "right": 1,
+        "service": "svc0"
+      },
+      "server_cpu_s": 1.145792476,
+      "server_peak_rss_kib": 97068,
+      "service_ns": 115751,
+      "snapshot": [
+        {
+          "id": "cfa4e8b78e647ec57afc181b9c59aeb491a7139bd73a59707c0c6518264e46ab",
+          "issuer": 0,
+          "kind": "revoke",
+          "mac": "186f418a86a92676a1c99e451469de2a2a518d4277ed25d56f248fc43f71719f",
+          "target": {
+            "deadlines": [
+              1000,
+              1000,
+              1000,
+              200,
+              200
+            ],
+            "id": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+            "issuer": 0,
+            "kind": "grant",
+            "mac": "3712e7b3314b9b0963de594b10beb26595344ae3b3a30c80a3aa3b3f8579a9fa",
+            "nonce": "pilot-root",
+            "parent": null,
+            "rights": 7,
+            "service": "svc0",
+            "subject": 1
+          }
+        },
+        {
+          "deadlines": [
+            1000,
+            1000,
+            1000,
+            200,
+            200
+          ],
+          "id": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+          "issuer": 0,
+          "kind": "grant",
+          "mac": "3712e7b3314b9b0963de594b10beb26595344ae3b3a30c80a3aa3b3f8579a9fa",
+          "nonce": "pilot-root",
+          "parent": null,
+          "rights": 7,
+          "service": "svc0",
+          "subject": 1
+        },
+        {
+          "deadlines": [
+            1000,
+            1000,
+            1000,
+            200,
+            200
+          ],
+          "id": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+          "issuer": 1,
+          "kind": "grant",
+          "mac": "22d6bc20dec65cf21fe634c8786301d4c118140a26fbb49e8be18ac5c8bd9b38",
+          "nonce": "pilot-child",
+          "parent": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+          "rights": 3,
+          "service": "svc0",
+          "subject": 2
+        }
+      ],
+      "rpc_ns": 384907
+    },
+    {
+      "allow": false,
+      "atom": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+      "chain": [
+        "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+        "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155"
+      ],
+      "clock": 200,
+      "epsilon": 0,
+      "floor": 0,
+      "node": 3,
+      "reason": "expired",
+      "request": {
+        "actor": 2,
+        "cap": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+        "right": 1,
+        "service": "svc0"
+      },
+      "server_cpu_s": 1.146132268,
+      "server_peak_rss_kib": 97068,
+      "service_ns": 113013,
+      "snapshot": [
+        {
+          "deadlines": [
+            1000,
+            1000,
+            1000,
+            200,
+            200
+          ],
+          "id": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+          "issuer": 0,
+          "kind": "grant",
+          "mac": "3712e7b3314b9b0963de594b10beb26595344ae3b3a30c80a3aa3b3f8579a9fa",
+          "nonce": "pilot-root",
+          "parent": null,
+          "rights": 7,
+          "service": "svc0",
+          "subject": 1
+        },
+        {
+          "deadlines": [
+            1000,
+            1000,
+            1000,
+            200,
+            200
+          ],
+          "id": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+          "issuer": 1,
+          "kind": "grant",
+          "mac": "22d6bc20dec65cf21fe634c8786301d4c118140a26fbb49e8be18ac5c8bd9b38",
+          "nonce": "pilot-child",
+          "parent": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+          "rights": 3,
+          "service": "svc0",
+          "subject": 2
+        }
+      ],
+      "rpc_ns": 371415
+    },
+    {
+      "allow": false,
+      "atom": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+      "chain": [
+        "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+        "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155"
+      ],
+      "clock": 200,
+      "epsilon": 0,
+      "floor": 0,
+      "node": 4,
+      "reason": "expired",
+      "request": {
+        "actor": 2,
+        "cap": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+        "right": 1,
+        "service": "svc0"
+      },
+      "server_cpu_s": 1.146467398,
+      "server_peak_rss_kib": 97068,
+      "service_ns": 122745,
+      "snapshot": [
+        {
+          "deadlines": [
+            1000,
+            1000,
+            1000,
+            200,
+            200
+          ],
+          "id": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+          "issuer": 0,
+          "kind": "grant",
+          "mac": "3712e7b3314b9b0963de594b10beb26595344ae3b3a30c80a3aa3b3f8579a9fa",
+          "nonce": "pilot-root",
+          "parent": null,
+          "rights": 7,
+          "service": "svc0",
+          "subject": 1
+        },
+        {
+          "deadlines": [
+            1000,
+            1000,
+            1000,
+            200,
+            200
+          ],
+          "id": "fa1d3ffe4f8eb5783b11abb30dbab62c3a2b3d9690e29c0a682ec5e47f9b2b0d",
+          "issuer": 1,
+          "kind": "grant",
+          "mac": "22d6bc20dec65cf21fe634c8786301d4c118140a26fbb49e8be18ac5c8bd9b38",
+          "nonce": "pilot-child",
+          "parent": "f52122e7785ee8c7f7c6e7fa8bfa67797f4b70b8cb3dda5f74fc184956765155",
+          "rights": 3,
+          "service": "svc0",
+          "subject": 2
+        }
+      ],
+      "rpc_ns": 450076
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "traces": 64,
+  "steps": 10240,
+  "authorization_comparisons": 51200,
+  "postclosure_decisions": 37890,
+  "gateway_reopens": 1196,
+  "collector_reopens": 1135,
+  "compactions": 1554,
+  "replays": 1809,
+  "hidden_deliveries": 80,
+  "mismatches": 0,
+  "postclosure_allows": 0,
+  "status_regressions": 0,
+  "wall_s": 11.929369018999978,
+  "parent_cpu_s": 11.92620165,
+  "parent_peak_rss_kib": 96944
+}

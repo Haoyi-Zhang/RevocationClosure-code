@@ -1,0 +1,8 @@
+{
+  "retained_source_files": 24,
+  "unchanged_resume_accepted": true,
+  "changed_source_resume_rejected": true,
+  "changed_source_set_resume_rejected": true,
+  "fresh_output_required_after_source_change": true,
+  "scope": "Finite self-test of the reproduction guard; it checks byte closure of the retained Python source set, not scientific correctness."
+}
