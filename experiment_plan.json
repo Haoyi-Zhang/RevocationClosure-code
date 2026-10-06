@@ -75,7 +75,8 @@
     "central-fail-closed",
     "lease-only",
     "all-durable-receipts",
-    "uniform-lease-plus-receipts",
+    "uniform-long-plus-receipts",
+    "uniform-short-plus-receipts",
     "audience-lease-plus-receipts"
   ],
   "negative_controls": [
