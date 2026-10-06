@@ -1,0 +1,63 @@
+name: Scientific checks
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PYTHONOPTIMIZE: '0'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce all 71 scientific commands sequentially
+        id: reproduce
+        timeout-minutes: 25
+        shell: bash
+        run: |
+          set -euo pipefail
+          output_directory="$(mktemp -d "$RUNNER_TEMP/p001-scientific.XXXXXX")"
+          echo "output_directory=$output_directory" >> "$GITHUB_OUTPUT"
+          # Owned finite fixtures, loopback services, SQLite and crash children only.
+          # Keep retained measurements untouched; do not resume or chunk a CI run.
+          python -B -c 'import resource, sys; assert __debug__; assert sys.platform == "linux"; assert sys.version_info[:2] == (3, 12)'
+          python -B reproduce.py --out "$output_directory" --compare results
+          python -B - "$output_directory" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          assert __debug__
+          output = Path(sys.argv[1])
+          result = json.loads((output / 'reproduction.json').read_text())
+          assert result['state'] == 'complete'
+          assert result['commands_executed_from_retained_source_snapshot'] is True
+          assert len(result['commands']) == 71
+          assert all(row['exit_code'] == 0 for row in result['commands'])
+          assert not result['failed_attempts']
+          assert sum(row['completed_commands'] for row in result['segments']) == 71
+          assert result['semantic_comparisons'] == 69
+          assert result['exact_structured_inputs_compared'] == 59
+          assert result['timing_equality_required'] is False
+          assert len(list((output / 'commands').glob('command-*.log'))) == 71
+          print('Complete: 71 commands, 69 semantic comparisons, 59 structured inputs.')
+          PY
+      - name: Upload this run's scientific output and command logs
+        if: ${{ always() && steps.reproduce.outputs.output_directory != '' }}
+        timeout-minutes: 4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: p001-scientific-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ steps.reproduce.outputs.output_directory }}
+          if-no-files-found: error
+          retention-days: 14
+          include-hidden-files: false
