@@ -51,6 +51,9 @@ jobs:
           assert len(list((output / 'commands').glob('command-*.log'))) == 71
           print('Complete: 71 commands, 69 semantic comparisons, 59 structured inputs.')
           PY
+      - name: Check batched ancestry lookup against the sequential comparator
+        timeout-minutes: 2
+        run: python -B lookup_batch.py
       - name: Upload this run's scientific output and command logs
         if: ${{ always() && steps.reproduce.outputs.output_directory != '' }}
         timeout-minutes: 4

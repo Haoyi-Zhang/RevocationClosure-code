@@ -1,0 +1,2736 @@
+{
+  "environment": {
+    "platform": "Windows-11-10.0.28000-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "affinity": {
+      "original_mask": "0xfffff",
+      "actual_mask": "0x1"
+    }
+  },
+  "protocol": {
+    "record_counts": [
+      100,
+      1000,
+      10000
+    ],
+    "depths": [
+      1,
+      4,
+      16,
+      64
+    ],
+    "revocation_positions": [
+      "none",
+      "leaf",
+      "root"
+    ],
+    "pairs": 11,
+    "batch": 32,
+    "warmups": 20,
+    "scope": "local in-memory SQLite authorization; excludes RPC, persistence and collector latency"
+  },
+  "cases": [
+    {
+      "records": 100,
+      "depth": 1,
+      "revocation": "none",
+      "median_ratio": 1.168141592920354,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 10903.125,
+          "batched": 8881.25
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 8762.5,
+          "sequential": 10303.125
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 10618.75,
+          "batched": 8984.375
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 9181.25,
+          "sequential": 10671.875
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 10509.375,
+          "batched": 9037.5
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 8834.375,
+          "sequential": 10690.625
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 10721.875,
+          "batched": 9265.625
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 10518.75,
+          "sequential": 10868.75
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 10659.375,
+          "batched": 9034.375
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 9181.25,
+          "sequential": 10725.0
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 10606.25,
+          "batched": 9112.5
+        }
+      ]
+    },
+    {
+      "records": 100,
+      "depth": 1,
+      "revocation": "leaf",
+      "median_ratio": 1.261513157894737,
+      "slower_pairs": 1,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 9862.5,
+          "batched": 7606.25
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 7525.0,
+          "sequential": 9662.5
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 9681.25,
+          "batched": 8306.25
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 7881.25,
+          "sequential": 9587.5
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 9496.875,
+          "batched": 7593.75
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 7425.0,
+          "sequential": 9525.0
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 9400.0,
+          "batched": 7434.375
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 11418.75,
+          "sequential": 10456.25
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 9587.5,
+          "batched": 7600.0
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 7384.375,
+          "sequential": 9412.5
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 9493.75,
+          "batched": 7600.0
+        }
+      ]
+    },
+    {
+      "records": 100,
+      "depth": 1,
+      "revocation": "root",
+      "median_ratio": 1.2830349531116794,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 9625.0,
+          "batched": 7437.5
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 7343.75,
+          "sequential": 9550.0
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 9459.375,
+          "batched": 8953.125
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 7481.25,
+          "sequential": 9612.5
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 9559.375,
+          "batched": 7543.75
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 7362.5,
+          "sequential": 9540.625
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 9531.25,
+          "batched": 7625.0
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 7331.25,
+          "sequential": 9406.25
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 9331.25,
+          "batched": 7371.875
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 7215.625,
+          "sequential": 9362.5
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 9356.25,
+          "batched": 7365.625
+        }
+      ]
+    },
+    {
+      "records": 100,
+      "depth": 4,
+      "revocation": "none",
+      "median_ratio": 1.1760711198913447,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 30303.125,
+          "batched": 25403.125
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 25087.5,
+          "sequential": 30040.625
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 29825.0,
+          "batched": 25509.375
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 25240.625,
+          "sequential": 30203.125
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 30071.875,
+          "batched": 25534.375
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 25309.375,
+          "sequential": 29765.625
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 29418.75,
+          "batched": 25287.5
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 26700.0,
+          "sequential": 31221.875
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 29431.25,
+          "batched": 25453.125
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 25137.5,
+          "sequential": 29584.375
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 29412.5,
+          "batched": 25143.75
+        }
+      ]
+    },
+    {
+      "records": 100,
+      "depth": 4,
+      "revocation": "leaf",
+      "median_ratio": 1.0951185057290849,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 37096.875,
+          "batched": 20481.25
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 19862.5,
+          "sequential": 23156.25
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 21859.375,
+          "batched": 20103.125
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 19909.375,
+          "sequential": 21803.125
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 21809.375,
+          "batched": 20034.375
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 20031.25,
+          "sequential": 22056.25
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 21906.25,
+          "batched": 20143.75
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 19965.625,
+          "sequential": 21925.0
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 21909.375,
+          "batched": 20078.125
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 19953.125,
+          "sequential": 22000.0
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 21900.0,
+          "batched": 20196.875
+        }
+      ]
+    },
+    {
+      "records": 100,
+      "depth": 4,
+      "revocation": "root",
+      "median_ratio": 1.1695510408828693,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 29193.75,
+          "batched": 24712.5
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 24918.75,
+          "sequential": 29143.75
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 28931.25,
+          "batched": 28721.875
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 25000.0,
+          "sequential": 29500.0
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 29056.25,
+          "batched": 24906.25
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 24700.0,
+          "sequential": 29193.75
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 30343.75,
+          "batched": 25078.125
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 24831.25,
+          "sequential": 28984.375
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 29090.625,
+          "batched": 25003.125
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 24765.625,
+          "sequential": 29003.125
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 28953.125,
+          "batched": 24862.5
+        }
+      ]
+    },
+    {
+      "records": 100,
+      "depth": 16,
+      "revocation": "none",
+      "median_ratio": 1.3419174192530663,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 106587.5,
+          "batched": 78784.375
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 78934.375,
+          "sequential": 107959.375
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 106450.0,
+          "batched": 81062.5
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 79240.625,
+          "sequential": 106334.375
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 107806.25,
+          "batched": 81259.375
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 84796.875,
+          "sequential": 107912.5
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 105996.875,
+          "batched": 79318.75
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 80953.125,
+          "sequential": 115912.5
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 108284.375,
+          "batched": 81618.75
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 79887.5,
+          "sequential": 108153.125
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 113915.625,
+          "batched": 83503.125
+        }
+      ]
+    },
+    {
+      "records": 100,
+      "depth": 16,
+      "revocation": "leaf",
+      "median_ratio": 1.0205844756909244,
+      "slower_pairs": 2,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 72356.25,
+          "batched": 70896.875
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 70468.75,
+          "sequential": 72431.25
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 72381.25,
+          "batched": 72218.75
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 70050.0,
+          "sequential": 75156.25
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 72746.875,
+          "batched": 70793.75
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 70206.25,
+          "sequential": 76590.625
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 71996.875,
+          "batched": 70837.5
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 70996.875,
+          "sequential": 72425.0
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 72434.375,
+          "batched": 70471.875
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 76609.375,
+          "sequential": 72618.75
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 72862.5,
+          "batched": 120621.875
+        }
+      ]
+    },
+    {
+      "records": 100,
+      "depth": 16,
+      "revocation": "root",
+      "median_ratio": 1.3456839415475526,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 109096.875,
+          "batched": 81665.625
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 78737.5,
+          "sequential": 145087.5
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 105496.875,
+          "batched": 86465.625
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 78525.0,
+          "sequential": 106831.25
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 108612.5,
+          "batched": 78950.0
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 83759.375,
+          "sequential": 105578.125
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 107156.25,
+          "batched": 79050.0
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 78268.75,
+          "sequential": 105325.0
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 105290.625,
+          "batched": 78906.25
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 89400.0,
+          "sequential": 109018.75
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 121278.125,
+          "batched": 80740.625
+        }
+      ]
+    },
+    {
+      "records": 100,
+      "depth": 64,
+      "revocation": "none",
+      "median_ratio": 1.297310236343563,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 421106.25,
+          "batched": 319400.0
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 320781.25,
+          "sequential": 439646.875
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 413400.0,
+          "batched": 335012.5
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 337800.0,
+          "sequential": 418593.75
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 422459.375,
+          "batched": 327421.875
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 318500.0,
+          "sequential": 427946.875
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 414940.625,
+          "batched": 319846.875
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 316456.25,
+          "sequential": 420225.0
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 418250.0,
+          "batched": 347021.875
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 317393.75,
+          "sequential": 412943.75
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 412903.125,
+          "batched": 324068.75
+        }
+      ]
+    },
+    {
+      "records": 100,
+      "depth": 64,
+      "revocation": "leaf",
+      "median_ratio": 1.0039860824916393,
+      "slower_pairs": 5,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 275706.25,
+          "batched": 272859.375
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 271056.25,
+          "sequential": 275878.125
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 277100.0,
+          "batched": 272140.625
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 361571.875,
+          "sequential": 281225.0
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 279193.75,
+          "batched": 308150.0
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 272059.375,
+          "sequential": 275568.75
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 272265.625,
+          "batched": 297421.875
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 324159.375,
+          "sequential": 295459.375
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 284812.5,
+          "batched": 279018.75
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 277528.125,
+          "sequential": 278634.375
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 272906.25,
+          "batched": 280793.75
+        }
+      ]
+    },
+    {
+      "records": 100,
+      "depth": 64,
+      "revocation": "root",
+      "median_ratio": 1.3086704408316245,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 422565.625,
+          "batched": 317493.75
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 340321.875,
+          "sequential": 424406.25
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 411112.5,
+          "batched": 321934.375
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 320275.0,
+          "sequential": 422215.625
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 419493.75,
+          "batched": 315171.875
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 318684.375,
+          "sequential": 420996.875
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 416815.625,
+          "batched": 318503.125
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 316068.75,
+          "sequential": 422687.5
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 411928.125,
+          "batched": 316115.625
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 325268.75,
+          "sequential": 413431.25
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 413303.125,
+          "batched": 353446.875
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 1,
+      "revocation": "none",
+      "median_ratio": 1.1478475652787579,
+      "slower_pairs": 2,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 10584.375,
+          "batched": 8703.125
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 8590.625,
+          "sequential": 10403.125
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 10043.75,
+          "batched": 8862.5
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 13621.875,
+          "sequential": 10428.125
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 10300.0,
+          "batched": 9000.0
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 9559.375,
+          "sequential": 10378.125
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 10268.75,
+          "batched": 8893.75
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 8659.375,
+          "sequential": 10443.75
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 10165.625,
+          "batched": 8856.25
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 13040.625,
+          "sequential": 10650.0
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 10240.625,
+          "batched": 8915.625
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 1,
+      "revocation": "leaf",
+      "median_ratio": 1.2549019607843137,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 9543.75,
+          "batched": 7468.75
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 7393.75,
+          "sequential": 9484.375
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 9768.75,
+          "batched": 7531.25
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 7525.0,
+          "sequential": 9481.25
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 9456.25,
+          "batched": 7384.375
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 8659.375,
+          "sequential": 9312.5
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 9125.0,
+          "batched": 7343.75
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 7381.25,
+          "sequential": 9196.875
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 9081.25,
+          "batched": 7365.625
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 7331.25,
+          "sequential": 9200.0
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 9084.375,
+          "batched": 7381.25
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 1,
+      "revocation": "root",
+      "median_ratio": 1.252820727120769,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 10925.0,
+          "batched": 7400.0
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 7478.125,
+          "sequential": 9368.75
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 9150.0,
+          "batched": 7471.875
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 7521.875,
+          "sequential": 9612.5
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 9215.625,
+          "batched": 7431.25
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 7400.0,
+          "sequential": 9268.75
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 9231.25,
+          "batched": 7465.625
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 7418.75,
+          "sequential": 9337.5
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 9393.75,
+          "batched": 7468.75
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 7456.25,
+          "sequential": 9378.125
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 9243.75,
+          "batched": 7453.125
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 4,
+      "revocation": "none",
+      "median_ratio": 1.172934160885968,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 30100.0,
+          "batched": 26356.25
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 25421.875,
+          "sequential": 30065.625
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 29596.875,
+          "batched": 25740.625
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 25393.75,
+          "sequential": 30112.5
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 30118.75,
+          "batched": 25678.125
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 25346.875,
+          "sequential": 29993.75
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 29903.125,
+          "batched": 25568.75
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 25440.625,
+          "sequential": 29946.875
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 29771.875,
+          "batched": 25340.625
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 26600.0,
+          "sequential": 29912.5
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 29828.125,
+          "batched": 25434.375
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 4,
+      "revocation": "leaf",
+      "median_ratio": 1.094412035615597,
+      "slower_pairs": 1,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 22371.875,
+          "batched": 20281.25
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 20378.125,
+          "sequential": 24843.75
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 22303.125,
+          "batched": 20631.25
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 20356.25,
+          "sequential": 22278.125
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 22237.5,
+          "batched": 26171.875
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 20465.625,
+          "sequential": 22375.0
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 23778.125,
+          "batched": 21678.125
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 20496.875,
+          "sequential": 22328.125
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 29956.25,
+          "batched": 21462.5
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 20371.875,
+          "sequential": 23706.25
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 22228.125,
+          "batched": 20546.875
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 4,
+      "revocation": "root",
+      "median_ratio": 1.1789800995024875,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 29621.875,
+          "batched": 25125.0
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 26321.875,
+          "sequential": 29440.625
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 29153.125,
+          "batched": 25196.875
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 24937.5,
+          "sequential": 29540.625
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 29346.875,
+          "batched": 25125.0
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 24756.25,
+          "sequential": 29318.75
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 39003.125,
+          "batched": 27643.75
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 25162.5,
+          "sequential": 29393.75
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 31762.5,
+          "batched": 26712.5
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 24925.0,
+          "sequential": 30653.125
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 29306.25,
+          "batched": 25075.0
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 16,
+      "revocation": "none",
+      "median_ratio": 1.3408428821130316,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 108400.0,
+          "batched": 80646.875
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 80453.125,
+          "sequential": 107875.0
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 107393.75,
+          "batched": 82568.75
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 80559.375,
+          "sequential": 109075.0
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 107871.875,
+          "batched": 80856.25
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 88146.875,
+          "sequential": 114268.75
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 112328.125,
+          "batched": 83950.0
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 83862.5,
+          "sequential": 113000.0
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 112359.375,
+          "batched": 83415.625
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 81012.5,
+          "sequential": 110196.875
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 108015.625,
+          "batched": 80990.625
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 16,
+      "revocation": "leaf",
+      "median_ratio": 1.030571905473074,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 73656.25,
+          "batched": 71215.625
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 71106.25,
+          "sequential": 73262.5
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 77003.125,
+          "batched": 71640.625
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 71425.0,
+          "sequential": 73421.875
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 73509.375,
+          "batched": 71331.25
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 71500.0,
+          "sequential": 75928.125
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 73368.75,
+          "batched": 71537.5
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 71143.75,
+          "sequential": 73318.75
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 73700.0,
+          "batched": 71409.375
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 71318.75,
+          "sequential": 73506.25
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 73656.25,
+          "batched": 71696.875
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 16,
+      "revocation": "root",
+      "median_ratio": 1.3318137917712962,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 107731.25,
+          "batched": 80890.625
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 83190.625,
+          "sequential": 110571.875
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 109706.25,
+          "batched": 80856.25
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 80471.875,
+          "sequential": 110184.375
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 106925.0,
+          "batched": 80684.375
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 80303.125,
+          "sequential": 106975.0
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 108221.875,
+          "batched": 81140.625
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 79993.75,
+          "sequential": 106990.625
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 106740.625,
+          "batched": 83681.25
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 88225.0,
+          "sequential": 107425.0
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 106875.0,
+          "batched": 80440.625
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 64,
+      "revocation": "none",
+      "median_ratio": 1.324097486968023,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 426250.0,
+          "batched": 321518.75
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 322456.25,
+          "sequential": 436628.125
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 445243.75,
+          "batched": 331331.25
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 329234.375,
+          "sequential": 419350.0
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 425993.75,
+          "batched": 322165.625
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 325721.875,
+          "sequential": 432215.625
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 431906.25,
+          "batched": 328678.125
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 344212.5,
+          "sequential": 425453.125
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 423240.625,
+          "batched": 350834.375
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 321325.0,
+          "sequential": 425465.625
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 437903.125,
+          "batched": 323118.75
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 64,
+      "revocation": "leaf",
+      "median_ratio": 1.0253163111496826,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 289184.375,
+          "batched": 284425.0
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 275843.75,
+          "sequential": 282759.375
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 316681.25,
+          "batched": 275993.75
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 276331.25,
+          "sequential": 293709.375
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 284650.0,
+          "batched": 280853.125
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 282321.875,
+          "sequential": 316737.5
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 294515.625,
+          "batched": 282371.875
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 272315.625,
+          "sequential": 280531.25
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 280590.625,
+          "batched": 273662.5
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 276965.625,
+          "sequential": 282237.5
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 278171.875,
+          "batched": 275212.5
+        }
+      ]
+    },
+    {
+      "records": 1000,
+      "depth": 64,
+      "revocation": "root",
+      "median_ratio": 1.3051539758824733,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 486343.75,
+          "batched": 323612.5
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 319515.625,
+          "sequential": 472959.375
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 422518.75,
+          "batched": 328893.75
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 327806.25,
+          "sequential": 422593.75
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 418387.5,
+          "batched": 320565.625
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 322228.125,
+          "sequential": 421396.875
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 417131.25,
+          "batched": 323228.125
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 323531.25,
+          "sequential": 422018.75
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 418271.875,
+          "batched": 321996.875
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 327071.875,
+          "sequential": 429650.0
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 422056.25,
+          "batched": 322468.75
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 1,
+      "revocation": "none",
+      "median_ratio": 1.168458781362007,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 10471.875,
+          "batched": 8728.125
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 8515.625,
+          "sequential": 10125.0
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 9940.625,
+          "batched": 8943.75
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 8740.625,
+          "sequential": 10218.75
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 11256.25,
+          "batched": 8787.5
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 8834.375,
+          "sequential": 10290.625
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 10125.0,
+          "batched": 8756.25
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 8718.75,
+          "sequential": 10187.5
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 10037.5,
+          "batched": 8721.875
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 8756.25,
+          "sequential": 10284.375
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 10084.375,
+          "batched": 8865.625
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 1,
+      "revocation": "leaf",
+      "median_ratio": 1.271970012494794,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 9653.125,
+          "batched": 7384.375
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 7412.5,
+          "sequential": 9687.5
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 9434.375,
+          "batched": 7503.125
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 7556.25,
+          "sequential": 9659.375
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 9484.375,
+          "batched": 7546.875
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 7503.125,
+          "sequential": 9543.75
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 9621.875,
+          "batched": 7628.125
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 7471.875,
+          "sequential": 9606.25
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 9650.0,
+          "batched": 7643.75
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 7543.75,
+          "sequential": 9640.625
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 9637.5,
+          "batched": 7787.5
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 1,
+      "revocation": "root",
+      "median_ratio": 1.2587104525430517,
+      "slower_pairs": 1,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 9693.75,
+          "batched": 7446.875
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 7415.625,
+          "sequential": 9653.125
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 9568.75,
+          "batched": 11462.5
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 8087.5,
+          "sequential": 10162.5
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 9962.5,
+          "batched": 7943.75
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 7621.875,
+          "sequential": 9890.625
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 9728.125,
+          "batched": 7856.25
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 7643.75,
+          "sequential": 9906.25
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 9821.875,
+          "batched": 7803.125
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 7684.375,
+          "sequential": 9784.375
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 9746.875,
+          "batched": 7784.375
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 4,
+      "revocation": "none",
+      "median_ratio": 1.167616334283001,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 31318.75,
+          "batched": 26434.375
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 26084.375,
+          "sequential": 30650.0
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 30475.0,
+          "batched": 26312.5
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 26218.75,
+          "sequential": 31059.375
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 30575.0,
+          "batched": 26387.5
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 26143.75,
+          "sequential": 30887.5
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 30737.5,
+          "batched": 26325.0
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 27768.75,
+          "sequential": 31018.75
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 30746.875,
+          "batched": 26384.375
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 26109.375,
+          "sequential": 33284.375
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 30906.25,
+          "batched": 29421.875
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 4,
+      "revocation": "leaf",
+      "median_ratio": 1.0909908559436365,
+      "slower_pairs": 2,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 22796.875,
+          "batched": 24725.0
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 20728.125,
+          "sequential": 23006.25
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 22537.5,
+          "batched": 20684.375
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 20818.75,
+          "sequential": 22718.75
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 28015.625,
+          "batched": 21015.625
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 20737.5,
+          "sequential": 22828.125
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 22668.75,
+          "batched": 22778.125
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 21981.25,
+          "sequential": 22934.375
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 22637.5,
+          "batched": 20750.0
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 20537.5,
+          "sequential": 22728.125
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 22743.75,
+          "batched": 20846.875
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 4,
+      "revocation": "root",
+      "median_ratio": 1.0532633158289573,
+      "slower_pairs": 4,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 30375.0,
+          "batched": 25615.625
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 33803.125,
+          "sequential": 32134.375
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 33046.875,
+          "batched": 43718.75
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 29159.375,
+          "sequential": 30712.5
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 30203.125,
+          "batched": 39200.0
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 25731.25,
+          "sequential": 30328.125
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 29881.25,
+          "batched": 29068.75
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 25778.125,
+          "sequential": 30178.125
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 29856.25,
+          "batched": 32484.375
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 25531.25,
+          "sequential": 29987.5
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 31525.0,
+          "batched": 25687.5
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 16,
+      "revocation": "none",
+      "median_ratio": 1.3450149925037482,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 112418.75,
+          "batched": 83453.125
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 83237.5,
+          "sequential": 116271.875
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 112140.625,
+          "batched": 83375.0
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 92903.125,
+          "sequential": 114384.375
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 111787.5,
+          "batched": 83190.625
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 82921.875,
+          "sequential": 115334.375
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 113981.25,
+          "batched": 83631.25
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 83168.75,
+          "sequential": 111756.25
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 117743.75,
+          "batched": 85075.0
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 83171.875,
+          "sequential": 111700.0
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 111537.5,
+          "batched": 84462.5
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 16,
+      "revocation": "leaf",
+      "median_ratio": 1.0282720273738237,
+      "slower_pairs": 3,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 76800.0,
+          "batched": 72656.25
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 72953.125,
+          "sequential": 75246.875
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 75128.125,
+          "batched": 73062.5
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 76365.625,
+          "sequential": 76096.875
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 80712.5,
+          "batched": 79481.25
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 100834.375,
+          "sequential": 80065.625
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 77931.25,
+          "batched": 73415.625
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 72909.375,
+          "sequential": 75043.75
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 74881.25,
+          "batched": 72759.375
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 79750.0,
+          "sequential": 76484.375
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 75190.625,
+          "batched": 73190.625
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 16,
+      "revocation": "root",
+      "median_ratio": 1.3572374645222327,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 114340.625,
+          "batched": 82765.625
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 88768.75,
+          "sequential": 111321.875
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 110650.0,
+          "batched": 82837.5
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 82203.125,
+          "sequential": 118690.625
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 113715.625,
+          "batched": 83540.625
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 82128.125,
+          "sequential": 112259.375
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 110590.625,
+          "batched": 82690.625
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 82206.25,
+          "sequential": 111046.875
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 112078.125,
+          "batched": 82578.125
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 86590.625,
+          "sequential": 119078.125
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 110937.5,
+          "batched": 83800.0
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 64,
+      "revocation": "none",
+      "median_ratio": 1.321699033107634,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 453231.25,
+          "batched": 342915.625
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 331350.0,
+          "sequential": 442809.375
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 442631.25,
+          "batched": 347337.5
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 358387.5,
+          "sequential": 445896.875
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 440234.375,
+          "batched": 333596.875
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 385609.375,
+          "sequential": 441003.125
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 450731.25,
+          "batched": 329946.875
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 334703.125,
+          "sequential": 454246.875
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 445896.875,
+          "batched": 340837.5
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 329015.625,
+          "sequential": 454075.0
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 496903.125,
+          "batched": 342293.75
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 64,
+      "revocation": "leaf",
+      "median_ratio": 0.9657284962590589,
+      "slower_pairs": 8,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 285446.875,
+          "batched": 307356.25
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 296975.0,
+          "sequential": 285246.875
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 281565.625,
+          "batched": 278106.25
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 305568.75,
+          "sequential": 286578.125
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 279337.5,
+          "batched": 291087.5
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 279112.5,
+          "sequential": 280390.625
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 286234.375,
+          "batched": 313625.0
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 290937.5,
+          "sequential": 286256.25
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 318934.375,
+          "batched": 283975.0
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 282600.0,
+          "sequential": 281578.125
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 282756.25,
+          "batched": 292790.625
+        }
+      ]
+    },
+    {
+      "records": 10000,
+      "depth": 64,
+      "revocation": "root",
+      "median_ratio": 1.3301088835926913,
+      "slower_pairs": 0,
+      "samples": [
+        {
+          "pair": 0,
+          "batch": 32,
+          "sequential": 439656.25,
+          "batched": 330184.375
+        },
+        {
+          "pair": 1,
+          "batch": 32,
+          "batched": 332365.625,
+          "sequential": 459521.875
+        },
+        {
+          "pair": 2,
+          "batch": 32,
+          "sequential": 440737.5,
+          "batched": 337215.625
+        },
+        {
+          "pair": 3,
+          "batch": 32,
+          "batched": 327656.25,
+          "sequential": 445100.0
+        },
+        {
+          "pair": 4,
+          "batch": 32,
+          "sequential": 470256.25,
+          "batched": 333718.75
+        },
+        {
+          "pair": 5,
+          "batch": 32,
+          "batched": 334359.375,
+          "sequential": 444734.375
+        },
+        {
+          "pair": 6,
+          "batch": 32,
+          "sequential": 440662.5,
+          "batched": 332481.25
+        },
+        {
+          "pair": 7,
+          "batch": 32,
+          "batched": 334256.25,
+          "sequential": 441753.125
+        },
+        {
+          "pair": 8,
+          "batch": 32,
+          "sequential": 439303.125,
+          "batched": 331471.875
+        },
+        {
+          "pair": 9,
+          "batch": 32,
+          "batched": 331550.0,
+          "sequential": 449446.875
+        },
+        {
+          "pair": 10,
+          "batch": 32,
+          "sequential": 433965.625,
+          "batched": 335875.0
+        }
+      ]
+    }
+  ]
+}

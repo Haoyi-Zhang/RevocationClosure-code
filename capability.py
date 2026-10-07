@@ -255,6 +255,38 @@ class Store:
         row = self.db.execute("SELECT payload FROM events WHERE id=? AND kind='grant'",(ident,)).fetchone()
         return None if row is None else json.loads(row[0])
 
+    def _first_revoked(self, consider: list[dict]) -> str | None:
+        """Return the nearest revoked ancestor in the original chain order."""
+        if self.mode == 'lease':
+            return None
+        if self.mode == 'lww':
+            # This deliberately unsafe comparator has timestamp semantics,
+            # unlike the immutable revocation-membership test.
+            for g in consider:
+                row = self.db.execute("SELECT id,stamp FROM events WHERE kind='revoke' AND target=? ORDER BY id LIMIT 1",(g['id'],)).fetchone()
+                revoked = row is not None or g['id'] in self.volatile
+                if row is not None:
+                    stamp = self.db.execute('SELECT stamp FROM events WHERE id=?',(g['id'],)).fetchone()[0]
+                    revoked = row[1] >= stamp
+                if revoked:
+                    return g['id']
+            return None
+        # Check the leaf first: an immediately revoked request needs only the
+        # original single indexed query, regardless of ancestry depth.
+        leaf = consider[0]['id']
+        if leaf in self.volatile or self.db.execute(
+                "SELECT 1 FROM events WHERE kind='revoke' AND target=? LIMIT 1",(leaf,)).fetchone() is not None:
+            return leaf
+        identifiers = [g['id'] for g in consider[1:]]
+        if not identifiers:
+            return None
+        placeholders = ','.join('?' for _ in identifiers)
+        revoked = {row[0] for row in self.db.execute(
+            "SELECT target FROM events WHERE kind='revoke' AND target IN ("+placeholders+")",
+            identifiers)}
+        revoked.update(self.volatile)
+        return next((ident for ident in identifiers if ident in revoked), None)
+
     def authorize(self, cap: str, actor: int, right: int, service: str, with_snapshot: bool = False) -> dict:
         if not isinstance(cap,str) or len(cap)!=64 or service not in {'svc0','svc1','svc2','svc3','svc4'} or type(actor) is not int or not 0 <= actor < N or type(right) is not int or right<=0 or right >= 1 << 32:
             raise ValueError('request')
@@ -285,16 +317,9 @@ class Store:
                         reason,atom='attenuation',child['id']; break
                 if reason == 'allow':
                     consider = chain[:1] if self.mode in {'acl','leaf-only'} else chain
-                    for g in consider:
-                        if self.mode != 'lease':
-                            row = self.db.execute("SELECT id,stamp FROM events WHERE kind='revoke' AND target=? ORDER BY id LIMIT 1",(g['id'],)).fetchone()
-                            revoked = row is not None or g['id'] in self.volatile
-                            if self.mode=='lww' and row is not None:
-                                stamp=self.db.execute('SELECT stamp FROM events WHERE id=?',(g['id'],)).fetchone()[0]
-                                # LWW baseline by receipt timestamp, not a CRDT security guarantee.
-                                revoked = row[1] >= stamp
-                            if revoked:
-                                reason,atom='revoked',g['id']; break
+                    revoked = self._first_revoked(consider)
+                    if revoked is not None:
+                        reason,atom='revoked',revoked
                     if reason=='allow':
                         d=leaf['deadlines'][self.node]
                         upper=self.clock if self.mode=='clock-unsafe' else self.clock+self.epsilon

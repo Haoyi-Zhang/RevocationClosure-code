@@ -1,0 +1,24 @@
+{
+  "matched_decisions": 4104,
+  "independent_oracle_decisions": 432,
+  "modes": [
+    "closed",
+    "all-ack",
+    "lease",
+    "lww",
+    "acl",
+    "volatile",
+    "no-floor",
+    "leaf-only",
+    "clock-unsafe"
+  ],
+  "depths": [
+    1,
+    2,
+    4,
+    16,
+    64,
+    256
+  ],
+  "passed": true
+}

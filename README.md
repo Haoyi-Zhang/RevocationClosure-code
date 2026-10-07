@@ -42,6 +42,28 @@ It records the durable floor, retained counts before and after the first post-re
 
 `proofs.md` gives the underlying gateway arguments; `collector-proofs.md` gives the journal characterization and its exact observation boundary. `experiment_plan.json` specifies the service grid; `collector-plan.json` specifies the full four-profile, sixteen-seed collector campaign. `claim_evidence_ledger.csv` maps claims to executable or analytical evidence.
 
+## Local ancestry lookup
+
+The authorizer retains the original leaf-first rejection order. After the
+leaf query, it combines the remaining immutable revocation-membership lookups
+and selects the nearest revoked ancestor in the original chain order. The
+timestamp-based LWW comparator remains separate. No cross-request cache or
+weaker authorization check is introduced.
+
+`python lookup_batch.py` compares 4,104 responses over all nine modes, depths
+through 256, revocation positions, rejected requests, compaction and stale
+replay; 432 closed-mode queries also agree with the independent interpreter.
+`python lookup_batch.py --measure --out <new-path>` records a separate local
+comparison on identical in-memory SQLite stores: 36 cases, 20 warmups per arm,
+11 alternating-order pairs, 32 calls per timed arm. The retained Windows
+Python 3.12.14/SQLite 3.53.1 run is pinned to logical CPU 0. Per-case median
+sequential/batched ratios span 0.966--1.357; one median favors sequential
+lookup, and all slower pairs are retained. These are local call costs, not
+RPC, collector or deployment gains. `results/lookup-batch/` contains this
+measurement and correctness record. The earlier 71-command frozen campaign
+and loopback timing data remain evidence for the implementation they measured;
+they are not a full rerun of this local lookup change.
+
 ## Retained journal evidence
 
 The independent observation oracle matches 26,852 cases: 16,921 covered and 9,931 open, with zero mismatch. It rejects 34 inconsistent clock histories and executes 93 accepting uncovered-coordinate witnesses through the SQL authorizer. The durable journal retains closure through a directed bounded-clock regression that reopens the legacy stateless poll. Three owned child-process exits distinguish precommit loss from postcommit reply loss; all reopened stores pass integrity checks.
