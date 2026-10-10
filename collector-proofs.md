@@ -30,7 +30,7 @@ A reading with C + epsilon < K contradicts the retained history and is rejected.
 
 ## Liveness and limits
 
-If each coordinate eventually has a received receipt or sufficient retained time evidence and the collector continues taking steps, finite membership yields eventual closure. With finite deadlines and sound progressing time, expiry eventually suffices; unscheduled processes still have no guaranteed response time. Under exact clocks and fixed receipt arrivals/deadlines, the receipt-or-expiry completion time is max_i min(A_i,d_i). This identity is not an optimal lease assignment or an impossibility result for stronger fences.
+If each coordinate eventually has a received receipt or sufficient retained time evidence and the collector continues taking steps, finite membership yields eventual closure. With finite deadlines and sound progressing time, expiry eventually suffices; unscheduled processes still have no guaranteed response time. Under exact clocks and fixed receipt arrivals/deadlines, the ideal receipt-or-expiry predicate crossing is T = max_i min(A_i,d_i). An operation started at S cannot reply before max(S,T); its reply follows a sufficient collector observation and durable commit. This identity is not an optimal lease assignment or an impossibility result for stronger fences.
 
 All guarantees concern future checks. They do not undo prior effects or released information. They do not supply production cryptography, clock synchronization, Byzantine behavior, power-loss semantics, dynamic membership, or physical disk-rollback protection.
 

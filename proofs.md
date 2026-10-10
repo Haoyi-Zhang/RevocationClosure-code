@@ -174,9 +174,11 @@ not minimum byte-size certification, and not a claim of a novel lease theorem.
 
 With exact clocks and no such degeneracy, let A_i denote receipt arrival time
 (infinity when absent), and D_i the inherited target deadline. The earliest time
-this predicate becomes true is max_i min(A_i,D_i). Each coordinate becomes true
+this ideal predicate becomes true is T = max_i min(A_i,D_i). Each coordinate becomes true
 at min(A_i,D_i); their conjunction becomes true at the maximum. This elementary
-identity describes a fixed certificate and fixed issuance policy, not an optimized
+identity does not give a reply time: an operation begun at S cannot reply before
+max(S,T), and must observe sufficient evidence and commit it before replying. It
+describes a fixed certificate and fixed issuance policy, not an optimized
 lease policy. Per-gateway shorter leases reduce disconnected useful lifetime.
 
 ## Lemma 3: monotone-set convergence and its boundary
