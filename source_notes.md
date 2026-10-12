@@ -8,4 +8,12 @@ For this journal release, official publisher, society, archive, or author record
 
 The evidence join is elementary. The paper's potentially publishable contribution is the precisely scoped observation-relative characterization, its durable reply and recovery obligations, and falsifiable executable correspondence. Importance relative to prior work remains a scientific and editorial judgment, not a template or citation-count property.
 
+Primary comparison passages: [Chubby, Sections 2.7 and 4.4](https://www.usenix.org/legacy/event/osdi06/tech/full_papers/burrows/burrows.pdf)
+describe acknowledgement-or-expiry cache invalidation and a worst-case lease
+wait after uncertain recovery. [Maat, Sections 3.1, 3.4--3.5](https://escholarship.org/content/qt7h24p98z/qt7h24p98z_noSplash_e5100ba830219ea9d89456214b951b33.pdf)
+cover synchronized-clock assumptions, automatic expiry, explicit early
+revocation, and renewable delegated computation keys. Neither is treated as
+a stateless latest-poll implementation. The local durable reference receives
+the same observations as the journal and has identical closure semantics.
+
 No external paper PDF, prior implementation, contact dataset, or third-party runtime is redistributed. Conference names and society URLs retained in the bibliography or audit tables identify legitimate scholarly sources; they are not publication-template dependencies.

@@ -1,6 +1,10 @@
 """Frozen seed/profile cross-product; SQL reopens are not process crashes."""
 from __future__ import annotations
-import argparse,gzip,json,random,resource,sys,tempfile,time
+import argparse,gzip,json,random,sys,tempfile,time
+try:
+    import resource
+except ImportError:
+    resource=None  # POSIX telemetry is unavailable, not a zero measurement.
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from capability import Store,grant,revocation,packed
@@ -19,7 +23,7 @@ def run(out):
         for pi,profile in enumerate(PROFILES):
             for seed in SEEDS:
                 rng=random.Random(seed+10000*pi)
-                with tempfile.TemporaryDirectory() as td:
+                with tempfile.TemporaryDirectory(dir=out) as td:
                     d=Path(td);ds=[40,70,100,130,160] if pi<2 else [160,160,160,40,60]
                     root=grant(0,1,None,3,[200]*5,f'r-{profile}-{seed}')
                     target=grant(1,2,root,1,ds,f't-{profile}-{seed}')
@@ -80,7 +84,7 @@ def run(out):
                         for s in stores:s.close()
                     totals['traces']+=1;summaries.append(dict(profile=profile,seed=seed,first_closed=first,postclosure_decisions=post))
     result=dict(**totals,trace_summaries=summaries,wall_s=time.perf_counter()-began,
-                parent_cpu_s=time.process_time()-cpu,parent_peak_rss_kib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
+                parent_cpu_s=time.process_time()-cpu,parent_peak_rss_kib=None if resource is None else resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
     (out/'collector-stateful.json').write_text(json.dumps(result,indent=2)+'\n');return result
 if __name__=='__main__':
     if not __debug__:raise RuntimeError('Do not use -O')

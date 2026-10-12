@@ -58,7 +58,7 @@ class ClosureJournal:
     @staticmethod
     def _fault(selected,current):
         if selected==current:os._exit(70) # only in owned subprocess tests
-    def observe(self,clock:int,receipts:list[dict],failpoint:str|None=None)->dict:
+    def _validate_observation(self,clock:int,receipts:list[dict],failpoint:str|None)->int:
         advance_lower_bound(0,clock,self.epsilon)
         if not isinstance(receipts,list) or len(receipts)>2*N:raise ValueError('receipt batch limit')
         incoming=0
@@ -69,17 +69,26 @@ class ClosureJournal:
             incoming|=1<<r['gateway']
         if failpoint not in {None,'before_transaction','before_commit','after_commit_before_reply'}:
             raise ValueError('unknown collector failpoint')
+        return incoming
+    def observe(self,clock:int,receipts:list[dict],failpoint:str|None=None)->dict:
+        incoming=self._validate_observation(clock,receipts,failpoint)
         self._fault(failpoint,'before_transaction')
         try:
             self.db.execute('BEGIN IMMEDIATE')
-            lower,mask=self.db.execute('SELECT lower_time,receipt_mask FROM certificate WHERE singleton=1').fetchone()
-            lower=advance_lower_bound(lower,clock,self.epsilon);mask|=incoming
-            self.db.execute('UPDATE certificate SET lower_time=?,receipt_mask=? WHERE singleton=1',(lower,mask))
+            previous,old_mask=self.db.execute('SELECT lower_time,receipt_mask FROM certificate WHERE singleton=1').fetchone()
+            lower=advance_lower_bound(previous,clock,self.epsilon);mask=old_mask|incoming
+            # The transaction still serializes observations. An unchanged join
+            # already has durable backing; do not submit a redundant row update.
+            if (lower,mask)!=(previous,old_mask):
+                self.db.execute('UPDATE certificate SET lower_time=?,receipt_mask=? WHERE singleton=1',(lower,mask))
+            result=coverage(self.revocation['target']['deadlines'],mask,lower,self.epsilon)
             self._fault(failpoint,'before_commit');self.db.commit()
         except BaseException:
             self.db.rollback();raise
         self._fault(failpoint,'after_commit_before_reply')
-        return self.status()
+        # Reply from this transaction's snapshot, only after its commit. This
+        # avoids a second SELECT, without a cross-request cache or deferred write.
+        return result
     def status(self)->dict:
         lower,mask=self.db.execute('SELECT lower_time,receipt_mask FROM certificate WHERE singleton=1').fetchone()
         return coverage(self.revocation['target']['deadlines'],mask,lower,self.epsilon)

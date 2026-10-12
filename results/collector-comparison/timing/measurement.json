@@ -1,0 +1,2481 @@
+{
+  "environment": {
+    "platform": "Windows-11-10.0.28000-SP0",
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "affinity": "not pinned",
+    "storage": "owned candidate-local SQLite WAL/FULL files"
+  },
+  "plan": {
+    "profiles": [
+      "receipts",
+      "expiry",
+      "mixed"
+    ],
+    "epsilon": [
+      2,
+      7
+    ],
+    "polls_per_tick": [
+      1,
+      8
+    ],
+    "seed": 17,
+    "ticks": 128,
+    "pairs": 7,
+    "warmups": "one whole trace per arm",
+    "automatic_wal_checkpoint": false,
+    "timing": "observe calls and returned states; excludes initialization, reopen, tracing, RPC, and gateway checks"
+  },
+  "cases": [
+    {
+      "profile": "receipts",
+      "epsilon": 2,
+      "polls_per_tick": 1,
+      "observations": 128,
+      "work": {
+        "reference": {
+          "elapsed_ns": 54412900,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 256,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 57809300,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 128,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 0.9579486120821786,
+      "slower_pairs": 7,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 49187500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 51346700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9579486120821786
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 52967700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 51172100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9661000949635343
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 52246100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 53613200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9745006826677013
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 52036800,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 49119900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9439454386126741
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 48990900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 55997400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.8748781193412551
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 62147700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 53692400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.8639483037988533
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 51580000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 53011700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9729927544296825
+        }
+      ]
+    },
+    {
+      "profile": "receipts",
+      "epsilon": 2,
+      "polls_per_tick": 8,
+      "observations": 1024,
+      "work": {
+        "reference": {
+          "elapsed_ns": 100178300,
+          "row_updates": 1024,
+          "sql": {
+            "begin": 1024,
+            "select": 2048,
+            "update": 1024,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 95152400,
+          "row_updates": 128,
+          "sql": {
+            "begin": 1024,
+            "select": 1024,
+            "update": 128,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 1.0598071148357373,
+      "slower_pairs": 3,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 96655400,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 90972700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0624659925450162
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 95199100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 94715200,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9949169687528558
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 99352000,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 92116500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0785472743753834
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 92811700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 98362500,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0598071148357373
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 95732700,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 96091400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9962670957026332
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 92500500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 99504300,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0757163474792029
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 102953800,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 108177700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9517100104735079
+        }
+      ]
+    },
+    {
+      "profile": "receipts",
+      "epsilon": 7,
+      "polls_per_tick": 1,
+      "observations": 128,
+      "work": {
+        "reference": {
+          "elapsed_ns": 56312100,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 256,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 51232000,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 128,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 0.9765597800755277,
+      "slower_pairs": 6,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 48607000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 53106100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.915280918764511
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 51502600,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 50383800,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9782768248593275
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 48897300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 50176900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.974498225278963
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 53386800,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 51684000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9681044752635483
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 51331400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 52563500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9765597800755277
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 54013300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 53075100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9826302040423377
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 50179100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 49455600,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0146292836402753
+        }
+      ]
+    },
+    {
+      "profile": "receipts",
+      "epsilon": 7,
+      "polls_per_tick": 8,
+      "observations": 1024,
+      "work": {
+        "reference": {
+          "elapsed_ns": 102467300,
+          "row_updates": 1024,
+          "sql": {
+            "begin": 1024,
+            "select": 2048,
+            "update": 1024,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 96831500,
+          "row_updates": 128,
+          "sql": {
+            "begin": 1024,
+            "select": 1024,
+            "update": 128,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 1.0394976419727748,
+      "slower_pairs": 1,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 101997300,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 93758300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.087874886810021
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 100924400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 97074000,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9618486708863268
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 97499500,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 92168400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0578408651989184
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 96145100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 99464400,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.034523860290332
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 95678600,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 95171000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0053335574912525
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 92181700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 102159800,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.1082438271370565
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 94713100,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 91114300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0394976419727748
+        }
+      ]
+    },
+    {
+      "profile": "expiry",
+      "epsilon": 2,
+      "polls_per_tick": 1,
+      "observations": 128,
+      "work": {
+        "reference": {
+          "elapsed_ns": 38038100,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 256,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 37355900,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 128,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 1.0035520894570908,
+      "slower_pairs": 2,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 37648100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 36528000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0306641480508103
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 36947500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 36989700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0011421611746396
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 39193900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 38593700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0155517610387188
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 38930700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 39109700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.004597913728754
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 38736300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 41878700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.924964241965486
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 40314300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 40457500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0035520894570908
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 41050300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 59257400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.6927455473915494
+        }
+      ]
+    },
+    {
+      "profile": "expiry",
+      "epsilon": 2,
+      "polls_per_tick": 8,
+      "observations": 1024,
+      "work": {
+        "reference": {
+          "elapsed_ns": 53264000,
+          "row_updates": 1024,
+          "sql": {
+            "begin": 1024,
+            "select": 2048,
+            "update": 1024,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 47143300,
+          "row_updates": 128,
+          "sql": {
+            "begin": 1024,
+            "select": 1024,
+            "update": 128,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 1.054111466016567,
+      "slower_pairs": 0,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 47562100,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 45423600,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0470790514182056
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 44256900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 49577800,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.1202275803321065
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 48356900,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 43942900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.1004485366236638
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 44957200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 47389900,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.054111466016567
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 47337700,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 45088300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.049888773806065
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 45675100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 47156200,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0324268583976828
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 47814000,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 44364200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0777608973000752
+        }
+      ]
+    },
+    {
+      "profile": "expiry",
+      "epsilon": 7,
+      "polls_per_tick": 1,
+      "observations": 128,
+      "work": {
+        "reference": {
+          "elapsed_ns": 39516500,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 256,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 45626400,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 128,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 1.0060053277896748,
+      "slower_pairs": 3,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 38209000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 36969200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0335360245826255
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 36941100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 37191300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0067729439567312
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 37185400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 37513300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9912591001058292
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 36700300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 37222400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0142260417489775
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 38200900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 38533900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9913582585723221
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 36750700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 36971400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0060053277896748
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 37868200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 39047100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9698082572073214
+        }
+      ]
+    },
+    {
+      "profile": "expiry",
+      "epsilon": 7,
+      "polls_per_tick": 8,
+      "observations": 1024,
+      "work": {
+        "reference": {
+          "elapsed_ns": 51634300,
+          "row_updates": 1024,
+          "sql": {
+            "begin": 1024,
+            "select": 2048,
+            "update": 1024,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 46434100,
+          "row_updates": 128,
+          "sql": {
+            "begin": 1024,
+            "select": 1024,
+            "update": 128,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 1.0876967327906641,
+      "slower_pairs": 0,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 49591900,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 44513500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.11408673773125
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 44344700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 47464600,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0703556456577674
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 48299300,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 44146900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0940586994783326
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 44264000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 48543000,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0966699801192843
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 47854400,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 44908500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0655978266920516
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 43771300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 47609900,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0876967327906641
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 48087500,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 44526800,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0799675700926183
+        }
+      ]
+    },
+    {
+      "profile": "mixed",
+      "epsilon": 2,
+      "polls_per_tick": 1,
+      "observations": 128,
+      "work": {
+        "reference": {
+          "elapsed_ns": 42526400,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 256,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 44229900,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 128,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 1.0276002850620252,
+      "slower_pairs": 1,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 43367200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 42708400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0154255368967229
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 41266500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 42828200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0378442562368992
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 43036200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 41105900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0469591956385822
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 41394500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 42537000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0276002850620252
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 42535100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 42147700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0091914861309157
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 42740900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 44226200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0347512569927166
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 43854900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 46572100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.941656055878949
+        }
+      ]
+    },
+    {
+      "profile": "mixed",
+      "epsilon": 2,
+      "polls_per_tick": 8,
+      "observations": 1024,
+      "work": {
+        "reference": {
+          "elapsed_ns": 86703700,
+          "row_updates": 1024,
+          "sql": {
+            "begin": 1024,
+            "select": 2048,
+            "update": 1024,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 85778800,
+          "row_updates": 128,
+          "sql": {
+            "begin": 1024,
+            "select": 1024,
+            "update": 128,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 1.0547159253606264,
+      "slower_pairs": 2,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 85995300,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 79708700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0788696842377306
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 93331500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 84166700,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9018037854314995
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 80297000,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 76131400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0547159253606264
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 74987700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 80455800,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0729199588732552
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 79655300,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 82209200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.968934133892557
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 79098600,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 81982900,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0364646150500767
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 84522500,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 75875000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.1139703459637562
+        }
+      ]
+    },
+    {
+      "profile": "mixed",
+      "epsilon": 7,
+      "polls_per_tick": 1,
+      "observations": 128,
+      "work": {
+        "reference": {
+          "elapsed_ns": 43138900,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 256,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 42520400,
+          "row_updates": 128,
+          "sql": {
+            "begin": 128,
+            "select": 128,
+            "update": 128,
+            "commit": 128
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 0.9919158522397438,
+      "slower_pairs": 4,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 41744900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 42103800,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9914758287850503
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 41859700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 41521300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9919158522397438
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 42123900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 41969500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0036788620307604
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 42771000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 41958200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9809964695705033
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 42506000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 41183400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0321148812385572
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 41442900,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 41980000,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0129600003860735
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 41470200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 44155500,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9391853789448653
+        }
+      ]
+    },
+    {
+      "profile": "mixed",
+      "epsilon": 7,
+      "polls_per_tick": 8,
+      "observations": 1024,
+      "work": {
+        "reference": {
+          "elapsed_ns": 83372600,
+          "row_updates": 1024,
+          "sql": {
+            "begin": 1024,
+            "select": 2048,
+            "update": 1024,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        },
+        "optimized": {
+          "elapsed_ns": 77412300,
+          "row_updates": 128,
+          "sql": {
+            "begin": 1024,
+            "select": 1024,
+            "update": 128,
+            "commit": 1024
+          },
+          "wal_bytes": 527392,
+          "wal_frames": 128
+        }
+      },
+      "median_ratio": 1.0289398457742294,
+      "slower_pairs": 2,
+      "pairs": [
+        {
+          "pair": 0,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 78640700,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 76414400,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.029134561025147
+        },
+        {
+          "pair": 1,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 75849600,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 86449500,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.1397489241868117
+        },
+        {
+          "pair": 2,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 79528100,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 83798600,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9490385280899681
+        },
+        {
+          "pair": 3,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 81044300,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 79530800,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 0.9813250284103879
+        },
+        {
+          "pair": 4,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 79106300,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 78592700,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0065349580813485
+        },
+        {
+          "pair": 5,
+          "order": [
+            "optimized",
+            "reference"
+          ],
+          "measurements": {
+            "optimized": {
+              "elapsed_ns": 77730200,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "reference": {
+              "elapsed_ns": 79979700,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0289398457742294
+        },
+        {
+          "pair": 6,
+          "order": [
+            "reference",
+            "optimized"
+          ],
+          "measurements": {
+            "reference": {
+              "elapsed_ns": 80436600,
+              "row_updates": 1024,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            },
+            "optimized": {
+              "elapsed_ns": 75160100,
+              "row_updates": 128,
+              "sql": null,
+              "wal_bytes": 527392,
+              "wal_frames": 128
+            }
+          },
+          "reference_over_optimized": 1.0702034723210851
+        }
+      ]
+    }
+  ],
+  "scope": "descriptive paired local timings, not a latency SLA or reduced durability guarantee"
+}

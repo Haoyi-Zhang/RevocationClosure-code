@@ -28,6 +28,39 @@ Join evidence by (K,A) join (K',A') = (max(K,K'), A union A'). For fixed configu
 
 A reading with C + epsilon < K contradicts the retained history and is rejected. This necessary consistency test does not certify clock soundness. A new target, audience, or epsilon cannot reinterpret an existing database. The state is a locally trusted validated receipt mask, not a transferable certificate verified by an untrusted observer.
 
+## Equivalent durable latest-state reference and redundant-work omission
+
+A straightforward confirmation/lease-expiry reference binds the same immutable
+configuration, retains the receipt set A and the high-water mark of sound clock
+observations, and persists the latest sufficient state before replying. With
+K = max(0, high_clock - epsilon), it has exactly the same predicate and future
+rejection guarantee. A journal label or the join notation supplies no semantic
+advantage over this reference. `collector_reference.py` implements the same
+durable pair by saving it unconditionally after each observation. It shares
+input validation and storage setup to isolate the SQL-work comparison, rather
+than claiming independent validation of these shared components.
+
+In `collector.py`, each observation still validates its entire input and then
+starts BEGIN IMMEDIATE before reading (K,A). If the join changes neither field,
+the old committed row already justifies the resulting status, so omitting its
+UPDATE is equivalent. If either field changes, the full pair is still committed
+before any reply. The reply uses the pair computed in this transaction, avoiding
+a post-commit SELECT. This is a transaction snapshot, not a cross-request cache;
+another connection's earlier committed evidence is read under the same lock.
+Concurrent later updates may strengthen state, but cannot invalidate a returned
+closed snapshot. The monotone and crash arguments above therefore still apply.
+There is no deferred write, weakened receipt check, or relaxed clock premise.
+
+`collector_comparison.py` checks positive finite lifetimes and uncertainties,
+reopens, clock regression, late descendants, two connections, atomic rejection,
+and changed/unchanged process-exit boundaries. The 36 workloads yield 20,736
+equal reference/journal states, 103,680 interpreter comparisons, and 42,120
+post-closure denials. The latest-reading boundary-grid count decomposes as
+1,088 zero-floor cases, 1,061 further inert cases, and 478 further history cases.
+The durable reference closes identically, so 2,627 is not a benefit over it.
+Local measurements distinguish fewer SQL submissions from unchanged WAL-frame
+counts and do not claim better closure time or durable-write volume.
+
 ## Liveness and limits
 
 If each coordinate eventually has a received receipt or sufficient retained time evidence and the collector continues taking steps, finite membership yields eventual closure. With finite deadlines and sound progressing time, expiry eventually suffices; unscheduled processes still have no guaranteed response time. Under exact clocks and fixed receipt arrivals/deadlines, the ideal receipt-or-expiry predicate crossing is T = max_i min(A_i,d_i). An operation started at S cannot reply before max(S,T); its reply follows a sufficient collector observation and durable commit. This identity is not an optimal lease assignment or an impossibility result for stronger fences.

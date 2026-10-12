@@ -1,6 +1,10 @@
 """Independent feasible-time oracle and owned-process collector crash tests."""
 from __future__ import annotations
-import argparse,copy,itertools,json,resource,subprocess,sys,tempfile,time
+import argparse,copy,itertools,json,subprocess,sys,tempfile,time
+try:
+    import resource
+except ImportError:
+    resource=None  # POSIX telemetry is unavailable, not a zero measurement.
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from collector import ClosureJournal,advance_lower_bound,coverage
@@ -15,7 +19,8 @@ def possible_now(history,epsilon):
 def run(out):
     began=time.perf_counter();cpu=time.process_time()
     count=closed=opens=histories=invalid=improvements=0;witnesses=[]
-    with tempfile.TemporaryDirectory() as td:
+    out.mkdir(parents=True,exist_ok=True)
+    with tempfile.TemporaryDirectory(dir=out) as td:
         root=Path(td)
         for eps in (0,1,2):
             hs=[()]+[(c,) for c in range(7)]+list(itertools.product(range(7),repeat=2))
@@ -94,7 +99,7 @@ def run(out):
                     additional_closed_cases=improvements,sql_witness_checks=len(witnesses),
                     rejected_binding_cases=rejected,legacy_status=[True,False],journal_status=[True,True,True],
                     crash_cases=faults,mismatches=0,wall_s=time.perf_counter()-began,
-                    parent_cpu_s=time.process_time()-cpu,parent_peak_rss_kib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
+                    parent_cpu_s=time.process_time()-cpu,parent_peak_rss_kib=None if resource is None else resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
     out.mkdir(parents=True,exist_ok=True);(out/'collector-audit.json').write_text(json.dumps(result,indent=2)+'\n');return result
 if __name__=='__main__':
     if not __debug__:raise RuntimeError('Do not use -O')

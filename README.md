@@ -40,6 +40,39 @@ It records the durable floor, retained counts before and after the first post-re
 
 `verifier.py` independently evaluates authorization using sets and dictionaries; it imports neither the SQL implementation nor server dispatch. `collector.py` binds one revoke, membership, and clock-error configuration to a SQLite evidence journal. It joins received receipt coordinates with a retained lower-time watermark, commits before exposing completion, and reconstructs status from evidence on reopen.
 
+`collector_reference.py` is a straightforward durable latest-state reference:
+the same confirmations, retained time bound, immutable configuration, validation,
+and FULL/WAL reply boundary. It has the same closure guarantee. The current
+collector omits an unchanged row UPDATE and the post-commit reply SELECT; it
+still serializes every observation and commits each changed pair before replying.
+This is a SQL-work optimization, not a new exclusion mechanism.
+
+The focused comparison is runnable on Windows or POSIX with the standard library:
+
+```sh
+python3 collector_comparison.py --out comparison-check
+python3 collector_comparison.py --measure --out comparison-timing
+```
+
+Use fresh output directories; temporary stores remain below them. The 36
+positive-duration/positive-uncertainty workloads have 20,736 identical collector
+states, 103,680 matching gateway/interpreter checks, and 42,120 post-closure
+denials. Twelve process exits cover changed and unchanged updates in both arms.
+The raw latest-poll grid's 2,627 additional closed cases decompose into 1,088
+zero-floor cases, 1,061 further inert cases, and 478 further history cases; these
+counts do not establish value over the equivalent durable reference.
+
+`results/collector-comparison/` retains inputs, comparisons, and focused reruns
+of the original collector campaigns. `timing-isolated/measurement.json` contains
+the 12-case, seven-pair local cost comparison. Repeated polls reduce SELECTs
+from 2,048 to 1,024 and submitted UPDATEs from 1,024 to 128, but both arms write
+128 WAL frames. Reference/optimized median timing ratios span 0.9985--1.0823,
+including one slower median; timings are descriptive, unpinned local SQLite
+calls, not a closure-delay or deployment gain. The first `timing/` record is also
+retained; it overlapped the stateful validation run and is not the isolated cost
+measurement. The existing frozen 71-command outputs are not a complete rerun of
+these source changes. Source snapshot and resume guards remain unchanged.
+
 `proofs.md` gives the underlying gateway arguments; `collector-proofs.md` gives the journal characterization and its exact observation boundary. `experiment_plan.json` specifies the service grid; `collector-plan.json` specifies the full four-profile, sixteen-seed collector campaign. `claim_evidence_ledger.csv` maps claims to executable or analytical evidence.
 
 ## Local ancestry lookup
