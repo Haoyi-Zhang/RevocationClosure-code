@@ -56,6 +56,31 @@ jobs:
       - name: Check batched ancestry lookup against the sequential comparator
         timeout-minutes: 2
         run: python -B lookup_batch.py
+      - name: Exercise record-budget progress and recovery
+        id: capacity
+        timeout-minutes: 10
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd capacity
+          output_directory="$PWD/ci-results"
+          echo "output_directory=$output_directory" >> "$GITHUB_OUTPUT"
+          mkdir "$output_directory"
+          python -B -m unittest test_environment test_retained_input -v
+          python -B run.py finite --out "$output_directory/finite" > "$output_directory/finite.log" 2>&1
+          python -B run.py directed --out "$output_directory/directed" > "$output_directory/directed.log" 2>&1
+          python -B run.py campaign --out "$output_directory/campaign" > "$output_directory/campaign.log" 2>&1
+          python -B run.py verify --out "$output_directory/verification" --finite-input "$output_directory/finite" --directed-input "$output_directory/directed" --campaign-input "$output_directory/campaign" > "$output_directory/verification.log" 2>&1
+      - name: Upload capacity inputs, outputs and execution logs
+        if: ${{ always() && steps.capacity.outputs.output_directory != '' }}
+        timeout-minutes: 4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: capacity-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ steps.capacity.outputs.output_directory }}
+          if-no-files-found: error
+          retention-days: 14
+          include-hidden-files: false
       - name: Upload this run's scientific output and command logs
         if: ${{ always() && steps.reproduce.outputs.output_directory != '' }}
         timeout-minutes: 4

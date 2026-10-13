@@ -1,0 +1,41 @@
+{
+  "clocks": {
+    "perf_counter": {
+      "adjustable": false,
+      "implementation": "QueryPerformanceCounter()",
+      "monotonic": true,
+      "resolution_s": 1e-07
+    },
+    "process_time": {
+      "adjustable": false,
+      "implementation": "GetProcessTimes()",
+      "monotonic": true,
+      "resolution_s": 1e-07
+    },
+    "time": {
+      "adjustable": true,
+      "implementation": "GetSystemTimeAsFileTime()",
+      "monotonic": false,
+      "resolution_s": 0.015625
+    }
+  },
+  "finished_utc": "2026-10-13T19:24:31.243350+00:00",
+  "host_observation": {
+    "logical_processors": 20,
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "processor_query": {
+      "Name": "12th Gen Intel(R) Core(TM) i7-12700KF",
+      "NumberOfCores": 12,
+      "NumberOfLogicalProcessors": 20
+    },
+    "release": "11",
+    "system": "Windows"
+  },
+  "model_clocks": "explicit nonnegative integer inputs with bound checked against retained synthetic actual time; no measured synchronization",
+  "platform": "Windows-11-10.0.28000-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sqlite": "3.53.1",
+  "stage": "directed",
+  "started_utc": "2026-10-13T19:24:29.839404+00:00"
+}

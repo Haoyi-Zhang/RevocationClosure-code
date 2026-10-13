@@ -1,0 +1,2364 @@
+{
+  "case_count": 58,
+  "cases": [
+    {
+      "admitted": 8,
+      "before": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "34b49c23d4c2f28c413b32ca95edf64d33f435cb0ec8d276c982418ec3201c11",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "5537df94ee4bfe55a9a9ac9312f6f1aaa9f0461af80cc44c066ec46c93778898",
+              "nonce": "saturation-3",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "34b49c23d4c2f28c413b32ca95edf64d33f435cb0ec8d276c982418ec3201c11",
+            "kind": "grant",
+            "target": "34b49c23d4c2f28c413b32ca95edf64d33f435cb0ec8d276c982418ec3201c11"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "01c259d7e7e594c1dff4d627b667a4deeb2d2439582dd98c703887f771b911d2",
+              "nonce": "saturation-0",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98",
+            "kind": "grant",
+            "target": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "6de093b1e7f8cfc8ebfb609d36dddd2af1bded68b5dca25c0393ddbd68f6bbb3",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "bd0d9cb0cc8987ace1f1832c282184cc43a446ebcc187bda00fbda5d7c84a096",
+              "nonce": "saturation-7",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "6de093b1e7f8cfc8ebfb609d36dddd2af1bded68b5dca25c0393ddbd68f6bbb3",
+            "kind": "grant",
+            "target": "6de093b1e7f8cfc8ebfb609d36dddd2af1bded68b5dca25c0393ddbd68f6bbb3"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "8e701d5174b5a3b176843e71f8acbc5b8910d822d68caec1fee9aba4b0c8675e",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "b9397899c88f032314cbaf99b0ce2039f8da32fefff68fb69d406b30664a927a",
+              "nonce": "saturation-4",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "8e701d5174b5a3b176843e71f8acbc5b8910d822d68caec1fee9aba4b0c8675e",
+            "kind": "grant",
+            "target": "8e701d5174b5a3b176843e71f8acbc5b8910d822d68caec1fee9aba4b0c8675e"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "9b061fd1c9dbf5ad7c8ce689975afe5478f281174e046cfec05edcab4f43d6a5",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "426ce622229be9cca53cd787156e5c5c43136b69f718806da35ce6bf5e7847ac",
+              "nonce": "saturation-5",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "9b061fd1c9dbf5ad7c8ce689975afe5478f281174e046cfec05edcab4f43d6a5",
+            "kind": "grant",
+            "target": "9b061fd1c9dbf5ad7c8ce689975afe5478f281174e046cfec05edcab4f43d6a5"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "1555b6552e76ee66c863698ccae2c10c0af1b93c5334f097728c492e7ab2715d",
+              "nonce": "saturation-1",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a",
+            "kind": "grant",
+            "target": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "ad80f274ba2ceaf3922a8521bc4c06ed0f35c98b2ea393e2326f0afd6b399b9c",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "cdad1178dc1b56fe01e1f42adfd77fd712c8bfb2df025c015d23ead0514afc3f",
+              "nonce": "saturation-6",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "ad80f274ba2ceaf3922a8521bc4c06ed0f35c98b2ea393e2326f0afd6b399b9c",
+            "kind": "grant",
+            "target": "ad80f274ba2ceaf3922a8521bc4c06ed0f35c98b2ea393e2326f0afd6b399b9c"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "55c8a585b2ec8ba40f23f5f7572e6bba1413861e0a8d473be3f2a11d65454543",
+              "nonce": "saturation-2",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04",
+            "kind": "grant",
+            "target": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04"
+          }
+        ]
+      },
+      "case": "saturation-and-credit-lifetime",
+      "compact": {
+        "after": 0,
+        "before": 8,
+        "floor": 120
+      },
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "append",
+        "unseen": 2
+      },
+      "known_revoke_refusal": "record limit",
+      "new_grant_refusal": "record limit",
+      "physical_at_peak": {
+        "files_bytes": {
+          "-shm": 32768,
+          "-wal": 32992,
+          "db": 4096
+        },
+        "freelist_count": 0,
+        "interpretation": "file extent, not physical-write count or a disk-space guarantee",
+        "page_count": 5,
+        "page_size": 4096,
+        "total_file_bytes": 69856,
+        "wal_file_frame_slots": 8
+      },
+      "receipts": 0
+    },
+    {
+      "case": "hidden-lineage-and-unrelated-availability",
+      "config": {
+        "budget": 12,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "append",
+        "unseen": 2
+      },
+      "late_grant_admitted": true,
+      "received_receipt": {
+        "gateway": 0,
+        "id": "c53a3e7b0632a23b50dd54bbcac7fae23bfc3624ea25e667549fd50083359c12",
+        "kind": "receipt",
+        "mac": "606c4bbbed9416214525cdc6aa93cb9fe169894f402d026afce4228d106a4751",
+        "revocation": "7c35e9e489c011d716150a2dea9a61756bba1d9e54bbd5f71e543c863a4ef4b4",
+        "target": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e"
+      },
+      "replay": [
+        "duplicate"
+      ],
+      "unrelated_after_reopen": true
+    },
+    {
+      "case": "early-origin-persists-until-horizon",
+      "policy": "append",
+      "receipt": {
+        "gateway": 0,
+        "id": "80d4d459943dfe6bc9965fded7007ce9905233af95556c5cb2510922eab5f882",
+        "kind": "receipt",
+        "mac": "659ff0284947e6bebf0c4119c3eae47c20f4eda068613077a570909e15504601",
+        "revocation": "b24f87a64f2d088f794203867fb4647f0aa143f184771a2e84e145eabfaacc41",
+        "target": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0"
+      },
+      "snapshot": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "id": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5",
+              "issuer": 1,
+              "kind": "grant",
+              "mac": "f0c3e76d839df3e551c98cb5fbad032046c8646755e2f5ebd176982593ff3fe8",
+              "nonce": "child-after-early-revoke",
+              "parent": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+              "rights": 1,
+              "service": "svc0",
+              "subject": 2
+            },
+            "horizon": 80,
+            "key": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5",
+            "kind": "grant",
+            "target": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5"
+          },
+          {
+            "early": 1,
+            "event": {
+              "id": "b24f87a64f2d088f794203867fb4647f0aa143f184771a2e84e145eabfaacc41",
+              "issuer": 0,
+              "kind": "revoke",
+              "mac": "1037a54fc9f644929fe87be71ec03b5bee89d8c944e287536bd3ba39c4cd1f1f",
+              "target": {
+                "deadlines": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "id": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+                "issuer": 0,
+                "kind": "grant",
+                "mac": "aeb6e2d9ff6615d03bb112a2f3837cba7feae3f815d295dfbd47ad7f2c48b004",
+                "nonce": "revoke-before-grant",
+                "parent": null,
+                "rights": 3,
+                "service": "svc0",
+                "subject": 1
+              }
+            },
+            "horizon": 100,
+            "key": "b24f87a64f2d088f794203867fb4647f0aa143f184771a2e84e145eabfaacc41",
+            "kind": "revoke",
+            "target": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "aeb6e2d9ff6615d03bb112a2f3837cba7feae3f815d295dfbd47ad7f2c48b004",
+              "nonce": "revoke-before-grant",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+            "kind": "grant",
+            "target": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0"
+          }
+        ]
+      }
+    },
+    {
+      "added": true,
+      "authorized": true,
+      "case": "eligible-unrevoked-future-admission",
+      "early_revoked_target": {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "f8bc57d7bcd626debf089bf0ff636116907f69fbcf9490f6a796518626d50135",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "cc243228313d394fbc5af0424f583793e0f2b941e99f18b690167edc59da9bb1",
+        "nonce": "revoked-unknown-target",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      "future": {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "4f6789abbff540490dc3e2a600e8db97b2c31aaefa48e407aa7c9eff7577ecb0",
+        "issuer": 2,
+        "kind": "grant",
+        "mac": "f9bf5c0b772483791d94dd1dd43de25e55f8b94b29c9a5b7869bee152d93bce1",
+        "nonce": "eligible-future-unrevoked",
+        "parent": null,
+        "rights": 1,
+        "service": "svc2",
+        "subject": 3
+      },
+      "policy": "append"
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        18,
+        22
+      ],
+      "first_commit": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      },
+      "policy": "append",
+      "reply": {
+        "after": 1,
+        "before": 1,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        19,
+        22
+      ],
+      "first_commit": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      },
+      "policy": "append",
+      "reply": {
+        "after": 1,
+        "before": 1,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        20,
+        22
+      ],
+      "first_commit": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      },
+      "policy": "append",
+      "reply": {
+        "after": 1,
+        "before": 1,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        22,
+        18
+      ],
+      "first_commit": {
+        "after": 2,
+        "before": 2,
+        "floor": 16
+      },
+      "policy": "append",
+      "reply": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        21,
+        19
+      ],
+      "first_commit": {
+        "after": 2,
+        "before": 2,
+        "floor": 17
+      },
+      "policy": "append",
+      "reply": {
+        "after": 1,
+        "before": 2,
+        "floor": 19
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        20,
+        20
+      ],
+      "first_commit": {
+        "after": 2,
+        "before": 2,
+        "floor": 18
+      },
+      "policy": "append",
+      "reply": {
+        "after": 2,
+        "before": 2,
+        "floor": 18
+      }
+    },
+    {
+      "case": "two-connection-grant-admission",
+      "policy": "append",
+      "snapshot": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "0d46a1b721a497efdbed1d7e56934058e12da59ad7c87e0cb19fa5246f86fb36",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "6c2760a42575152f8c596f32cd0e4db42a7152c721f06d909e6b8413d56242bc",
+              "nonce": "prefill-2",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "0d46a1b721a497efdbed1d7e56934058e12da59ad7c87e0cb19fa5246f86fb36",
+            "kind": "grant",
+            "target": "0d46a1b721a497efdbed1d7e56934058e12da59ad7c87e0cb19fa5246f86fb36"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "5dfd367e7492b95b8b574b02a81ae7ba52f7f52e3eb28d0411b8c255d0ebbd37",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "f98b86a030fea4004a9a7a6799c8b4b9bfc43dad920155bc5292ef8a5ad04854",
+              "nonce": "other-connection-grant",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "5dfd367e7492b95b8b574b02a81ae7ba52f7f52e3eb28d0411b8c255d0ebbd37",
+            "kind": "grant",
+            "target": "5dfd367e7492b95b8b574b02a81ae7ba52f7f52e3eb28d0411b8c255d0ebbd37"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "b763822941dedf6805eab5a511084f6b866470abc1c74c957678138e155431c0",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "f0e2e6249987caaeff69469125576c40c3caa4b3c22580dd950b6fbf2c33ca31",
+              "nonce": "prefill-1",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "b763822941dedf6805eab5a511084f6b866470abc1c74c957678138e155431c0",
+            "kind": "grant",
+            "target": "b763822941dedf6805eab5a511084f6b866470abc1c74c957678138e155431c0"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "efea2b8e31c3492e0d99ac88b78ec251121fa445adf033bb5b68248c6713f1e2",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "d6a8dae59b32bd56364b340f6e034a4dfeda5c98c2a8a8153248b8fc821351d2",
+              "nonce": "prefill-0",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "efea2b8e31c3492e0d99ac88b78ec251121fa445adf033bb5b68248c6713f1e2",
+            "kind": "grant",
+            "target": "efea2b8e31c3492e0d99ac88b78ec251121fa445adf033bb5b68248c6713f1e2"
+          }
+        ]
+      }
+    },
+    {
+      "case": "valid-late-batch-failure",
+      "error": "record limit",
+      "old_authority_available": true,
+      "policy": "append"
+    },
+    {
+      "case": "two-connection-early-quota-and-configuration",
+      "policy": "append",
+      "snapshot": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 1,
+            "event": {
+              "id": "50c181aabd71863ab322306f26e789ee283d8d715e9203bc228772231f3149f3",
+              "issuer": 0,
+              "kind": "revoke",
+              "mac": "38078be2795a549ccfa7d364bbf07c6e904b0a2830f44644dd994f9e87b59a94",
+              "target": {
+                "deadlines": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "id": "d246958e3f74d5af35472fc709841f2a0ef4c698178d1f52ed44d5b485af40e4",
+                "issuer": 0,
+                "kind": "grant",
+                "mac": "ef2055d9399490d8ab27bc1f45d72ebad3f15d5ae590c2a7183bdf4b032e7ea0",
+                "nonce": "batch-unseen-a",
+                "parent": null,
+                "rights": 3,
+                "service": "svc0",
+                "subject": 1
+              }
+            },
+            "horizon": 100,
+            "key": "50c181aabd71863ab322306f26e789ee283d8d715e9203bc228772231f3149f3",
+            "kind": "revoke",
+            "target": "d246958e3f74d5af35472fc709841f2a0ef4c698178d1f52ed44d5b485af40e4"
+          },
+          {
+            "early": 1,
+            "event": {
+              "id": "734696f2167f5789150271d700bfac2059037c36d113fdb43a45f98434c6aee5",
+              "issuer": 0,
+              "kind": "revoke",
+              "mac": "5e7c3f899f8932ebbb4a7dc4a7fc16d9c6de51a213fbe51333234a3b2e4dcf49",
+              "target": {
+                "deadlines": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "id": "140f0ad6cdf404fcc60f7672dd6d24a16b3cc973e03d090c2f847f4a42bce06c",
+                "issuer": 0,
+                "kind": "grant",
+                "mac": "5c1ea8ed9d0be39fcbae69416b991e9d46ab1a340cf491bb8f3b1cf3c0fbc958",
+                "nonce": "batch-unseen-b",
+                "parent": null,
+                "rights": 3,
+                "service": "svc0",
+                "subject": 1
+              }
+            },
+            "horizon": 100,
+            "key": "734696f2167f5789150271d700bfac2059037c36d113fdb43a45f98434c6aee5",
+            "kind": "revoke",
+            "target": "140f0ad6cdf404fcc60f7672dd6d24a16b3cc973e03d090c2f847f4a42bce06c"
+          }
+        ]
+      }
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": true,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "append",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_transaction",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": false,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": true,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "append",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_commit",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": false,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": true,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "append",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "after_commit_before_reply",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": false,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "append",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_transaction",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": false,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "append",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_commit",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": false,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "append",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "after_commit_before_reply",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "admitted": 3,
+      "before": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "01c259d7e7e594c1dff4d627b667a4deeb2d2439582dd98c703887f771b911d2",
+              "nonce": "saturation-0",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98",
+            "kind": "grant",
+            "target": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "1555b6552e76ee66c863698ccae2c10c0af1b93c5334f097728c492e7ab2715d",
+              "nonce": "saturation-1",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a",
+            "kind": "grant",
+            "target": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "55c8a585b2ec8ba40f23f5f7572e6bba1413861e0a8d473be3f2a11d65454543",
+              "nonce": "saturation-2",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04",
+            "kind": "grant",
+            "target": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04"
+          }
+        ]
+      },
+      "case": "saturation-and-credit-lifetime",
+      "compact": {
+        "after": 0,
+        "before": 8,
+        "floor": 120
+      },
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 2
+      },
+      "known_revoke_refusal": null,
+      "new_grant_refusal": "grant quota",
+      "physical_at_peak": {
+        "files_bytes": {
+          "-shm": 32768,
+          "-wal": 107152,
+          "db": 4096
+        },
+        "freelist_count": 0,
+        "interpretation": "file extent, not physical-write count or a disk-space guarantee",
+        "page_count": 7,
+        "page_size": 4096,
+        "total_file_bytes": 144016,
+        "wal_file_frame_slots": 26
+      },
+      "receipts": 3
+    },
+    {
+      "case": "hidden-lineage-and-unrelated-availability",
+      "config": {
+        "budget": 12,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 2
+      },
+      "late_grant_admitted": true,
+      "received_receipt": {
+        "gateway": 0,
+        "id": "c53a3e7b0632a23b50dd54bbcac7fae23bfc3624ea25e667549fd50083359c12",
+        "kind": "receipt",
+        "mac": "606c4bbbed9416214525cdc6aa93cb9fe169894f402d026afce4228d106a4751",
+        "revocation": "7c35e9e489c011d716150a2dea9a61756bba1d9e54bbd5f71e543c863a4ef4b4",
+        "target": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e"
+      },
+      "replay": [
+        "duplicate"
+      ],
+      "unrelated_after_reopen": true
+    },
+    {
+      "case": "early-origin-persists-until-horizon",
+      "policy": "reservation",
+      "receipt": {
+        "gateway": 0,
+        "id": "80d4d459943dfe6bc9965fded7007ce9905233af95556c5cb2510922eab5f882",
+        "kind": "receipt",
+        "mac": "659ff0284947e6bebf0c4119c3eae47c20f4eda068613077a570909e15504601",
+        "revocation": "b24f87a64f2d088f794203867fb4647f0aa143f184771a2e84e145eabfaacc41",
+        "target": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0"
+      },
+      "snapshot": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "id": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5",
+              "issuer": 1,
+              "kind": "grant",
+              "mac": "f0c3e76d839df3e551c98cb5fbad032046c8646755e2f5ebd176982593ff3fe8",
+              "nonce": "child-after-early-revoke",
+              "parent": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+              "rights": 1,
+              "service": "svc0",
+              "subject": 2
+            },
+            "horizon": 80,
+            "key": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5",
+            "kind": "grant",
+            "target": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5"
+          },
+          {
+            "early": 1,
+            "event": {
+              "id": "b24f87a64f2d088f794203867fb4647f0aa143f184771a2e84e145eabfaacc41",
+              "issuer": 0,
+              "kind": "revoke",
+              "mac": "1037a54fc9f644929fe87be71ec03b5bee89d8c944e287536bd3ba39c4cd1f1f",
+              "target": {
+                "deadlines": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "id": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+                "issuer": 0,
+                "kind": "grant",
+                "mac": "aeb6e2d9ff6615d03bb112a2f3837cba7feae3f815d295dfbd47ad7f2c48b004",
+                "nonce": "revoke-before-grant",
+                "parent": null,
+                "rights": 3,
+                "service": "svc0",
+                "subject": 1
+              }
+            },
+            "horizon": 100,
+            "key": "b24f87a64f2d088f794203867fb4647f0aa143f184771a2e84e145eabfaacc41",
+            "kind": "revoke",
+            "target": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "aeb6e2d9ff6615d03bb112a2f3837cba7feae3f815d295dfbd47ad7f2c48b004",
+              "nonce": "revoke-before-grant",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+            "kind": "grant",
+            "target": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0"
+          },
+          {
+            "early": 1,
+            "event": {
+              "id": "f2ef82ffbfa5ad3d57e46afa9b86eba5d1c615b5f1dac2eabffe65c904845276",
+              "issuer": 0,
+              "kind": "revoke",
+              "mac": "5349b2d4101ea1572f9ff4f5c773bdde6243864786c0a2946a4223d1148be3a0",
+              "target": {
+                "deadlines": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "id": "e67a4ec1b9f6d7dd681dd6f4b393c899cfaabb024d8ac339623479471b1807f4",
+                "issuer": 0,
+                "kind": "grant",
+                "mac": "c578d57523d4016f3b6493b61bfd0bd0bf31426d1bd231f9a087a5cebe50528a",
+                "nonce": "second-early",
+                "parent": null,
+                "rights": 3,
+                "service": "svc0",
+                "subject": 1
+              }
+            },
+            "horizon": 100,
+            "key": "f2ef82ffbfa5ad3d57e46afa9b86eba5d1c615b5f1dac2eabffe65c904845276",
+            "kind": "revoke",
+            "target": "e67a4ec1b9f6d7dd681dd6f4b393c899cfaabb024d8ac339623479471b1807f4"
+          }
+        ]
+      }
+    },
+    {
+      "added": true,
+      "authorized": true,
+      "case": "eligible-unrevoked-future-admission",
+      "early_revoked_target": {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "f8bc57d7bcd626debf089bf0ff636116907f69fbcf9490f6a796518626d50135",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "cc243228313d394fbc5af0424f583793e0f2b941e99f18b690167edc59da9bb1",
+        "nonce": "revoked-unknown-target",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      "future": {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "4f6789abbff540490dc3e2a600e8db97b2c31aaefa48e407aa7c9eff7577ecb0",
+        "issuer": 2,
+        "kind": "grant",
+        "mac": "f9bf5c0b772483791d94dd1dd43de25e55f8b94b29c9a5b7869bee152d93bce1",
+        "nonce": "eligible-future-unrevoked",
+        "parent": null,
+        "rights": 1,
+        "service": "svc2",
+        "subject": 3
+      },
+      "policy": "reservation"
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        18,
+        22
+      ],
+      "first_commit": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      },
+      "policy": "reservation",
+      "reply": {
+        "after": 1,
+        "before": 1,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        19,
+        22
+      ],
+      "first_commit": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      },
+      "policy": "reservation",
+      "reply": {
+        "after": 1,
+        "before": 1,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        20,
+        22
+      ],
+      "first_commit": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      },
+      "policy": "reservation",
+      "reply": {
+        "after": 1,
+        "before": 1,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        22,
+        18
+      ],
+      "first_commit": {
+        "after": 2,
+        "before": 2,
+        "floor": 16
+      },
+      "policy": "reservation",
+      "reply": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        21,
+        19
+      ],
+      "first_commit": {
+        "after": 2,
+        "before": 2,
+        "floor": 17
+      },
+      "policy": "reservation",
+      "reply": {
+        "after": 1,
+        "before": 2,
+        "floor": 19
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        20,
+        20
+      ],
+      "first_commit": {
+        "after": 2,
+        "before": 2,
+        "floor": 18
+      },
+      "policy": "reservation",
+      "reply": {
+        "after": 2,
+        "before": 2,
+        "floor": 18
+      }
+    },
+    {
+      "case": "two-connection-grant-admission",
+      "policy": "reservation",
+      "snapshot": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "5dfd367e7492b95b8b574b02a81ae7ba52f7f52e3eb28d0411b8c255d0ebbd37",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "f98b86a030fea4004a9a7a6799c8b4b9bfc43dad920155bc5292ef8a5ad04854",
+              "nonce": "other-connection-grant",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "5dfd367e7492b95b8b574b02a81ae7ba52f7f52e3eb28d0411b8c255d0ebbd37",
+            "kind": "grant",
+            "target": "5dfd367e7492b95b8b574b02a81ae7ba52f7f52e3eb28d0411b8c255d0ebbd37"
+          }
+        ]
+      }
+    },
+    {
+      "case": "valid-late-batch-failure",
+      "error": "unseen quota",
+      "old_authority_available": true,
+      "policy": "reservation"
+    },
+    {
+      "case": "two-connection-early-quota-and-configuration",
+      "policy": "reservation",
+      "snapshot": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 1,
+            "event": {
+              "id": "50c181aabd71863ab322306f26e789ee283d8d715e9203bc228772231f3149f3",
+              "issuer": 0,
+              "kind": "revoke",
+              "mac": "38078be2795a549ccfa7d364bbf07c6e904b0a2830f44644dd994f9e87b59a94",
+              "target": {
+                "deadlines": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "id": "d246958e3f74d5af35472fc709841f2a0ef4c698178d1f52ed44d5b485af40e4",
+                "issuer": 0,
+                "kind": "grant",
+                "mac": "ef2055d9399490d8ab27bc1f45d72ebad3f15d5ae590c2a7183bdf4b032e7ea0",
+                "nonce": "batch-unseen-a",
+                "parent": null,
+                "rights": 3,
+                "service": "svc0",
+                "subject": 1
+              }
+            },
+            "horizon": 100,
+            "key": "50c181aabd71863ab322306f26e789ee283d8d715e9203bc228772231f3149f3",
+            "kind": "revoke",
+            "target": "d246958e3f74d5af35472fc709841f2a0ef4c698178d1f52ed44d5b485af40e4"
+          }
+        ]
+      }
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": true,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_transaction",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": false,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": true,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_commit",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": false,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": true,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "after_commit_before_reply",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": false,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_transaction",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": false,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_commit",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": false,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "after_commit_before_reply",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "admitted": 6,
+      "before": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "34b49c23d4c2f28c413b32ca95edf64d33f435cb0ec8d276c982418ec3201c11",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "5537df94ee4bfe55a9a9ac9312f6f1aaa9f0461af80cc44c066ec46c93778898",
+              "nonce": "saturation-3",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "34b49c23d4c2f28c413b32ca95edf64d33f435cb0ec8d276c982418ec3201c11",
+            "kind": "grant",
+            "target": "34b49c23d4c2f28c413b32ca95edf64d33f435cb0ec8d276c982418ec3201c11"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "01c259d7e7e594c1dff4d627b667a4deeb2d2439582dd98c703887f771b911d2",
+              "nonce": "saturation-0",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98",
+            "kind": "grant",
+            "target": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "8e701d5174b5a3b176843e71f8acbc5b8910d822d68caec1fee9aba4b0c8675e",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "b9397899c88f032314cbaf99b0ce2039f8da32fefff68fb69d406b30664a927a",
+              "nonce": "saturation-4",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "8e701d5174b5a3b176843e71f8acbc5b8910d822d68caec1fee9aba4b0c8675e",
+            "kind": "grant",
+            "target": "8e701d5174b5a3b176843e71f8acbc5b8910d822d68caec1fee9aba4b0c8675e"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "9b061fd1c9dbf5ad7c8ce689975afe5478f281174e046cfec05edcab4f43d6a5",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "426ce622229be9cca53cd787156e5c5c43136b69f718806da35ce6bf5e7847ac",
+              "nonce": "saturation-5",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "9b061fd1c9dbf5ad7c8ce689975afe5478f281174e046cfec05edcab4f43d6a5",
+            "kind": "grant",
+            "target": "9b061fd1c9dbf5ad7c8ce689975afe5478f281174e046cfec05edcab4f43d6a5"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "1555b6552e76ee66c863698ccae2c10c0af1b93c5334f097728c492e7ab2715d",
+              "nonce": "saturation-1",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a",
+            "kind": "grant",
+            "target": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "55c8a585b2ec8ba40f23f5f7572e6bba1413861e0a8d473be3f2a11d65454543",
+              "nonce": "saturation-2",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04",
+            "kind": "grant",
+            "target": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04"
+          }
+        ]
+      },
+      "case": "saturation-and-credit-lifetime",
+      "compact": {
+        "after": 0,
+        "before": 8,
+        "floor": 120
+      },
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 2
+      },
+      "known_revoke_refusal": null,
+      "new_grant_refusal": "grant quota",
+      "physical_at_peak": {
+        "files_bytes": {
+          "-shm": 32768,
+          "-wal": 119512,
+          "db": 4096
+        },
+        "freelist_count": 0,
+        "interpretation": "file extent, not physical-write count or a disk-space guarantee",
+        "page_count": 7,
+        "page_size": 4096,
+        "total_file_bytes": 156376,
+        "wal_file_frame_slots": 29
+      },
+      "receipts": 6
+    },
+    {
+      "case": "hidden-lineage-and-unrelated-availability",
+      "config": {
+        "budget": 12,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 2
+      },
+      "late_grant_admitted": true,
+      "received_receipt": {
+        "gateway": 0,
+        "id": "c53a3e7b0632a23b50dd54bbcac7fae23bfc3624ea25e667549fd50083359c12",
+        "kind": "receipt",
+        "mac": "606c4bbbed9416214525cdc6aa93cb9fe169894f402d026afce4228d106a4751",
+        "revocation": "7c35e9e489c011d716150a2dea9a61756bba1d9e54bbd5f71e543c863a4ef4b4",
+        "target": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e"
+      },
+      "replay": [
+        "duplicate"
+      ],
+      "unrelated_after_reopen": true
+    },
+    {
+      "case": "early-origin-persists-until-horizon",
+      "policy": "replacement",
+      "receipt": {
+        "gateway": 0,
+        "id": "80d4d459943dfe6bc9965fded7007ce9905233af95556c5cb2510922eab5f882",
+        "kind": "receipt",
+        "mac": "659ff0284947e6bebf0c4119c3eae47c20f4eda068613077a570909e15504601",
+        "revocation": "b24f87a64f2d088f794203867fb4647f0aa143f184771a2e84e145eabfaacc41",
+        "target": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0"
+      },
+      "snapshot": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "id": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5",
+              "issuer": 1,
+              "kind": "grant",
+              "mac": "f0c3e76d839df3e551c98cb5fbad032046c8646755e2f5ebd176982593ff3fe8",
+              "nonce": "child-after-early-revoke",
+              "parent": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+              "rights": 1,
+              "service": "svc0",
+              "subject": 2
+            },
+            "horizon": 80,
+            "key": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5",
+            "kind": "grant",
+            "target": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5"
+          },
+          {
+            "early": 1,
+            "event": {
+              "id": "b24f87a64f2d088f794203867fb4647f0aa143f184771a2e84e145eabfaacc41",
+              "issuer": 0,
+              "kind": "revoke",
+              "mac": "1037a54fc9f644929fe87be71ec03b5bee89d8c944e287536bd3ba39c4cd1f1f",
+              "target": {
+                "deadlines": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "id": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+                "issuer": 0,
+                "kind": "grant",
+                "mac": "aeb6e2d9ff6615d03bb112a2f3837cba7feae3f815d295dfbd47ad7f2c48b004",
+                "nonce": "revoke-before-grant",
+                "parent": null,
+                "rights": 3,
+                "service": "svc0",
+                "subject": 1
+              }
+            },
+            "horizon": 100,
+            "key": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+            "kind": "revoke",
+            "target": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0"
+          },
+          {
+            "early": 1,
+            "event": {
+              "id": "f2ef82ffbfa5ad3d57e46afa9b86eba5d1c615b5f1dac2eabffe65c904845276",
+              "issuer": 0,
+              "kind": "revoke",
+              "mac": "5349b2d4101ea1572f9ff4f5c773bdde6243864786c0a2946a4223d1148be3a0",
+              "target": {
+                "deadlines": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "id": "e67a4ec1b9f6d7dd681dd6f4b393c899cfaabb024d8ac339623479471b1807f4",
+                "issuer": 0,
+                "kind": "grant",
+                "mac": "c578d57523d4016f3b6493b61bfd0bd0bf31426d1bd231f9a087a5cebe50528a",
+                "nonce": "second-early",
+                "parent": null,
+                "rights": 3,
+                "service": "svc0",
+                "subject": 1
+              }
+            },
+            "horizon": 100,
+            "key": "e67a4ec1b9f6d7dd681dd6f4b393c899cfaabb024d8ac339623479471b1807f4",
+            "kind": "revoke",
+            "target": "e67a4ec1b9f6d7dd681dd6f4b393c899cfaabb024d8ac339623479471b1807f4"
+          }
+        ]
+      }
+    },
+    {
+      "added": true,
+      "authorized": true,
+      "case": "eligible-unrevoked-future-admission",
+      "early_revoked_target": {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "f8bc57d7bcd626debf089bf0ff636116907f69fbcf9490f6a796518626d50135",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "cc243228313d394fbc5af0424f583793e0f2b941e99f18b690167edc59da9bb1",
+        "nonce": "revoked-unknown-target",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      "future": {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "4f6789abbff540490dc3e2a600e8db97b2c31aaefa48e407aa7c9eff7577ecb0",
+        "issuer": 2,
+        "kind": "grant",
+        "mac": "f9bf5c0b772483791d94dd1dd43de25e55f8b94b29c9a5b7869bee152d93bce1",
+        "nonce": "eligible-future-unrevoked",
+        "parent": null,
+        "rights": 1,
+        "service": "svc2",
+        "subject": 3
+      },
+      "policy": "replacement"
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        18,
+        22
+      ],
+      "first_commit": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      },
+      "policy": "replacement",
+      "reply": {
+        "after": 1,
+        "before": 1,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        19,
+        22
+      ],
+      "first_commit": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      },
+      "policy": "replacement",
+      "reply": {
+        "after": 1,
+        "before": 1,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        20,
+        22
+      ],
+      "first_commit": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      },
+      "policy": "replacement",
+      "reply": {
+        "after": 1,
+        "before": 1,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        22,
+        18
+      ],
+      "first_commit": {
+        "after": 2,
+        "before": 2,
+        "floor": 16
+      },
+      "policy": "replacement",
+      "reply": {
+        "after": 1,
+        "before": 2,
+        "floor": 20
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        21,
+        19
+      ],
+      "first_commit": {
+        "after": 2,
+        "before": 2,
+        "floor": 17
+      },
+      "policy": "replacement",
+      "reply": {
+        "after": 1,
+        "before": 2,
+        "floor": 19
+      }
+    },
+    {
+      "actual_time": 20,
+      "case": "two-connection-floor-and-count",
+      "clocks": [
+        20,
+        20
+      ],
+      "first_commit": {
+        "after": 2,
+        "before": 2,
+        "floor": 18
+      },
+      "policy": "replacement",
+      "reply": {
+        "after": 2,
+        "before": 2,
+        "floor": 18
+      }
+    },
+    {
+      "case": "two-connection-grant-admission",
+      "policy": "replacement",
+      "snapshot": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "5dfd367e7492b95b8b574b02a81ae7ba52f7f52e3eb28d0411b8c255d0ebbd37",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "f98b86a030fea4004a9a7a6799c8b4b9bfc43dad920155bc5292ef8a5ad04854",
+              "nonce": "other-connection-grant",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "5dfd367e7492b95b8b574b02a81ae7ba52f7f52e3eb28d0411b8c255d0ebbd37",
+            "kind": "grant",
+            "target": "5dfd367e7492b95b8b574b02a81ae7ba52f7f52e3eb28d0411b8c255d0ebbd37"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "b763822941dedf6805eab5a511084f6b866470abc1c74c957678138e155431c0",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "f0e2e6249987caaeff69469125576c40c3caa4b3c22580dd950b6fbf2c33ca31",
+              "nonce": "prefill-1",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "b763822941dedf6805eab5a511084f6b866470abc1c74c957678138e155431c0",
+            "kind": "grant",
+            "target": "b763822941dedf6805eab5a511084f6b866470abc1c74c957678138e155431c0"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "efea2b8e31c3492e0d99ac88b78ec251121fa445adf033bb5b68248c6713f1e2",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "d6a8dae59b32bd56364b340f6e034a4dfeda5c98c2a8a8153248b8fc821351d2",
+              "nonce": "prefill-0",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "efea2b8e31c3492e0d99ac88b78ec251121fa445adf033bb5b68248c6713f1e2",
+            "kind": "grant",
+            "target": "efea2b8e31c3492e0d99ac88b78ec251121fa445adf033bb5b68248c6713f1e2"
+          }
+        ]
+      }
+    },
+    {
+      "case": "valid-late-batch-failure",
+      "error": "unseen quota",
+      "old_authority_available": true,
+      "policy": "replacement"
+    },
+    {
+      "case": "two-connection-early-quota-and-configuration",
+      "policy": "replacement",
+      "snapshot": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 1,
+            "event": {
+              "id": "50c181aabd71863ab322306f26e789ee283d8d715e9203bc228772231f3149f3",
+              "issuer": 0,
+              "kind": "revoke",
+              "mac": "38078be2795a549ccfa7d364bbf07c6e904b0a2830f44644dd994f9e87b59a94",
+              "target": {
+                "deadlines": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "id": "d246958e3f74d5af35472fc709841f2a0ef4c698178d1f52ed44d5b485af40e4",
+                "issuer": 0,
+                "kind": "grant",
+                "mac": "ef2055d9399490d8ab27bc1f45d72ebad3f15d5ae590c2a7183bdf4b032e7ea0",
+                "nonce": "batch-unseen-a",
+                "parent": null,
+                "rights": 3,
+                "service": "svc0",
+                "subject": 1
+              }
+            },
+            "horizon": 100,
+            "key": "d246958e3f74d5af35472fc709841f2a0ef4c698178d1f52ed44d5b485af40e4",
+            "kind": "revoke",
+            "target": "d246958e3f74d5af35472fc709841f2a0ef4c698178d1f52ed44d5b485af40e4"
+          }
+        ]
+      }
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": true,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_transaction",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": false,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": true,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_commit",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": false,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": true,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "after_commit_before_reply",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": false,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_transaction",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": false,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "before_commit",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "case": "process-exit-boundary",
+      "changed": false,
+      "config": {
+        "budget": 8,
+        "epsilon": 2,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 2
+      },
+      "exit": 70,
+      "integrity": "ok",
+      "point": "after_commit_before_reply",
+      "retry_receipt": {
+        "gateway": 0,
+        "id": "40140c65eb367c267691d97c610d00c364b4b5efcaa1952ae01eada77b07fef9",
+        "kind": "receipt",
+        "mac": "0b4d392826f1cc30305568bec464d0494caa661ccf4f1485ec66b7aedbac7e55",
+        "revocation": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+        "target": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a"
+      },
+      "revoked_after_reopen": true,
+      "stdout_empty": true
+    },
+    {
+      "B": 4,
+      "G": 2,
+      "U": 1,
+      "case": "separate-row-bound-witness",
+      "refused_target": "f25a620cc3eedd98e6d7e61ba12b294e4b707601966df0b3d7e9566b515ed211",
+      "required_records": 5,
+      "stored": {
+        "floor": 0,
+        "records": [
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "1868c173f83b220e7ef074af6c4b382748303fd8a136296759e4adb4535d258e",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "2853d8b7cc63a0bd2a3e65b1d1e6a763c6f862d0f3b5493e5461273c8b24c801",
+              "nonce": "tight-a",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "1868c173f83b220e7ef074af6c4b382748303fd8a136296759e4adb4535d258e",
+            "kind": "grant",
+            "target": "1868c173f83b220e7ef074af6c4b382748303fd8a136296759e4adb4535d258e"
+          },
+          {
+            "early": 1,
+            "event": {
+              "id": "64474c927bc0f4cf6b024e2fda518dbf3350bf92d82cc95d25104f642b2021a0",
+              "issuer": 0,
+              "kind": "revoke",
+              "mac": "c4d3e07a5a77b7b8df6d6d1896c7623ee26d1b7f241b0f72f93d6949240c3297",
+              "target": {
+                "deadlines": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "id": "13970572fddf8cfb6ce5ca8ffe5cd79044cefa0e08ef256571ec0c1540078ea4",
+                "issuer": 0,
+                "kind": "grant",
+                "mac": "98913f8ad5e6fc5c766e9888441acfb7eabad3756e99b68f159bd0bbe75ce569",
+                "nonce": "tight-unseen",
+                "parent": null,
+                "rights": 3,
+                "service": "svc0",
+                "subject": 1
+              }
+            },
+            "horizon": 100,
+            "key": "64474c927bc0f4cf6b024e2fda518dbf3350bf92d82cc95d25104f642b2021a0",
+            "kind": "revoke",
+            "target": "13970572fddf8cfb6ce5ca8ffe5cd79044cefa0e08ef256571ec0c1540078ea4"
+          },
+          {
+            "early": 0,
+            "event": {
+              "id": "cb0234b65fe24004ff001a83f35d02dac8e8d83068ef0dc00a5f72c1fb898c0c",
+              "issuer": 0,
+              "kind": "revoke",
+              "mac": "baa5cdea69b4986d0b98120d9c38ffdc8f1433e8e8063a7772e6efc98fa4a611",
+              "target": {
+                "deadlines": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "id": "1868c173f83b220e7ef074af6c4b382748303fd8a136296759e4adb4535d258e",
+                "issuer": 0,
+                "kind": "grant",
+                "mac": "2853d8b7cc63a0bd2a3e65b1d1e6a763c6f862d0f3b5493e5461273c8b24c801",
+                "nonce": "tight-a",
+                "parent": null,
+                "rights": 3,
+                "service": "svc0",
+                "subject": 1
+              }
+            },
+            "horizon": 100,
+            "key": "cb0234b65fe24004ff001a83f35d02dac8e8d83068ef0dc00a5f72c1fb898c0c",
+            "kind": "revoke",
+            "target": "1868c173f83b220e7ef074af6c4b382748303fd8a136296759e4adb4535d258e"
+          },
+          {
+            "early": 0,
+            "event": {
+              "deadlines": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "id": "f25a620cc3eedd98e6d7e61ba12b294e4b707601966df0b3d7e9566b515ed211",
+              "issuer": 0,
+              "kind": "grant",
+              "mac": "03fbf45bc70d4131a60a43f927bc51a8e627e0fb904bac2eb46c69c8fe1048a7",
+              "nonce": "tight-b",
+              "parent": null,
+              "rights": 3,
+              "service": "svc0",
+              "subject": 1
+            },
+            "horizon": 100,
+            "key": "f25a620cc3eedd98e6d7e61ba12b294e4b707601966df0b3d7e9566b515ed211",
+            "kind": "grant",
+            "target": "f25a620cc3eedd98e6d7e61ba12b294e4b707601966df0b3d7e9566b515ed211"
+          }
+        ]
+      }
+    }
+  ],
+  "failures": 0,
+  "scope": "owned local SQLite, honest actors, bounded supplied clocks; process exits, not power loss or storage rollback"
+}

@@ -113,6 +113,19 @@ The model assumes fixed complete honest membership, authentic immutable records,
 
 No public contact-trace experiment or separate Java model checker is claimed. Finite tests are not an unbounded mechanized proof or independent human review. A familiar lease/receipt/evidence-join pattern is not itself a broad novelty claim. See the paper's closest-work comparison and `source_notes.md` for provenance and interpretation.
 
+## Record-budget revocation progress
+
+`capacity/` compares ordinary append, separate-row reservation and one-target-row
+replacement at a fixed authorization-record budget. It preserves the existing
+gateway/journal algorithms and runs a separate local admission/progress study.
+Known-target revocation, early-origin credit lifetime, unrelated authority,
+eligible future admission and commit-before-receipt recovery are checked together.
+The common and saturated cohorts use distinct admission denominators. Complete
+inputs, decisions and environment records are retained, including refusals and
+physical SQLite/checkpoint measurements. Run the commands in `capacity/README.md`;
+the contracts and row bounds are in `docs/capacity-progress.md`. CI runs all four
+capacity stages in addition to the original71-command campaign and ancestry checks.
+
 ## Paper build
 
 The complete project archive additionally contains `paper/`. From that directory, run `sh build.sh` to build `main.pdf` and `supplement.pdf` using the unmodified IEEEtran class and bibliography style. The standalone artifact intentionally does not duplicate the paper tree. The supplement is a separate PDF, not an appendix embedded in the main submission.

@@ -1,0 +1,37 @@
+{
+  "actual_time": 20,
+  "clock": 20,
+  "config": {
+    "budget": 8,
+    "epsilon": 2,
+    "node": 0,
+    "policy": "append",
+    "unseen": 2
+  },
+  "event": {
+    "id": "e36cd7462b1623744ee768404144a4a464abac283c49fbc6a7120c74be6130e8",
+    "issuer": 0,
+    "kind": "revoke",
+    "mac": "ea66bd9c9e7eeaa50820bffbd165f718acfd3a4a9885f589c72915d20d6832bf",
+    "target": {
+      "deadlines": [
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "id": "770d79d219c5f95e803dde33105f30b97c509e69c6637bfd9f1ee69b32c3a76a",
+      "issuer": 0,
+      "kind": "grant",
+      "mac": "91a3f3b9b2cce3344cb33917a3d225fc274247c11963c24182a5bbca0ae76dbf",
+      "nonce": "fault-target",
+      "parent": null,
+      "rights": 3,
+      "service": "svc0",
+      "subject": 1
+    }
+  },
+  "path": "results\\directed\\fault-append-True-before_commit.sqlite",
+  "point": "before_commit"
+}

@@ -1,0 +1,40 @@
+{
+  "campaign": {
+    "cases": 750,
+    "raw_counts": {
+      "authorization_checks": 295365,
+      "known_revoke_refusals": 9680,
+      "known_revoke_requests": 38510,
+      "operations": 73335,
+      "postreceipt_allows": 0,
+      "postreceipt_checks": 55705,
+      "progress_violations": 0,
+      "receipt_checks": 31180,
+      "state_matches": 73335,
+      "unrelated_checks": 92140,
+      "unrelated_losses": 0,
+      "unseen_revoke_refusals": 320
+    }
+  },
+  "directed": {
+    "cases": 58,
+    "owned_process_exits": 18,
+    "raw_authorizations": 114,
+    "raw_returns": 300
+  },
+  "finite": {
+    "raw_counts": {
+      "authorization_checks": 500760,
+      "future_admission_obligations": 5974,
+      "progress_obligations": 21474,
+      "receipt_checks": 53956,
+      "refused": 26028,
+      "state_matches": 125190,
+      "states_expanded": 9260,
+      "transitions": 125190,
+      "unrelated_checks": 118900
+    }
+  },
+  "mismatches": 0,
+  "scope": "read-only raw replay through the shared SQL-free specification; no database or old P001 pipeline execution"
+}

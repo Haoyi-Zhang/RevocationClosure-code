@@ -1,0 +1,1309 @@
+[
+  {
+    "actual_times": [
+      20,
+      120
+    ],
+    "case": "saturation-and-credit-lifetime",
+    "clocks": [
+      20,
+      122
+    ],
+    "config": {
+      "budget": 8,
+      "epsilon": 2,
+      "node": 0,
+      "policy": "append",
+      "unseen": 2
+    },
+    "grants": [
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "01c259d7e7e594c1dff4d627b667a4deeb2d2439582dd98c703887f771b911d2",
+        "nonce": "saturation-0",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "1555b6552e76ee66c863698ccae2c10c0af1b93c5334f097728c492e7ab2715d",
+        "nonce": "saturation-1",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "55c8a585b2ec8ba40f23f5f7572e6bba1413861e0a8d473be3f2a11d65454543",
+        "nonce": "saturation-2",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "34b49c23d4c2f28c413b32ca95edf64d33f435cb0ec8d276c982418ec3201c11",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "5537df94ee4bfe55a9a9ac9312f6f1aaa9f0461af80cc44c066ec46c93778898",
+        "nonce": "saturation-3",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "8e701d5174b5a3b176843e71f8acbc5b8910d822d68caec1fee9aba4b0c8675e",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "b9397899c88f032314cbaf99b0ce2039f8da32fefff68fb69d406b30664a927a",
+        "nonce": "saturation-4",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "9b061fd1c9dbf5ad7c8ce689975afe5478f281174e046cfec05edcab4f43d6a5",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "426ce622229be9cca53cd787156e5c5c43136b69f718806da35ce6bf5e7847ac",
+        "nonce": "saturation-5",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "ad80f274ba2ceaf3922a8521bc4c06ed0f35c98b2ea393e2326f0afd6b399b9c",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "cdad1178dc1b56fe01e1f42adfd77fd712c8bfb2df025c015d23ead0514afc3f",
+        "nonce": "saturation-6",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "6de093b1e7f8cfc8ebfb609d36dddd2af1bded68b5dca25c0393ddbd68f6bbb3",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "bd0d9cb0cc8987ace1f1832c282184cc43a446ebcc187bda00fbda5d7c84a096",
+        "nonce": "saturation-7",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "56e25185527802cc4ed254ac5899ec417e8b3fe882af16f75d756168e7e7f981",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "8912d6e0089670b69b2bcd1b9e3298bea16f80b5744413e6f251a72d3cb1dde5",
+        "nonce": "saturation-8",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      }
+    ],
+    "unseen_targets": [
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "3652f6dba812f451bff44637696f6a1c996b0d751457cecd0693f2b4365c9843",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "da6f0d6855df44cc1585b246e17a50858817fc4cffbcb950bb4dd7a97f2c26f8",
+        "nonce": "early-0",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "ec09137eb152ea21dd0b3987e4f5e6d446122153e30c86b5351d0fc332d59c9a",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "28f02fe8a42bc0cf765cbf2dd1b32343b1dc902a506497fd4507e039680f53b9",
+        "nonce": "early-1",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "719d224c1d283a21003c21cd167192fccb8f08d52a10c46ba729af97afcd86fc",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "d04c0f04619cd2072605b994d4f4def3b36625781385e4fb0b751dece496ba0e",
+        "nonce": "early-2",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      }
+    ]
+  },
+  {
+    "actual_time": 20,
+    "case": "lineage",
+    "clock": 20,
+    "config": {
+      "budget": 12,
+      "epsilon": 2,
+      "node": 0,
+      "policy": "append",
+      "unseen": 2
+    },
+    "events": [
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "4fed14f49c1a2497bd22801b35a5ad00b8000095c778881a804dab1660caa35a",
+        "nonce": "lineage-target",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          90,
+          90,
+          90,
+          90,
+          90
+        ],
+        "id": "8ab4d5243c1f0245d7fe02b9db70a2675fc71caf968a3b3c973f2819e7919520",
+        "issuer": 1,
+        "kind": "grant",
+        "mac": "8d99bf979579da83179df67abaa30c61be0ea2bfc5082bc4eb34cb6541caf5ed",
+        "nonce": "lineage-child",
+        "parent": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e",
+        "rights": 1,
+        "service": "svc0",
+        "subject": 2
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "cd82ef9258964e82781b898daabc97e887c5f09b725c0b0faf1fd82640db153a",
+        "issuer": 2,
+        "kind": "grant",
+        "mac": "7ae943a1540ee6bc00571b7d21366f9ba2eb686ef25b647bd4f0ad758660a22e",
+        "nonce": "unrelated-root",
+        "parent": null,
+        "rights": 3,
+        "service": "svc2",
+        "subject": 3
+      },
+      {
+        "deadlines": [
+          90,
+          90,
+          90,
+          90,
+          90
+        ],
+        "id": "a2183ebb5cc8caf588f05ed5794f2e7285fb5bd65cb5e0625e125a84686967c0",
+        "issuer": 3,
+        "kind": "grant",
+        "mac": "3aeb3c763d13577ad6148cebdbf96af3b17cda62eab726e437c2ebcecec6f93c",
+        "nonce": "unrelated-child",
+        "parent": "cd82ef9258964e82781b898daabc97e887c5f09b725c0b0faf1fd82640db153a",
+        "rights": 1,
+        "service": "svc2",
+        "subject": 4
+      },
+      {
+        "deadlines": [
+          80,
+          80,
+          80,
+          80,
+          80
+        ],
+        "id": "8b76613f47477cf7bb2031bbecdc94b862cd4a250e2089e7049bdcd8d67566d3",
+        "issuer": 1,
+        "kind": "grant",
+        "mac": "c155a232c5ad86a39fc893714e5a69012772cd53ef96fce6114fdf5e12fe7a38",
+        "nonce": "hidden-descendant",
+        "parent": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e",
+        "rights": 1,
+        "service": "svc0",
+        "subject": 3
+      }
+    ]
+  },
+  {
+    "actual_time": 20,
+    "case": "early-arrival",
+    "clock": 20,
+    "config": {
+      "budget": 12,
+      "epsilon": 2,
+      "node": 0,
+      "policy": "append",
+      "unseen": 2
+    },
+    "events": [
+      {
+        "id": "b24f87a64f2d088f794203867fb4647f0aa143f184771a2e84e145eabfaacc41",
+        "issuer": 0,
+        "kind": "revoke",
+        "mac": "1037a54fc9f644929fe87be71ec03b5bee89d8c944e287536bd3ba39c4cd1f1f",
+        "target": {
+          "deadlines": [
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "id": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+          "issuer": 0,
+          "kind": "grant",
+          "mac": "aeb6e2d9ff6615d03bb112a2f3837cba7feae3f815d295dfbd47ad7f2c48b004",
+          "nonce": "revoke-before-grant",
+          "parent": null,
+          "rights": 3,
+          "service": "svc0",
+          "subject": 1
+        }
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "aeb6e2d9ff6615d03bb112a2f3837cba7feae3f815d295dfbd47ad7f2c48b004",
+        "nonce": "revoke-before-grant",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          80,
+          80,
+          80,
+          80,
+          80
+        ],
+        "id": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5",
+        "issuer": 1,
+        "kind": "grant",
+        "mac": "f0c3e76d839df3e551c98cb5fbad032046c8646755e2f5ebd176982593ff3fe8",
+        "nonce": "child-after-early-revoke",
+        "parent": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+        "rights": 1,
+        "service": "svc0",
+        "subject": 2
+      }
+    ]
+  },
+  {
+    "actual_times": [
+      20,
+      120
+    ],
+    "case": "saturation-and-credit-lifetime",
+    "clocks": [
+      20,
+      122
+    ],
+    "config": {
+      "budget": 8,
+      "epsilon": 2,
+      "node": 0,
+      "policy": "reservation",
+      "unseen": 2
+    },
+    "grants": [
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "01c259d7e7e594c1dff4d627b667a4deeb2d2439582dd98c703887f771b911d2",
+        "nonce": "saturation-0",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "1555b6552e76ee66c863698ccae2c10c0af1b93c5334f097728c492e7ab2715d",
+        "nonce": "saturation-1",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "55c8a585b2ec8ba40f23f5f7572e6bba1413861e0a8d473be3f2a11d65454543",
+        "nonce": "saturation-2",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "34b49c23d4c2f28c413b32ca95edf64d33f435cb0ec8d276c982418ec3201c11",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "5537df94ee4bfe55a9a9ac9312f6f1aaa9f0461af80cc44c066ec46c93778898",
+        "nonce": "saturation-3",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "8e701d5174b5a3b176843e71f8acbc5b8910d822d68caec1fee9aba4b0c8675e",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "b9397899c88f032314cbaf99b0ce2039f8da32fefff68fb69d406b30664a927a",
+        "nonce": "saturation-4",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "9b061fd1c9dbf5ad7c8ce689975afe5478f281174e046cfec05edcab4f43d6a5",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "426ce622229be9cca53cd787156e5c5c43136b69f718806da35ce6bf5e7847ac",
+        "nonce": "saturation-5",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "ad80f274ba2ceaf3922a8521bc4c06ed0f35c98b2ea393e2326f0afd6b399b9c",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "cdad1178dc1b56fe01e1f42adfd77fd712c8bfb2df025c015d23ead0514afc3f",
+        "nonce": "saturation-6",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "6de093b1e7f8cfc8ebfb609d36dddd2af1bded68b5dca25c0393ddbd68f6bbb3",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "bd0d9cb0cc8987ace1f1832c282184cc43a446ebcc187bda00fbda5d7c84a096",
+        "nonce": "saturation-7",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "56e25185527802cc4ed254ac5899ec417e8b3fe882af16f75d756168e7e7f981",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "8912d6e0089670b69b2bcd1b9e3298bea16f80b5744413e6f251a72d3cb1dde5",
+        "nonce": "saturation-8",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      }
+    ],
+    "unseen_targets": [
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "3652f6dba812f451bff44637696f6a1c996b0d751457cecd0693f2b4365c9843",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "da6f0d6855df44cc1585b246e17a50858817fc4cffbcb950bb4dd7a97f2c26f8",
+        "nonce": "early-0",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "ec09137eb152ea21dd0b3987e4f5e6d446122153e30c86b5351d0fc332d59c9a",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "28f02fe8a42bc0cf765cbf2dd1b32343b1dc902a506497fd4507e039680f53b9",
+        "nonce": "early-1",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "719d224c1d283a21003c21cd167192fccb8f08d52a10c46ba729af97afcd86fc",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "d04c0f04619cd2072605b994d4f4def3b36625781385e4fb0b751dece496ba0e",
+        "nonce": "early-2",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      }
+    ]
+  },
+  {
+    "actual_time": 20,
+    "case": "lineage",
+    "clock": 20,
+    "config": {
+      "budget": 12,
+      "epsilon": 2,
+      "node": 0,
+      "policy": "reservation",
+      "unseen": 2
+    },
+    "events": [
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "4fed14f49c1a2497bd22801b35a5ad00b8000095c778881a804dab1660caa35a",
+        "nonce": "lineage-target",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          90,
+          90,
+          90,
+          90,
+          90
+        ],
+        "id": "8ab4d5243c1f0245d7fe02b9db70a2675fc71caf968a3b3c973f2819e7919520",
+        "issuer": 1,
+        "kind": "grant",
+        "mac": "8d99bf979579da83179df67abaa30c61be0ea2bfc5082bc4eb34cb6541caf5ed",
+        "nonce": "lineage-child",
+        "parent": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e",
+        "rights": 1,
+        "service": "svc0",
+        "subject": 2
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "cd82ef9258964e82781b898daabc97e887c5f09b725c0b0faf1fd82640db153a",
+        "issuer": 2,
+        "kind": "grant",
+        "mac": "7ae943a1540ee6bc00571b7d21366f9ba2eb686ef25b647bd4f0ad758660a22e",
+        "nonce": "unrelated-root",
+        "parent": null,
+        "rights": 3,
+        "service": "svc2",
+        "subject": 3
+      },
+      {
+        "deadlines": [
+          90,
+          90,
+          90,
+          90,
+          90
+        ],
+        "id": "a2183ebb5cc8caf588f05ed5794f2e7285fb5bd65cb5e0625e125a84686967c0",
+        "issuer": 3,
+        "kind": "grant",
+        "mac": "3aeb3c763d13577ad6148cebdbf96af3b17cda62eab726e437c2ebcecec6f93c",
+        "nonce": "unrelated-child",
+        "parent": "cd82ef9258964e82781b898daabc97e887c5f09b725c0b0faf1fd82640db153a",
+        "rights": 1,
+        "service": "svc2",
+        "subject": 4
+      },
+      {
+        "deadlines": [
+          80,
+          80,
+          80,
+          80,
+          80
+        ],
+        "id": "8b76613f47477cf7bb2031bbecdc94b862cd4a250e2089e7049bdcd8d67566d3",
+        "issuer": 1,
+        "kind": "grant",
+        "mac": "c155a232c5ad86a39fc893714e5a69012772cd53ef96fce6114fdf5e12fe7a38",
+        "nonce": "hidden-descendant",
+        "parent": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e",
+        "rights": 1,
+        "service": "svc0",
+        "subject": 3
+      }
+    ]
+  },
+  {
+    "actual_time": 20,
+    "case": "early-arrival",
+    "clock": 20,
+    "config": {
+      "budget": 12,
+      "epsilon": 2,
+      "node": 0,
+      "policy": "reservation",
+      "unseen": 2
+    },
+    "events": [
+      {
+        "id": "b24f87a64f2d088f794203867fb4647f0aa143f184771a2e84e145eabfaacc41",
+        "issuer": 0,
+        "kind": "revoke",
+        "mac": "1037a54fc9f644929fe87be71ec03b5bee89d8c944e287536bd3ba39c4cd1f1f",
+        "target": {
+          "deadlines": [
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "id": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+          "issuer": 0,
+          "kind": "grant",
+          "mac": "aeb6e2d9ff6615d03bb112a2f3837cba7feae3f815d295dfbd47ad7f2c48b004",
+          "nonce": "revoke-before-grant",
+          "parent": null,
+          "rights": 3,
+          "service": "svc0",
+          "subject": 1
+        }
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "aeb6e2d9ff6615d03bb112a2f3837cba7feae3f815d295dfbd47ad7f2c48b004",
+        "nonce": "revoke-before-grant",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          80,
+          80,
+          80,
+          80,
+          80
+        ],
+        "id": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5",
+        "issuer": 1,
+        "kind": "grant",
+        "mac": "f0c3e76d839df3e551c98cb5fbad032046c8646755e2f5ebd176982593ff3fe8",
+        "nonce": "child-after-early-revoke",
+        "parent": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+        "rights": 1,
+        "service": "svc0",
+        "subject": 2
+      }
+    ]
+  },
+  {
+    "actual_times": [
+      20,
+      120
+    ],
+    "case": "saturation-and-credit-lifetime",
+    "clocks": [
+      20,
+      122
+    ],
+    "config": {
+      "budget": 8,
+      "epsilon": 2,
+      "node": 0,
+      "policy": "replacement",
+      "unseen": 2
+    },
+    "grants": [
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "5f9135f4deab95415f778416c12d9db2c27bc5a1cc1adfb47902854d15b83e98",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "01c259d7e7e594c1dff4d627b667a4deeb2d2439582dd98c703887f771b911d2",
+        "nonce": "saturation-0",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "a7cb09b7159d86290408e6d0aa89f62475afd72f166deb6a13490e7d09d2063a",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "1555b6552e76ee66c863698ccae2c10c0af1b93c5334f097728c492e7ab2715d",
+        "nonce": "saturation-1",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "f7bc66e05da9a053e98528ad5a429d4482cb1c428dfe0d4beac3822031062e04",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "55c8a585b2ec8ba40f23f5f7572e6bba1413861e0a8d473be3f2a11d65454543",
+        "nonce": "saturation-2",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "34b49c23d4c2f28c413b32ca95edf64d33f435cb0ec8d276c982418ec3201c11",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "5537df94ee4bfe55a9a9ac9312f6f1aaa9f0461af80cc44c066ec46c93778898",
+        "nonce": "saturation-3",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "8e701d5174b5a3b176843e71f8acbc5b8910d822d68caec1fee9aba4b0c8675e",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "b9397899c88f032314cbaf99b0ce2039f8da32fefff68fb69d406b30664a927a",
+        "nonce": "saturation-4",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "9b061fd1c9dbf5ad7c8ce689975afe5478f281174e046cfec05edcab4f43d6a5",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "426ce622229be9cca53cd787156e5c5c43136b69f718806da35ce6bf5e7847ac",
+        "nonce": "saturation-5",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "ad80f274ba2ceaf3922a8521bc4c06ed0f35c98b2ea393e2326f0afd6b399b9c",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "cdad1178dc1b56fe01e1f42adfd77fd712c8bfb2df025c015d23ead0514afc3f",
+        "nonce": "saturation-6",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "6de093b1e7f8cfc8ebfb609d36dddd2af1bded68b5dca25c0393ddbd68f6bbb3",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "bd0d9cb0cc8987ace1f1832c282184cc43a446ebcc187bda00fbda5d7c84a096",
+        "nonce": "saturation-7",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "56e25185527802cc4ed254ac5899ec417e8b3fe882af16f75d756168e7e7f981",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "8912d6e0089670b69b2bcd1b9e3298bea16f80b5744413e6f251a72d3cb1dde5",
+        "nonce": "saturation-8",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      }
+    ],
+    "unseen_targets": [
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "3652f6dba812f451bff44637696f6a1c996b0d751457cecd0693f2b4365c9843",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "da6f0d6855df44cc1585b246e17a50858817fc4cffbcb950bb4dd7a97f2c26f8",
+        "nonce": "early-0",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "ec09137eb152ea21dd0b3987e4f5e6d446122153e30c86b5351d0fc332d59c9a",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "28f02fe8a42bc0cf765cbf2dd1b32343b1dc902a506497fd4507e039680f53b9",
+        "nonce": "early-1",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "719d224c1d283a21003c21cd167192fccb8f08d52a10c46ba729af97afcd86fc",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "d04c0f04619cd2072605b994d4f4def3b36625781385e4fb0b751dece496ba0e",
+        "nonce": "early-2",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      }
+    ]
+  },
+  {
+    "actual_time": 20,
+    "case": "lineage",
+    "clock": 20,
+    "config": {
+      "budget": 12,
+      "epsilon": 2,
+      "node": 0,
+      "policy": "replacement",
+      "unseen": 2
+    },
+    "events": [
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "4fed14f49c1a2497bd22801b35a5ad00b8000095c778881a804dab1660caa35a",
+        "nonce": "lineage-target",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          90,
+          90,
+          90,
+          90,
+          90
+        ],
+        "id": "8ab4d5243c1f0245d7fe02b9db70a2675fc71caf968a3b3c973f2819e7919520",
+        "issuer": 1,
+        "kind": "grant",
+        "mac": "8d99bf979579da83179df67abaa30c61be0ea2bfc5082bc4eb34cb6541caf5ed",
+        "nonce": "lineage-child",
+        "parent": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e",
+        "rights": 1,
+        "service": "svc0",
+        "subject": 2
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "cd82ef9258964e82781b898daabc97e887c5f09b725c0b0faf1fd82640db153a",
+        "issuer": 2,
+        "kind": "grant",
+        "mac": "7ae943a1540ee6bc00571b7d21366f9ba2eb686ef25b647bd4f0ad758660a22e",
+        "nonce": "unrelated-root",
+        "parent": null,
+        "rights": 3,
+        "service": "svc2",
+        "subject": 3
+      },
+      {
+        "deadlines": [
+          90,
+          90,
+          90,
+          90,
+          90
+        ],
+        "id": "a2183ebb5cc8caf588f05ed5794f2e7285fb5bd65cb5e0625e125a84686967c0",
+        "issuer": 3,
+        "kind": "grant",
+        "mac": "3aeb3c763d13577ad6148cebdbf96af3b17cda62eab726e437c2ebcecec6f93c",
+        "nonce": "unrelated-child",
+        "parent": "cd82ef9258964e82781b898daabc97e887c5f09b725c0b0faf1fd82640db153a",
+        "rights": 1,
+        "service": "svc2",
+        "subject": 4
+      },
+      {
+        "deadlines": [
+          80,
+          80,
+          80,
+          80,
+          80
+        ],
+        "id": "8b76613f47477cf7bb2031bbecdc94b862cd4a250e2089e7049bdcd8d67566d3",
+        "issuer": 1,
+        "kind": "grant",
+        "mac": "c155a232c5ad86a39fc893714e5a69012772cd53ef96fce6114fdf5e12fe7a38",
+        "nonce": "hidden-descendant",
+        "parent": "e9a92c30a394cfec886ce139ba112ca8006adcbe19e075d0ef9357bdfd24289e",
+        "rights": 1,
+        "service": "svc0",
+        "subject": 3
+      }
+    ]
+  },
+  {
+    "actual_time": 20,
+    "case": "early-arrival",
+    "clock": 20,
+    "config": {
+      "budget": 12,
+      "epsilon": 2,
+      "node": 0,
+      "policy": "replacement",
+      "unseen": 2
+    },
+    "events": [
+      {
+        "id": "b24f87a64f2d088f794203867fb4647f0aa143f184771a2e84e145eabfaacc41",
+        "issuer": 0,
+        "kind": "revoke",
+        "mac": "1037a54fc9f644929fe87be71ec03b5bee89d8c944e287536bd3ba39c4cd1f1f",
+        "target": {
+          "deadlines": [
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "id": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+          "issuer": 0,
+          "kind": "grant",
+          "mac": "aeb6e2d9ff6615d03bb112a2f3837cba7feae3f815d295dfbd47ad7f2c48b004",
+          "nonce": "revoke-before-grant",
+          "parent": null,
+          "rights": 3,
+          "service": "svc0",
+          "subject": 1
+        }
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "aeb6e2d9ff6615d03bb112a2f3837cba7feae3f815d295dfbd47ad7f2c48b004",
+        "nonce": "revoke-before-grant",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          80,
+          80,
+          80,
+          80,
+          80
+        ],
+        "id": "9a8a2257fd395be7c8222010784b4607aa31bc1c261d58e0294607d1db41e0a5",
+        "issuer": 1,
+        "kind": "grant",
+        "mac": "f0c3e76d839df3e551c98cb5fbad032046c8646755e2f5ebd176982593ff3fe8",
+        "nonce": "child-after-early-revoke",
+        "parent": "ba6bd0defb82b3965b390980ed25e20f08ce86ca598bdefcb99ccb05441bc8d0",
+        "rights": 1,
+        "service": "svc0",
+        "subject": 2
+      }
+    ]
+  },
+  {
+    "case": "separate-row-bound-witness",
+    "grants": [
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "1868c173f83b220e7ef074af6c4b382748303fd8a136296759e4adb4535d258e",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "2853d8b7cc63a0bd2a3e65b1d1e6a763c6f862d0f3b5493e5461273c8b24c801",
+        "nonce": "tight-a",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      },
+      {
+        "deadlines": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "id": "f25a620cc3eedd98e6d7e61ba12b294e4b707601966df0b3d7e9566b515ed211",
+        "issuer": 0,
+        "kind": "grant",
+        "mac": "03fbf45bc70d4131a60a43f927bc51a8e627e0fb904bac2eb46c69c8fe1048a7",
+        "nonce": "tight-b",
+        "parent": null,
+        "rights": 3,
+        "service": "svc0",
+        "subject": 1
+      }
+    ],
+    "unseen": {
+      "deadlines": [
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "id": "13970572fddf8cfb6ce5ca8ffe5cd79044cefa0e08ef256571ec0c1540078ea4",
+      "issuer": 0,
+      "kind": "grant",
+      "mac": "98913f8ad5e6fc5c766e9888441acfb7eabad3756e99b68f159bd0bbe75ce569",
+      "nonce": "tight-unseen",
+      "parent": null,
+      "rights": 3,
+      "service": "svc0",
+      "subject": 1
+    }
+  }
+]

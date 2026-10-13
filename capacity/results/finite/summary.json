@@ -1,0 +1,475 @@
+{
+  "configurations": 24,
+  "depth": 5,
+  "mismatches": 0,
+  "per_configuration": [
+    {
+      "authorization_checks": 10152,
+      "config": {
+        "budget": 2,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "append",
+        "unseen": 0
+      },
+      "future_admission_obligations": 118,
+      "progress_obligations": 0,
+      "reached_depth_states": 405,
+      "receipt_checks": 706,
+      "refused": 1120,
+      "state_matches": 2538,
+      "states_expanded": 282,
+      "transitions": 2538,
+      "unrelated_checks": 1566
+    },
+    {
+      "authorization_checks": 20592,
+      "config": {
+        "budget": 2,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "append",
+        "unseen": 0
+      },
+      "future_admission_obligations": 176,
+      "progress_obligations": 0,
+      "reached_depth_states": 409,
+      "receipt_checks": 1452,
+      "refused": 2240,
+      "state_matches": 5148,
+      "states_expanded": 286,
+      "transitions": 5148,
+      "unrelated_checks": 3220
+    },
+    {
+      "authorization_checks": 2700,
+      "config": {
+        "budget": 2,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 0
+      },
+      "future_admission_obligations": 22,
+      "progress_obligations": 88,
+      "reached_depth_states": 108,
+      "receipt_checks": 109,
+      "refused": 384,
+      "state_matches": 675,
+      "states_expanded": 75,
+      "transitions": 675,
+      "unrelated_checks": 243
+    },
+    {
+      "authorization_checks": 5400,
+      "config": {
+        "budget": 2,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 0
+      },
+      "future_admission_obligations": 32,
+      "progress_obligations": 176,
+      "reached_depth_states": 108,
+      "receipt_checks": 218,
+      "refused": 768,
+      "state_matches": 1350,
+      "states_expanded": 75,
+      "transitions": 1350,
+      "unrelated_checks": 486
+    },
+    {
+      "authorization_checks": 5832,
+      "config": {
+        "budget": 2,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 0
+      },
+      "future_admission_obligations": 109,
+      "progress_obligations": 280,
+      "reached_depth_states": 259,
+      "receipt_checks": 348,
+      "refused": 524,
+      "state_matches": 1458,
+      "states_expanded": 162,
+      "transitions": 1458,
+      "unrelated_checks": 772
+    },
+    {
+      "authorization_checks": 11664,
+      "config": {
+        "budget": 2,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 0
+      },
+      "future_admission_obligations": 150,
+      "progress_obligations": 560,
+      "reached_depth_states": 259,
+      "receipt_checks": 696,
+      "refused": 1048,
+      "state_matches": 2916,
+      "states_expanded": 162,
+      "transitions": 2916,
+      "unrelated_checks": 1544
+    },
+    {
+      "authorization_checks": 20232,
+      "config": {
+        "budget": 3,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "append",
+        "unseen": 1
+      },
+      "future_admission_obligations": 306,
+      "progress_obligations": 0,
+      "reached_depth_states": 885,
+      "receipt_checks": 1992,
+      "refused": 1304,
+      "state_matches": 5058,
+      "states_expanded": 562,
+      "transitions": 5058,
+      "unrelated_checks": 4392
+    },
+    {
+      "authorization_checks": 40752,
+      "config": {
+        "budget": 3,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "append",
+        "unseen": 1
+      },
+      "future_admission_obligations": 426,
+      "progress_obligations": 0,
+      "reached_depth_states": 889,
+      "receipt_checks": 4024,
+      "refused": 2608,
+      "state_matches": 10188,
+      "states_expanded": 566,
+      "transitions": 10188,
+      "unrelated_checks": 8872
+    },
+    {
+      "authorization_checks": 9072,
+      "config": {
+        "budget": 3,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 1
+      },
+      "future_admission_obligations": 65,
+      "progress_obligations": 626,
+      "reached_depth_states": 375,
+      "receipt_checks": 780,
+      "refused": 956,
+      "state_matches": 2268,
+      "states_expanded": 252,
+      "transitions": 2268,
+      "unrelated_checks": 1724
+    },
+    {
+      "authorization_checks": 18432,
+      "config": {
+        "budget": 3,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 1
+      },
+      "future_admission_obligations": 103,
+      "progress_obligations": 1284,
+      "reached_depth_states": 379,
+      "receipt_checks": 1600,
+      "refused": 1912,
+      "state_matches": 4608,
+      "states_expanded": 256,
+      "transitions": 4608,
+      "unrelated_checks": 3536
+    },
+    {
+      "authorization_checks": 13464,
+      "config": {
+        "budget": 3,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 1
+      },
+      "future_admission_obligations": 238,
+      "progress_obligations": 1128,
+      "reached_depth_states": 640,
+      "receipt_checks": 1408,
+      "refused": 584,
+      "state_matches": 3366,
+      "states_expanded": 374,
+      "transitions": 3366,
+      "unrelated_checks": 3104
+    },
+    {
+      "authorization_checks": 27216,
+      "config": {
+        "budget": 3,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 1
+      },
+      "future_admission_obligations": 333,
+      "progress_obligations": 2288,
+      "reached_depth_states": 644,
+      "receipt_checks": 2856,
+      "refused": 1168,
+      "state_matches": 6804,
+      "states_expanded": 378,
+      "transitions": 6804,
+      "unrelated_checks": 6296
+    },
+    {
+      "authorization_checks": 25128,
+      "config": {
+        "budget": 4,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "append",
+        "unseen": 1
+      },
+      "future_admission_obligations": 442,
+      "progress_obligations": 0,
+      "reached_depth_states": 1333,
+      "receipt_checks": 3150,
+      "refused": 544,
+      "state_matches": 6282,
+      "states_expanded": 698,
+      "transitions": 6282,
+      "unrelated_checks": 6930
+    },
+    {
+      "authorization_checks": 50544,
+      "config": {
+        "budget": 4,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "append",
+        "unseen": 1
+      },
+      "future_admission_obligations": 594,
+      "progress_obligations": 0,
+      "reached_depth_states": 1337,
+      "receipt_checks": 6340,
+      "refused": 1088,
+      "state_matches": 12636,
+      "states_expanded": 702,
+      "transitions": 12636,
+      "unrelated_checks": 13948
+    },
+    {
+      "authorization_checks": 9072,
+      "config": {
+        "budget": 4,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 1
+      },
+      "future_admission_obligations": 65,
+      "progress_obligations": 626,
+      "reached_depth_states": 375,
+      "receipt_checks": 780,
+      "refused": 956,
+      "state_matches": 2268,
+      "states_expanded": 252,
+      "transitions": 2268,
+      "unrelated_checks": 1724
+    },
+    {
+      "authorization_checks": 18432,
+      "config": {
+        "budget": 4,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 1
+      },
+      "future_admission_obligations": 103,
+      "progress_obligations": 1284,
+      "reached_depth_states": 379,
+      "receipt_checks": 1600,
+      "refused": 1912,
+      "state_matches": 4608,
+      "states_expanded": 256,
+      "transitions": 4608,
+      "unrelated_checks": 3536
+    },
+    {
+      "authorization_checks": 14508,
+      "config": {
+        "budget": 4,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 1
+      },
+      "future_admission_obligations": 315,
+      "progress_obligations": 1244,
+      "reached_depth_states": 737,
+      "receipt_checks": 1553,
+      "refused": 392,
+      "state_matches": 3627,
+      "states_expanded": 403,
+      "transitions": 3627,
+      "unrelated_checks": 3423
+    },
+    {
+      "authorization_checks": 29304,
+      "config": {
+        "budget": 4,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 1
+      },
+      "future_admission_obligations": 429,
+      "progress_obligations": 2520,
+      "reached_depth_states": 741,
+      "receipt_checks": 3146,
+      "refused": 784,
+      "state_matches": 7326,
+      "states_expanded": 407,
+      "transitions": 7326,
+      "unrelated_checks": 6934
+    },
+    {
+      "authorization_checks": 25128,
+      "config": {
+        "budget": 4,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "append",
+        "unseen": 2
+      },
+      "future_admission_obligations": 442,
+      "progress_obligations": 0,
+      "reached_depth_states": 1333,
+      "receipt_checks": 3150,
+      "refused": 544,
+      "state_matches": 6282,
+      "states_expanded": 698,
+      "transitions": 6282,
+      "unrelated_checks": 6930
+    },
+    {
+      "authorization_checks": 50544,
+      "config": {
+        "budget": 4,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "append",
+        "unseen": 2
+      },
+      "future_admission_obligations": 594,
+      "progress_obligations": 0,
+      "reached_depth_states": 1337,
+      "receipt_checks": 6340,
+      "refused": 1088,
+      "state_matches": 12636,
+      "states_expanded": 702,
+      "transitions": 12636,
+      "unrelated_checks": 13948
+    },
+    {
+      "authorization_checks": 13824,
+      "config": {
+        "budget": 4,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 2
+      },
+      "future_admission_obligations": 95,
+      "progress_obligations": 1344,
+      "reached_depth_states": 609,
+      "receipt_checks": 1679,
+      "refused": 1038,
+      "state_matches": 3456,
+      "states_expanded": 384,
+      "transitions": 3456,
+      "unrelated_checks": 3697
+    },
+    {
+      "authorization_checks": 27936,
+      "config": {
+        "budget": 4,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "reservation",
+        "unseen": 2
+      },
+      "future_admission_obligations": 143,
+      "progress_obligations": 2720,
+      "reached_depth_states": 613,
+      "receipt_checks": 3398,
+      "refused": 2076,
+      "state_matches": 6984,
+      "states_expanded": 388,
+      "transitions": 6984,
+      "unrelated_checks": 7482
+    },
+    {
+      "authorization_checks": 16848,
+      "config": {
+        "budget": 4,
+        "epsilon": 0,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 2
+      },
+      "future_admission_obligations": 283,
+      "progress_obligations": 1758,
+      "reached_depth_states": 828,
+      "receipt_checks": 2197,
+      "refused": 330,
+      "state_matches": 4212,
+      "states_expanded": 468,
+      "transitions": 4212,
+      "unrelated_checks": 4835
+    },
+    {
+      "authorization_checks": 33984,
+      "config": {
+        "budget": 4,
+        "epsilon": 1,
+        "node": 0,
+        "policy": "replacement",
+        "unseen": 2
+      },
+      "future_admission_obligations": 391,
+      "progress_obligations": 3548,
+      "reached_depth_states": 832,
+      "receipt_checks": 4434,
+      "refused": 660,
+      "state_matches": 8496,
+      "states_expanded": 472,
+      "transitions": 8496,
+      "unrelated_checks": 9758
+    }
+  ],
+  "scope": "all declared traces to depth five modulo exact state/depth equivalence; in-memory SQLite, not physical recovery",
+  "totals": {
+    "authorization_checks": 500760,
+    "future_admission_obligations": 5974,
+    "progress_obligations": 21474,
+    "receipt_checks": 53956,
+    "refused": 26028,
+    "state_matches": 125190,
+    "states_expanded": 9260,
+    "transitions": 125190,
+    "unrelated_checks": 118900
+  }
+}
