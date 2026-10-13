@@ -234,22 +234,25 @@ class Store:
         return {'added':added,'dropped':dropped,'receipts':rs}
 
     def compact(self, failpoint: str | None = None) -> dict:
-        f = max(self.floor, self.clock-self.epsilon)
-        before = self.db.execute('SELECT COUNT(*) FROM events').fetchone()[0]
         self._fault('before_transaction',failpoint)
         try:
             self.db.execute('BEGIN IMMEDIATE')
+            # Read the previous floor after obtaining the write lock. Another
+            # connection may have advanced it while this compaction waited.
+            f = max(self.floor, self.clock-self.epsilon)
+            before = self.db.execute('SELECT COUNT(*) FROM events').fetchone()[0]
             self.db.execute('DELETE FROM events WHERE deadline<=?',(f,))
             self._fault('before_floor',failpoint)
             if self.mode != 'no-floor':
                 self.db.execute("UPDATE meta SET value=? WHERE key='floor'",(f,))
+            after = self.db.execute('SELECT COUNT(*) FROM events').fetchone()[0]
+            floor = self.floor
             self._fault('before_commit',failpoint)
             self.db.commit()
         except BaseException:
             self.db.rollback(); raise
         self._fault('after_commit_before_reply',failpoint)
-        after = self.db.execute('SELECT COUNT(*) FROM events').fetchone()[0]
-        return {'before':before,'after':after,'floor':self.floor}
+        return {'before':before,'after':after,'floor':floor}
 
     def _get(self, ident: str) -> dict | None:
         row = self.db.execute("SELECT payload FROM events WHERE id=? AND kind='grant'",(ident,)).fetchone()

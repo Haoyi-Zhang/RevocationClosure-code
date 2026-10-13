@@ -107,6 +107,8 @@ The gateway-service evidence remains separate: 27,648 barrier cases; 29,875 fini
 
 ## Assumptions and limits
 
+Run `python -B tests/compaction_transactions.py` for the five local transaction-ordering tests. They cover twelve bounded-clock interleavings of two connections, committed reply counts, serial floor monotonicity, precommit rollback, and postcommit reply interruption followed by reopen. Compaction acquires its write lock before reading the old floor and derives its reply from that transaction. These checks are also a required CI step, separate from the 71-command campaign.
+
 The model assumes fixed complete honest membership, authentic immutable records, nonnegative clocks within a fixed error bound after recovery, and durable non-rollback storage. Fixture keys are public; administrative RPC actors and clocks are model inputs, not production authentication. The journal stores a validated receipt mask, not a portable certificate for an untrusted verifier. It does not solve Byzantine receipts, changing audiences, power failure, clock restoration, physical storage rollback, saturation throughput, or cancellation of effects admitted before closure.
 
 No public contact-trace experiment or separate Java model checker is claimed. Finite tests are not an unbounded mechanized proof or independent human review. A familiar lease/receipt/evidence-join pattern is not itself a broad novelty claim. See the paper's closest-work comparison and `source_notes.md` for provenance and interpretation.
