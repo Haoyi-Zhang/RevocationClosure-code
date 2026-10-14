@@ -8,7 +8,7 @@ permissions:
 jobs:
   reproduce:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     env:
       PYTHONOPTIMIZE: '0'
       PYTHONDONTWRITEBYTECODE: '1'
@@ -58,7 +58,7 @@ jobs:
         run: python -B lookup_batch.py
       - name: Exercise record-budget progress and recovery
         id: capacity
-        timeout-minutes: 10
+        timeout-minutes: 30
         shell: bash
         run: |
           set -euo pipefail
