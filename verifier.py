@@ -50,7 +50,7 @@ def authentic(x):
 
 def evaluate(snapshot, request, node, clock, epsilon, floor):
     """Root-to-leaf stack validation; SQL-independent dictionary/set oracle."""
-    if not all(typed(e) for e in snapshot): raise ValueError('snapshot authentication or shape')
+    if not isinstance(snapshot,list) or not all(typed(e) for e in snapshot): raise ValueError('snapshot authentication or shape')
     grants={x['id']:x for x in snapshot if x['kind']=='grant'}
     revoked={x['target']['id'] for x in snapshot if x['kind']=='revoke'}
     return indexed(grants,revoked,request,node,clock,epsilon,floor)
@@ -134,7 +134,7 @@ class Replay:
         self.node=node; self.epsilon=epsilon; self.floor=0; self.records={}
         self.grants={}; self.revoked=set()
     def ingest(self,events):
-        if not all(typed(x) for x in events): raise ValueError('replay record')
+        if not isinstance(events,list) or not all(typed(x) for x in events): raise ValueError('replay record')
         for x in events:
             g=x if x['kind']=='grant' else x['target']
             if any(d>self.floor for d in g['deadlines']): self.records[x['id']]=x

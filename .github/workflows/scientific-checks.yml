@@ -21,6 +21,8 @@ jobs:
           python-version: '3.12'
       - name: Check compaction transaction ordering
         run: python -B tests/compaction_transactions.py
+      - name: Check current replay input admission
+        run: python -B tests/replay_input_contract.py
       - name: Reproduce all 71 scientific commands sequentially
         id: reproduce
         timeout-minutes: 25
