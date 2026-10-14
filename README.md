@@ -1,6 +1,6 @@
 # Recovery-Stable Revocation Closure
 
-This repository implements a bounded authorization model and a durable completion-evidence journal for a fixed five-gateway audience. It accompanies **Recovery-Stable Revocation Closure for Offline Capability Delegation**, prepared in IEEE Computer Society journal format for TDSC. It is not a production identity system or a multi-machine deployment.
+This repository implements a bounded authorization model and a durable completion-evidence journal for a fixed five-gateway audience. A separate record-budget module compares reservation and target-row replacement under a common known-target revocation contract, with their admission quotas and physical storage costs reported separately. It accompanies **Recovery-Stable Revocation Closure for Offline Capability Delegation**, prepared in IEEE Computer Society journal format for TDSC. The experiments use local stores and owned loopback endpoints on one host.
 
 ## Run and reproduce
 
