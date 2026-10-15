@@ -1,6 +1,6 @@
-# Resource scope and current reproduction
+# Retained resource observations
 
-The retained source-closed campaign completed all 71 scientific commands. Each command used one owned local runner and bounded child processes; no GPU, external compute, external model API, private dataset, or production service was used. Individual commands have a 180-second coordinator timeout.
+The retained source-closed campaign completed all 71 scientific commands. The figures below describe that saved execution and its 24-source snapshot, rather than fixing the size of the present source tree or a future run. Each command used one owned local runner and bounded child processes; no GPU, external compute, external model API, private dataset, or production service was used. Individual commands have a 180-second coordinator timeout.
 
 ## Measured coordinator record
 
@@ -25,4 +25,4 @@ The article's lookup figure retains the primary measured per-query data. Reprodu
 
 The recovery-compaction-window case is retained in `results/recovery-compaction-window.json`. It records the observed floor and record counts before and after the first post-recovery compaction, plus ten SQL/interpreter authorization rejections. It does not change the article's 26,852 collector cases, 51,200 stateful decisions, 37,890 post-closure rejections, or 9,600 measured lookup queries.
 
-The reproduction guard checks exact executable source bytes and source-set membership. All 24 executable Python files are compared with the snapshot from which the commands run. The standalone repository does not require a toolchain fingerprint or checksum manifest.
+The reproduction guard checks exact executable source bytes and source-set membership. All 24 Python files in the saved run were compared with its execution snapshot. A new reproduction records and checks its actual source set, including later additions. The standalone repository does not require a toolchain fingerprint or checksum manifest.
